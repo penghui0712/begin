@@ -1,0 +1,116 @@
+.sm_bg {
+  width: 1349px; }
+
+.sm_right_v {
+  float: left; }
+
+.category_title {
+  font-size: 18px;
+  color: #e22238;
+  letter-spacing: 2.25px;
+  margin-left: 52px;
+  margin-top: 32px;
+  display: block; }
+
+.sm_detail_v {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.12);
+  margin: 15px auto auto 32px;
+  border-radius: 8px;
+  width: 1099px; }
+  .sm_detail_v .up_arrow {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-bottom: 10px solid #e1e1e1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 286px;
+    margin-top: -10px; }
+  .sm_detail_v .up_arrow_bg {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-bottom: 8px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+    left: 288px;
+    margin-top: -8px; }
+  .sm_detail_v .shipment_top_v {
+    margin-top: 36px; }
+    .sm_detail_v .shipment_top_v a {
+      margin-left: 12px;
+      background: #6bc2ef;
+      border-radius: 5px;
+      width: 151px;
+      height: 32px;
+      display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: center;
+      cursor: pointer; }
+    .sm_detail_v .shipment_top_v a:active {
+      background: #3caee9; }
+  .sm_detail_v .shipment_content {
+    width: 1076px;
+    margin: 27px auto 27px 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    overflow: hidden; }
+    .sm_detail_v .shipment_content .title_v {
+      font-size: 16px;
+      color: #7a7a7a;
+      letter-spacing: 0px;
+      height: 36px;
+      background: #f9f9f9; }
+      .sm_detail_v .shipment_content .title_v span {
+        line-height: 36px;
+        display: inline-block; }
+      .sm_detail_v .shipment_content .title_v .title {
+        margin-left: 19px; }
+      .sm_detail_v .shipment_content .title_v .subtitle {
+        float: right;
+        margin-right: 118px;
+        width: 68px;
+        height: 36px;
+        text-align: center; }
+    .sm_detail_v .shipment_content .shipment_v {
+      font-size: 16px;
+      color: #7a7a7a;
+      letter-spacing: 0px;
+      height: 36px;
+      border-bottom: 1px solid #eaeaea; }
+      .sm_detail_v .shipment_content .shipment_v span {
+        line-height: 36px;
+        display: inline-block; }
+      .sm_detail_v .shipment_content .shipment_v .title {
+        vertical-align: middle;
+        margin-left: 19px; }
+      .sm_detail_v .shipment_content .shipment_v .subtitle {
+        float: right;
+        margin-right: 118px;
+        width: 68px;
+        height: 36px; }
+      .sm_detail_v .shipment_content .shipment_v a {
+        vertical-align: middle;
+        background: #6bc2ef;
+        border-radius: 5px;
+        width: 68px;
+        height: 22px;
+        font-size: 14px;
+        color: #ffffff;
+        letter-spacing: 0.87px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 118px;
+        float: right;
+        margin-top: 7px; }
+
+/*# sourceMappingURL=shipment_manage.css.map */

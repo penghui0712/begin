@@ -1,0 +1,655 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/collapse.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/hb_im.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+    <script src="http://cdn.ronghub.com/RongIMLib-2.2.3.min.js"></script>
+    <script src="https://cdn.ronghub.com/RongIMLib-2.2.3.min.js"></script>
+    <script src="http://cdn.ronghub.com/RongEmoji-2.2.3.min.js"></script>
+</head>
+<body>
+  <div class="contain-view">
+    <div class="left-menu">
+      <img class="user-icon-img" src="../images/im-user-icon.png">
+      <div class="menu-list">
+          <a class="menu-btn"><img src="../images/message.png" ><span class="right-arrow"></span></a>
+          <div class="menu-line"></div>
+          <a class="menu-btn active"><img class="mt18" src="../images/im_contacts.png"><span class="right-arrow"></span></a>
+          <div class="menu-line"></div>
+          <a class="menu-btn"><img class="mt18" src="../images/im_group.png"><span class="right-arrow"></span></a>
+      </div>
+      <a class="setting-btn" data-toggle="dropdown"><img class="setting-btn-img" src="../images/im_menu_add.png"></a>
+      <ul class="dropdown-menu custom-menu">
+        <li><a href="#" data-toggle="modal" data-target="#search_friend_dialog">添加联系人</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#create_group_dialog"  id="create-group">创建讨论组</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#add_group_dialog">添加分组</a></li>
+      </ul>
+
+
+    </div>
+    <div class="friend-list" >
+      <div class="top-bar">
+        <div class="search-view">
+          <input class="search-txt" type="text">
+          <img class="search-img" src="../images/im_search.png">
+        </div>
+      </div>
+       <div class="friend-info" id="im_group" >
+        <div class="title-view">我的群组
+        </div>
+        <div class="info-view" id="im-info">
+            <div class="friend-item">
+              <div class="item">
+                <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+                <div class="item-info">
+                  <span class="name">Emma Wallace</span>
+                  <span class="desc">哈喽！！</span>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+          <div class="friend-item">
+            <div class="item">
+            <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+            <div class="item-info">
+              <span class="name">Emma Wallace</span>
+              <span class="desc">哈喽！！</span>
+            </div>
+          </div>
+          <div class="line"></div>
+         </div>
+        </div>
+      </div>
+       <div class="friend-info" id="im_friend">
+         <div class="info-view" id="info-list">
+         <div class="message-list" id="message-verify">
+            <div class="message-item">
+              <img class="message-icon" src="../images/head_new.png">
+              <div class="detail-view">
+                <span class="title">伙伴验证消息</span>
+                <span class="desc">最新：2016-10-08</span>
+              </div>
+            </div>
+           <div class="message-item">
+             <img class="message-icon" src="../images/order_test.png">
+             <div class="detail-view">
+               <span class="title">123</span>
+               <span class="desc">aaaa</span>
+             </div>
+           </div>
+         </div>
+           </div>
+        <div class="info-view" id="friend-list">
+
+         <div class="group-list panel-group" id="accordion">
+              <div class="group-view">
+                  <div class="group-title-view">
+                    <span class="title" data-toggle="collapse" data-parent="#accordion" href="#collapse1">好友分组1(5)<img class="arrow-img" src="../images/im_arrow_down.png"></span>
+                  </div>
+                  <div class="group-info panel-collapse collapse" id="collapse1">
+                    <div class="friend-item">
+                      <div class="item">
+                        <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+                        <div class="item-info">
+                          <span class="name">Emma Wallace</span>
+                          <span class="desc">哈喽！！</span>
+                        </div>
+                      </div>
+                      <div class="line"></div>
+                    </div>
+                    <div class="friend-item">
+                      <div class="item">
+                        <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+                        <div class="item-info">
+                          <span class="name">Emma Wallace</span>
+                          <span class="desc">哈喽！！</span>
+                        </div>
+                      </div>
+                      <div class="line"></div>
+                    </div>
+                  </div>
+              </div>
+            <div class="group-view">
+              <div class="group-title-view">
+                <span class="title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">好友分组1(5)<img class="arrow-img" src="../images/im_arrow_down.png"></span>
+              </div>
+              <div class="group-info panel-collapse collapse" id="collapse2">
+                <div class="friend-item">
+                  <div class="item">
+                    <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+                    <div class="item-info">
+                      <span class="name">Emma Wallace</span>
+                      <span class="desc">哈喽！！</span>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+                <div class="friend-item">
+                  <div class="item">
+                    <img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">
+                    <div class="item-info">
+                      <span class="name">Emma Wallace</span>
+                      <span class="desc">哈喽！！</span>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-view" id="chat-view" style="display:none">
+      <a class="title" id="all-chat">查看更多消息</a>
+      <div class="chat-info" id="chat-list">
+          <div class="other-chat">
+            <img class="user-icon" src="../images/im-user-icon.png">
+            <span class="left-arrow"></span>
+            <span class="left-arrow-bg"></span>
+            <div class="other-chat-info">
+              <pre>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</pre>
+            </div>
+          </div>
+          <div class="my-chat">
+        <div class="my-chat-info">
+          <pre>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</pre>
+        </div>
+        <span class="right-arrow"></span>
+        <img class="user-icon" src="../images/im-user-icon.png">
+      </div>
+        <div class="other-chat">
+          <img class="user-icon" src="../images/im-user-icon.png">
+          <span class="left-arrow"></span>
+          <span class="left-arrow-bg"></span>
+          <div class="other-chat-info">
+            <pre>可以的哦，你买几份呢？<a class="re-link" href="http://www.baidu.com" target="_blank">http://www.baidu.com<div class="record-detail-info"><img class="pro-img" src="../images/order_test.png"><div class="record-detail"><span class="titles">读书会</span><span class="price">¥128</span><span class="desc">去往他们的天鹅城堡——王尔德、安徒生、安房直子</span></div></div></a></pre>
+          </div>
+        </div>
+
+        <div class="my-chat">
+          <div class="my-chat-info">
+            <pre>可以的哦，你买几份呢？<a class="re-link" href="http://www.baidu.com" target="_blank">http://www.baidu.com<div class="record-detail-info"><img class="pro-img" src="../images/order_test.png"><div class="record-detail"><span class="titles">读书会</span><span class="price">¥128</span><span class="desc">去往他们的天鹅城堡——王尔德、安徒生、安房直子</span></div></div></a></pre>
+          </div>
+          <span class="right-arrow"></span>
+          <img class="user-icon" src="../images/im-user-icon.png">
+        </div>
+        <div class="other-chat">
+          <img class="user-icon" src="../images/im-user-icon.png">
+          <span class="left-arrow"></span>
+          <span class="left-arrow-bg"></span>
+          <div class="other-chat-info">
+            <pre><img class="record-img" src="../images/test-record.png"></pre>
+          </div>
+        </div>
+        <div class="my-chat">
+          <div class="my-chat-info">
+            <pre><img class="record-img" src="../images/test-record.png"></pre>
+          </div>
+          <span class="right-arrow"></span>
+          <img class="user-icon" src="../images/im-user-icon.png">
+        </div>
+      </div>
+      <div class="input-view">
+        <div class="tools-bar">
+          <a class="left-tools"><img src="../images/ziti.png"></a>
+          <a class="left-tools" id="biaoqing"><img src="../images/biaoqing.png"></a>
+          <a class="left-tools"><img src="../images/upload-icon.png"></a>
+          <a class="right-tools" id="chat-record">聊天记录</a>
+          <a class="right-tools">自动回复</a>
+          <a class="right-tools">快捷回复</a>
+        </div>
+        <textarea class="textarea" id ="im_text"></textarea>
+        <a class="send" id="sendMessage">发送</a>
+      </div>
+    </div>
+
+    <div class="message-view" id="message-list">
+      <div class="message-list" id="message-grade" >
+        <div class="message-item">
+          <span class="tips">2016-10-08</span>
+          <div class="message-type-1">
+            <img class="user-icon" src="../images/order_test.png">
+            <div class="user-info">
+              <span class="tips">Evelyn Fuller (9763343445)申请加您为伙伴！</span>
+              <div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>
+              <div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>
+            </div>
+            <a class="add-friend tools-btn b7ED321">加为伙伴</a>
+            <div class="add-info-view">
+              <div class="item-tools mt20">
+                <span class="ttips">分组：</span>
+                <select class="select">
+                  <option>sh</option>
+                </select>
+                <a id="add-group-btn" class="add-group">新增分组</a>
+              </div>
+              <div class="item-tools mt5">
+                <span class="ttips">备注：</span>
+                <input class="input" type="text"/>
+              </div>
+              <div class="tools-view">
+                <a class="cancel">取消</a>
+                <a class="done">确定</a>
+              </div>
+            </div>
+          </div>
+          <div class="message-type-1">
+            <img class="user-icon" src="../images/order_test.png">
+            <div class="user-info">
+              <span class="tips">Coco lerna (42363765)您的申请已发出！</span>
+              <div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>
+              <div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>
+            </div>
+            <a class="tools-btn b6BC2EF">等待对方验证</a>
+          </div>
+          <!-- <div class="message-type-1">
+            <img class="user-icon" src="../images/order_test.png">
+            <div class="user-info">
+              <span class="tips">Evelyn Fuller (9763343445)申请加您为伙伴！</span>
+              <div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>
+              <div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>
+            </div>
+            <a class="tools-btn bEA6A79">已拒绝</a>
+          </div> -->
+          <div class="message-type-1">
+            <img class="user-icon" src="../images/order_test.png">
+            <div class="user-info">
+              <span class="tips">Coco lerna (42363765)已成功添加您为伙伴！</span>
+              <div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>
+              <div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>
+            </div>
+            <a class="tools-btn b6BC2EF">会话窗口</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="record-view" id="record-view">
+        <div class="record-search-view">
+            <div class="search-view"><input class="seach-input" type="text"><a class="search-btn"><img class="search-img" src="../images/im_search.png"></a></div>
+            <div class="record-tools">
+              <a class="record-btn ml14">
+                <img src="../images/im_link.png">
+                <span>链接</span>
+              </a>
+              <a class="record-btn ml30">
+                <img src="../images/im_img.png">
+                <span>图片</span>
+              </a>
+              <a class="record-btn ml30">
+                <img src="../images/im_file.png">
+                <span>文件</span>
+              </a>
+              <a class="record-all ml30">显示全部</a>
+            </div>
+        </div>
+      <div class="record-list" id="record-list">
+        <div class="record-item">
+          <div class="time-view"><span class="line"></span><span class="title ml14">2016-04-18</span><span class="line ml14"></span></div>
+          <div class="record-info">
+            <div class="record-info-head"><span class="user-name c6BC2EF">Emma Wallace</span><span class="time-title">14:30:01</span></div>
+            <div></div>
+            <pre class="record-tips ft14">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</pre>
+          </div>
+            <div class="record-info">
+              <div class="record-info-head"><span class="user-name cEA6A79">pony</span><span class="time-title">14:30:01</span></div>
+                <pre class="record-tips"><img class="record-img" src="../images/test-record.png"></pre>
+              </div>
+          <div class="record-info">
+            <div class="record-info-head"><span class="user-name cEA6A79">pony</span><span class="time-title">14:30:01</span></div>
+                <pre class="record-tips"><span class="ft14">这个活动的行程是怎么安排的？</span><a class="re-link" href="http://www.baidu.com" target="_blank">http://www.baidu.com<div class="record-detail-info"><img class="pro-img" src="../images/order_test.png"><div class="record-detail"><span class="title">读书会</span><span class="price">¥128</span><span class="desc">去往他们的天鹅城堡——王尔德、安徒生、安房直子</span></div></div>
+                </a>
+                </pre>
+          </div>
+          <div class="record-info">
+            <div class="record-info-head"><span class="user-name cEA6A79">pony</span><span class="time-title">14:30:01</span></div>
+                <pre class="record-tips">
+                  <div class="re-file">
+                    <img class="file-type-img" src="../images/im_eps.png"><span class="file-desc">方案参考文件——团建场地</span><a class="record-btn mr25">下载</a>
+                  </div>
+                </pre>
+          </div>
+          <div class="record-info">
+            <div class="record-info-head"><span class="user-name cEA6A79">pony</span><span class="time-title">14:30:01</span></div>
+                <pre class="record-tips">
+                  <div class="re-file">
+                    <img class="file-type-img" src="../images/im_pdf.png"><span class="file-desc">方案参考文件——团建场地</span><a class="record-btn mr14">打开文件</a>
+                  </div>
+                </pre>
+          </div>
+          <div class="record-info">
+            <div class="record-info-head"><span class="user-name cEA6A79">pony</span><span class="time-title">14:30:01</span></div>
+                <pre class="record-tips">
+                  <div class="re-file">
+                    <img class="file-type-img" src="../images/im_text.png"><span class="file-desc">方案参考文件——团建场地</span><a class="record-btn mr14">打开文件</a>
+                  </div>
+                </pre>
+          </div>
+        </div>
+
+      </div>
+      <div class="record-bot-tools">
+        <div class="select-date-view">
+          <a class="left-date-select" id="left-date-btn">
+            <img class="cimg" src="../images/im_calendar.png">
+          </a>
+          <input class="left-time-input" readonly="readonly" value="2015-01-01" id="record-start-date">
+          <span class="center-line"></span>
+          <input class="right-time-input" readonly="readonly" value="2016-01-01" id="record-end-date">
+          <a class="right-date-select" id="right-date-btn">
+            <img class="cimg" src="../images/im_calendar.png">
+          </a>
+        </div>
+        <div class="record-right-view">
+          <a class="left-btn"><img src="../images/im_page_left.png"></a>
+          <a class="right-btn"><img src="../images/im_page_right.png"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="../libs/jquery.min.js"></script>
+  <script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../libs/laydate.js"></script>
+  <script type="text/javascript" src="../libs/perfect-scrollbar.jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="../js/utils.js"></script>
+  <script type="text/javascript" src="../js/hb_im.js"></script>
+  <link rel="import" href="../widget/search_friend.html?__inline">
+  <link rel="import" href="../widget/add_friend.html?__inline">
+  <link rel="import" href="../widget/add_group.html?__inline">
+  <link rel="import" href="../widget/create_group.html?__inline">
+  <link rel="import" href="../widget/group_info.html?__inline">
+  <link rel="import" href="../widget/create_group_info.html?__inline">
+  <div class="modal fade" id="add_friend_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="add-friend-dialog" class="add_friend_dialog h400">
+    <div class="dialog_head">
+      <span class="title">添加伙伴</span>
+    </div>
+    <div class="dialog_content">
+      <span class="dialog_tips">您将添加以下好友</span>
+          <div class="result-item">
+            <img src="../images/order_test.png" class="user-icon">
+            <div class="info-view">
+              <span class="user-name">Evelyn Fuller(9763343445)</span>
+              <div class="cell mt8">
+                <span class="title">用户信用:</span>
+                <div class="star-list">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/half_star.png">
+                  <span class="score">4.9分</span>
+                </div>
+              </div>
+              <div class="cell mt2">
+                <span class="title">商家等级:</span>
+                <img class="shop_icon" src="../images/shop_level_icon.png">
+                <span class="subtitle"> 7 Lev</span>
+              </div>
+            </div>
+          </div>
+         <span class="center-line"></span>
+         <div class="item-tools mt20">
+           <span class="tips">分组：</span>
+           <select class="select">
+             <option>sh</option>
+           </select>
+           <a id="add-group-btn" class="add-group">新增分组</a>
+         </div>
+          <div class="item-tools mt5">
+           <span class="tips">备注：</span>
+            <input class="input" type="text" id="remark"/>
+          </div>
+    </div>
+      <a class="bot-btn mr50" id="add-friend">发送</a>
+      <a class="bot-btn mr20" id="cancle">取消</a>
+  </div>
+</div>
+
+<div class="modal fade" id="add_group_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="add_group_dialog">
+      <div class="dialog_head">
+        <span class="title">添加分组</span>
+      </div>
+      <div class="dialog-content">
+        <span class="tips">分组名称</span>
+        <input class="input" id="group-name">
+      </div>
+      <div class="dialog-tools">
+        <a class="add-group-person">添加分组成员</a>
+        <a class="complete" id="add-group">完成</a>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="create_group_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="create_group_dialog">
+    <div class="dialog_head">
+      <span class="title">创建讨论组</span>
+    </div>
+    <span class="tips">添加讨论组成员</span>
+    <div class="search-view">
+      <input class="input" id="search-input">
+      <img class="search-img" src="../images/friend_search_white_icon.png" id="search-friend">
+    </div>
+    <div class="info-view">
+      <div class="left-view" id="left-group-view">
+        <div class="menu-view">
+          <a class="menu-tips" data-toggle="collapse" data-parent="#accordion"
+           href="#collapse-friend">
+          伙伴分组（5）
+          </a>
+          <img class="arrow-img" src="../images/im_arrow_up.png">
+        </div>
+        <div id="collapse-friend" class="panel-collapse collapse in">
+          <div class="friend-list">
+            <a class="friend-item">活动策划商</a>
+            <a class="friend-item">住宿资源</a>
+            <a class="friend-item">旅游资源</a>
+            <a class="friend-item">旅行社</a>
+            <a class="friend-item">场地供应商</a>
+          </div>
+        </div>
+        <div class="menu-view">
+        <a class="menu-tips" data-toggle="collapse" data-parent="#accordion"
+           href="#collapse-group">
+          伙伴讨论组（123）
+        </a>
+          <img class="arrow-img" src="../images/im_arrow_up.png">
+        </div>
+        <div id="collapse-group" class="panel-collapse collapse in">
+          <div class="group-list">
+            <a class="group-item">
+              <img class="group-img" src="../images/order_test.png">
+              <span class="group-tips">色达7日游102111111111111111111111</span>
+            </a>
+            <a class="group-item">
+              <img class="group-img" src="../images/order_test.png">
+              <span class="group-tips">色达7日游102111111111111111111111</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="center-view" id="center-group-view">
+        <div class="user-list">
+          <div class="user-item">
+            <div class="rg_cb">
+              <input class="user-checkbox" type="checkbox" data-uid="userId" value="" id="user-checkbox-1" name="jy" />
+              <label for="user-checkbox-1"></label>
+            </div>
+            <label class="check-box-info" for="user-checkbox-1">
+              <img class="user-icon" src="../images/order_test.png">
+              <span class="user-name">Evelyn（985623153）1111111111111111111111111111</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="right-view" id="right-group-view">
+        <span class="g-tips">已选成员<span class="cEA6A79">（单击移除）</span></span>
+        <div class="checked-user-list" id="checked-user-list">
+          <div class="checked-user-item">
+            <img class="user-icon" src="../images/order_test.png">
+            <span class="user-name">Evelyn（985623153）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bot-view">
+      <a class="forward">上一步</a>
+      <a class="complete">完成</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="search_friend_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+      <div id="search-friend-dialog-view" class="search_friend_dialog h350">
+        <div class="dialog_head">
+          <span class="title">添加伙伴</span>
+        </div>
+        <div class="dialog_content">
+          <span class="dialog_tips">通过<span class="cEA6A79">帐号</span>／<span class="cEA6A79">用户名</span>查找伙伴</span>
+          <div class="search-view">
+            <input class="search-input" type="text" id="search-input">
+            <img id="search-btn" class="search-img" src="../images/friend_search_icon.png">
+          </div>
+          <span class="subtips" style="display: none">您输入的账号不存在~</span>
+          <div class="result-view" >
+            <div class="result-list" id="result-list">
+              <div class="result-item">
+                <img src="../images/order_test.png" class="user-icon">
+                <div class="info-view">
+                  <span class="user-name">Evelyn Fuller(9763343445)</span>
+                  <div class="cell mt8">
+                    <span class="title">用户信用:</span>
+                    <div class="star-list">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/half_star.png">
+                      <span class="score">4.9分</span>
+                    </div>
+                  </div>
+                  <div class="cell mt2">
+                    <span class="title">商家等级:</span>
+                    <img class="shop_icon" src="../images/shop_level_icon.png">
+                    <span class="subtitle"> 7 Lev</span>
+                  </div>
+                </div>
+                <div class="tools-view">
+                  <a class="add-btn">加为好友</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+
+
+  <script>
+
+    $('#result-list').perfectScrollbar();
+    $('#left-group-view').perfectScrollbar();
+    $('#center-group-view').perfectScrollbar();
+    $('#message-list').perfectScrollbar();
+
+
+    changeContentHeight(0);
+
+
+    $(".add-btn").click(function(){
+      $("#search_friend_dialog").modal('hide');
+      $("#add_friend_dialog").modal('show');
+    })
+
+    $("#cl").click(function(){
+
+    })
+
+    $(".group-cell").click(function(){
+      $(this).addClass("active");
+      $(".group-cell").not($(this)).removeClass("active");
+    })
+
+    //添加分组 点击新增分组
+    $("#add-group-btn").click(function(){
+      $("#add_friend_dialog").modal('hide');
+      $("#add_group_dialog").modal('show')
+    })
+    //创建讨论组 勾选朋友
+    $(".user-checkbox").click(function(){
+      if($(this).get(0).checked==true){
+        var a=($($(this).parent()).siblings(".check-box-info").html());
+        var b='<div class="checked-user-item" id='+$(this).attr('data-uid')+'>'+a+'</div>';
+        $("#checked-user-list").append(b);
+        $(".checked-user-item").unbind().bind('click',function(){
+          var cb=$('input:checkbox[data-uid='+$(this).attr("id")+']:checked');
+          $(cb).removeAttr('checked');
+          $(this).remove();
+
+        })
+      }else{
+        $('#'+$(this).attr('data-uid')).remove();
+      }
+    })
+
+
+
+
+    function changeContentHeight(count){
+      if(count>3){
+        count=3;
+      }
+      var cheight=count*64;
+      var theight=356+cheight;
+      $("#search-friend-dialog-view").height(theight);
+    }
+
+    //信息列表 添加好友
+    $(".add-friend").click(function(){
+      $($(this).parent()).animate({height:"250px"});
+      $(this).hide();
+    });
+
+    $(".cancel").click(function(){
+      $($(this).parent().parent().parent()).animate({height:"114px"});
+      $($(this).parent().parent()).siblings(".add-friend").show();
+    });
+
+    function messageInfofriendClick(){
+
+    }
+
+    $("#group_info_dialog").modal("show");
+    //$("#create_group_info_dialog").modal("show");
+
+
+    $("#editor-group-name").click(function(){
+      $(this).siblings(".group-name").hide();
+      $(this).siblings(".group-name-edit").show();
+    });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+.contain {
+  width: 100%;
+  height: auto; }
+  .contain .center-view {
+    width: 1100px;
+    margin: 0 auto;
+    height: 500px; }
+    .contain .center-view .top-src {
+      margin-left: 32px;
+      margin-top: 16px;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #485157;
+      letter-spacing: 0.87px; }
+      .contain .center-view .top-src .forword-a {
+        cursor: pointer; }
+    .contain .center-view .detail-view {
+      width: 1036px;
+      height: 290px;
+      margin: 91px auto auto auto;
+      border: 1px solid #EAEAEA;
+      border-radius: 3px; }
+      .contain .center-view .detail-view .detial-title-view {
+        font-size: 0;
+        margin-left: 48px;
+        margin-top: -10px;
+        height: 20px;
+        line-height: 20px;
+        background: #ffffff;
+        display: inline-block; }
+        .contain .center-view .detail-view .detial-title-view .line {
+          width: 4px;
+          height: 15px;
+          background: #CDCDCD;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px; }
+        .contain .center-view .detail-view .detial-title-view .title {
+          opacity: 0.6;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #222222;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px;
+          margin-right: 5px; }
+      .contain .center-view .detail-view .detail-info {
+        width: 958px;
+        margin: 46px auto auto auto;
+        font-size: 0; }
+        .contain .center-view .detail-view .detail-info .user-icon {
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          vertical-align: middle; }
+        .contain .center-view .detail-view .detail-info .user-info {
+          display: inline-block;
+          height: 42px;
+          width: 500px;
+          vertical-align: middle;
+          margin-left: 16px; }
+          .contain .center-view .detail-view .detail-info .user-info span {
+            display: block; }
+          .contain .center-view .detail-view .detail-info .user-info .user-name {
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            color: #222222;
+            letter-spacing: 0px; }
+          .contain .center-view .detail-view .detail-info .user-info .create-time {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #222222; }
+        .contain .center-view .detail-view .detail-info .operating-info {
+          display: inline-block;
+          vertical-align: middle;
+          width: 400px; }
+          .contain .center-view .detail-view .detail-info .operating-info .operating-top {
+            text-align: right; }
+            .contain .center-view .detail-view .detail-info .operating-info .operating-top .operating-a {
+              opacity: 0.6;
+              font-size: 16px;
+              color: #222222;
+              vertical-align: middle;
+              line-height: 22px;
+              height: 22px;
+              display: inline-block;
+              cursor: pointer;
+              margin-right: 15px; }
+              .contain .center-view .detail-view .detail-info .operating-info .operating-top .operating-a img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 16px;
+                height: 16px;
+                margin-right: 8px; }
+            .contain .center-view .detail-view .detail-info .operating-info .operating-top .operating-update {
+              background: #6BC2EF;
+              border-radius: 4px;
+              width: 68px;
+              height: 22px;
+              font-size: 12px;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 22px;
+              display: inline-block;
+              margin-left: 8px;
+              cursor: pointer; }
+            .contain .center-view .detail-view .detail-info .operating-info .operating-top .operating-added {
+              background: #EA6A79;
+              border-radius: 4px;
+              width: 68px;
+              height: 22px;
+              font-size: 12px;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 22px;
+              display: inline-block;
+              margin-left: 8px;
+              cursor: pointer; }
+        .contain .center-view .detail-view .detail-info .detail-cell-info {
+          margin-top: 14px;
+          font-size: 0; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .tips {
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #222222;
+            display: inline-block; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .title {
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            color: #222222;
+            margin-left: 14px; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .time {
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #EA6A79;
+            margin-left: 14px; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .address {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #222222;
+            margin-left: 14px; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .content {
+            opacity: 0.8;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            max-width: 912px;
+            display: block;
+            color: #222222;
+            /*            vertical-align: top;*/ }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .lcell {
+            display: inline-block;
+            vertical-align: top; }
+          .contain .center-view .detail-view .detail-info .detail-cell-info .rcell {
+            margin-left: 14px;
+            display: inline-block;
+            vertical-align: top; }
+        .contain .center-view .detail-view .detail-info .mb32 {
+          margin-bottom: 32px; }
+      .contain .center-view .detail-view .close-btn {
+        width: 88px;
+        height: 32px;
+        line-height: 32px;
+        background: #6BC2EF;
+        border-radius: 5px;
+        display: block;
+        margin: 96px auto auto auto;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        cursor: pointer; }
+
+/*# sourceMappingURL=/css/demand.css.map */

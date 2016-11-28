@@ -1,0 +1,93 @@
+.rc_top_v{
+  background:#353e45;
+  width:100%;
+  height:60px;
+  .rc_top_info_v{
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  span{
+    float: left;
+    line-height: 60px;
+    color: #ffffff;
+    display: inline-block;
+  }
+  .logo_1{
+    font-size: 24px;
+    margin-left: 48px;
+  }
+  .logo_2{
+    font-size: 14px;
+  }
+  .rc_left_v{
+    margin-left: 86px;
+    float: left;
+    vertical-align: middle;
+    a{
+      font-size:18px;
+      color:#ffffff;
+      cursor: pointer;
+      line-height: 60px;
+    }
+  }
+  .rc_right_v{
+    float: right;
+    margin-right: 40px;
+    vertical-align: middle;
+    .is_login_v{
+      .user_icon_img{
+        float: left;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 14px 16px 14px auto;
+      }
+      span{
+        float: left;
+        font-size:16px;
+        color:#ffffff;
+        margin-right: 15px;
+        display: inline-block;
+      }
+      .arrow{
+        float: left;
+        display: inline-block;
+        width: 16px;
+        height: 9px;
+        margin: 27px 16px 24px auto;
+        cursor: pointer;
+      }
+    }
+    .rc_other_v {
+       display: inline-block;
+       height: 22px;
+       margin-top: 19px;
+       color: #ffffff;
+       a {
+         font-size: 14px;
+         cursor: pointer;
+         display: inline-block;
+         line-height: 22px;
+         color: #ffffff;
+         text-decoration: none;
+       }
+       a:link {
+         font-size: 14px;
+         color: #ffffff;
+         text-decoration: none;
+        }
+       a:visited {
+         font-size: 14px;
+         color: #ffffff;
+         text-decoration: none;
+       }
+       a:hover {
+         font-size: 14px;
+         color: #ffffff;
+         text-decoration: none;
+       }
+     }
+  }
+}

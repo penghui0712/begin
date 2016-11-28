@@ -1,0 +1,929 @@
+.c6BC2EF {
+  color: #6BC2EF; }
+
+.cEA6A79 {
+  color: #EA6A79; }
+
+.b6BC2EF {
+  background: #6BC2EF; }
+
+.b7ED321 {
+  background: #7ED321; }
+
+.bEA6A79 {
+  background: #EA6A79; }
+
+.contain-view {
+  width: 1200px;
+  height: 640px;
+  margin: 10px auto;
+  font-size: 0;
+  border: 1px solid #eaeaea;
+  overflow: hidden; }
+  .contain-view .left-menu {
+    width: 80px;
+    height: 100%;
+    background: #353E45;
+    display: inline-block;
+    vertical-align: middle; }
+    .contain-view .left-menu .user-icon-img {
+      width: 55px;
+      height: 55px;
+      display: inline-block;
+      margin: 26px auto auto 12.5px; }
+    .contain-view .left-menu .menu-list {
+      margin-top: 84px; }
+      .contain-view .left-menu .menu-list img {
+        display: block;
+        margin: 18px auto; }
+      .contain-view .left-menu .menu-list .menu-btn {
+        cursor: pointer; }
+        .contain-view .left-menu .menu-list .menu-btn img {
+          width: 28px;
+          height: 28px; }
+      .contain-view .left-menu .menu-list .menu-line {
+        width: 60px;
+        margin: 18px auto auto auto;
+        height: 1px;
+        background: #3D474F; }
+      .contain-view .left-menu .menu-list .right-arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: -40px;
+        margin-left: 80px;
+        z-index: 999;
+        border-top: 10px solid transparent;
+        border-left: 15px solid #353E45;
+        border-bottom: 10px solid transparent;
+        display: none; }
+      .contain-view .left-menu .menu-list .active .right-arrow {
+        display: inline-block; }
+    .contain-view .left-menu .setting-btn {
+      display: block;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      margin: 230px auto auto 28px; }
+      .contain-view .left-menu .setting-btn .setting-btn-img {
+        width: 24px;
+        height: 24px; }
+    .contain-view .left-menu .custom-menu {
+      left: 150px;
+      margin-top: -132px;
+      background: #F0F0F0;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 10px; }
+  .contain-view .friend-list {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 245px;
+    height: 100%;
+    background: #eeeeee; }
+    .contain-view .friend-list .top-bar {
+      height: 62px;
+      width: 100%; }
+      .contain-view .friend-list .top-bar .search-view {
+        display: inline-block;
+        margin: 10px auto auto 25.5px;
+        width: 194px;
+        height: 32px;
+        background: #ffffff;
+        font-size: 0; }
+        .contain-view .friend-list .top-bar .search-view .search-txt {
+          width: 150px;
+          height: 32px;
+          display: inline-block;
+          vertical-align: middle;
+          border: none;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #222222;
+          outline: none;
+          margin: 0 5px; }
+        .contain-view .friend-list .top-bar .search-view .search-img {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+          display: inline-block;
+          vertical-align: middle; }
+    .contain-view .friend-list .friend-info {
+      width: 100%; }
+      .contain-view .friend-list .friend-info .title-view {
+        height: 52px;
+        line-height: 52px;
+        width: 234px;
+        text-align: center;
+        background: #ffffff;
+        font-family: PingFangSC-Semibold;
+        font-size: 16px;
+        color: #7A7A7A; }
+      .contain-view .friend-list .friend-info .im-info {
+        width: 234px;
+        background: #ffffff;
+        height: 525px;
+        position: relative; }
+        .contain-view .friend-list .friend-info .im-info .friend-item {
+          width: 208px;
+          height: 62px;
+          display: inline-block;
+          margin-left: 20px;
+          margin: 4px auto auto 20px; }
+          .contain-view .friend-list .friend-info .im-info .friend-item .item {
+            font-size: 0;
+            cursor: pointer; }
+            .contain-view .friend-list .friend-info .im-info .friend-item .item .friend-icon {
+              width: 42px;
+              height: 42px;
+              margin: 9px auto 9px 10px;
+              display: inline-block;
+              vertical-align: top; }
+            .contain-view .friend-list .friend-info .im-info .friend-item .item .item-info {
+              display: inline-block;
+              vertical-align: top; }
+              .contain-view .friend-list .friend-info .im-info .friend-item .item .item-info .name {
+                margin: 4px auto auto 20px;
+                display: block;
+                font-family: PingFangSC-Semibold;
+                font-size: 16px;
+                color: #222222;
+                max-width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+              .contain-view .friend-list .friend-info .im-info .friend-item .item .item-info .desc {
+                margin: 8px auto auto 20px;
+                display: block;
+                font-family: PingFang-SC-Regular;
+                font-size: 14px;
+                color: #7A7A7A;
+                max-width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+          .contain-view .friend-list .friend-info .im-info .friend-item .active {
+            background: #6BC2EF;
+            border-radius: 3px; }
+            .contain-view .friend-list .friend-info .im-info .friend-item .active .item-info .desc {
+              color: #ffffff; }
+          .contain-view .friend-list .friend-info .im-info .friend-item .line {
+            width: 198px;
+            height: 1px;
+            background: #EAEAEA;
+            margin: 2px auto auto 8px; }
+      .contain-view .friend-list .friend-info .message-list {
+        width: 198px;
+        height: 524px;
+        background: #ffffff;
+        margin-left: 28px;
+        border-top: 1px solid #EAEAEA; }
+        .contain-view .friend-list .friend-info .message-list .message-item {
+          height: 65px;
+          width: 100%;
+          border-bottom: 1px solid #EAEAEA;
+          font-size: 0; }
+          .contain-view .friend-list .friend-info .message-list .message-item .message-icon {
+            width: 42px;
+            height: 42px;
+            display: inline-block;
+            vertical-align: middle; }
+          .contain-view .friend-list .friend-info .message-list .message-item .detail-view {
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            height: 65px;
+            width: 130px; }
+            .contain-view .friend-list .friend-info .message-list .message-item .detail-view .title {
+              margin-top: 10px;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              display: block;
+              color: #222222; }
+            .contain-view .friend-list .friend-info .message-list .message-item .detail-view .desc {
+              margin-top: 8px;
+              font-family: PingFang-SC-Regular;
+              font-size: 14px;
+              display: block;
+              color: #7A7A7A; }
+      .contain-view .friend-list .friend-info .info-view {
+        width: 234px;
+        background: #ffffff;
+        height: 525px;
+        position: relative; }
+        .contain-view .friend-list .friend-info .info-view .group-list {
+          width: 214px; }
+          .contain-view .friend-list .friend-info .info-view .group-list .group-view .group-title-view {
+            width: 100%;
+            height: 44px;
+            border-bottom: 1px solid #dddddd; }
+            .contain-view .friend-list .friend-info .info-view .group-list .group-view .group-title-view .title {
+              font-size: 16px;
+              color: #7A7A7A;
+              line-height: 44px;
+              margin-left: 20px;
+              width: 100%;
+              display: inline-block;
+              cursor: pointer; }
+              .contain-view .friend-list .friend-info .info-view .group-list .group-view .group-title-view .title .arrow-img {
+                margin-left: 12px; }
+        .contain-view .friend-list .friend-info .info-view .friend-item {
+          width: 208px;
+          height: 62px;
+          display: inline-block;
+          margin-left: 20px;
+          margin: 4px auto auto 20px; }
+          .contain-view .friend-list .friend-info .info-view .friend-item .item {
+            font-size: 0;
+            cursor: pointer; }
+            .contain-view .friend-list .friend-info .info-view .friend-item .item .friend-icon {
+              width: 42px;
+              height: 42px;
+              margin: 9px auto 9px 10px;
+              display: inline-block;
+              vertical-align: top; }
+            .contain-view .friend-list .friend-info .info-view .friend-item .item .item-info {
+              display: inline-block;
+              vertical-align: top; }
+              .contain-view .friend-list .friend-info .info-view .friend-item .item .item-info .name {
+                margin: 4px auto auto 20px;
+                display: block;
+                font-family: PingFangSC-Semibold;
+                font-size: 16px;
+                color: #222222;
+                max-width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+              .contain-view .friend-list .friend-info .info-view .friend-item .item .item-info .desc {
+                margin: 8px auto auto 20px;
+                display: block;
+                font-family: PingFang-SC-Regular;
+                font-size: 14px;
+                color: #7A7A7A;
+                max-width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+          .contain-view .friend-list .friend-info .info-view .friend-item .active {
+            background: #6BC2EF;
+            border-radius: 3px; }
+            .contain-view .friend-list .friend-info .info-view .friend-item .active .item-info .desc {
+              color: #ffffff; }
+          .contain-view .friend-list .friend-info .info-view .friend-item .line {
+            width: 198px;
+            height: 1px;
+            background: #EAEAEA;
+            margin: 2px auto auto 8px; }
+  .contain-view .chat-view {
+    max-width: 875px;
+    width: 875px;
+    min-width: 524px;
+    height: 640px;
+    display: inline-block;
+    vertical-align: middle; }
+    .contain-view .chat-view .title {
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #222222;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-top: 42px;
+      cursor: pointer;
+      margin-bottom: 28px; }
+    .contain-view .chat-view .chat-info {
+      width: 100%;
+      height: 410px;
+      position: relative; }
+      .contain-view .chat-view .chat-info .other-chat {
+        clear: both;
+        margin: auto auto 28px 14px; }
+        .contain-view .chat-view .chat-info .other-chat .user-icon {
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          vertical-align: top; }
+        .contain-view .chat-view .chat-info .other-chat .left-arrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin-top: 10px;
+          margin-left: 11px;
+          border-top: 7px solid transparent;
+          border-right: 10px solid #6BC2EF;
+          border-bottom: 7px solid transparent; }
+        .contain-view .chat-view .chat-info .other-chat .left-arrow-bg {
+          position: absolute;
+          z-index: 999;
+          width: 0;
+          height: 0;
+          margin-top: 11px;
+          margin-left: 12px;
+          border-top: 6px solid transparent;
+          border-right: 9px solid #ffffff;
+          border-bottom: 6px solid transparent; }
+        .contain-view .chat-view .chat-info .other-chat .other-chat-info {
+          margin-left: 20px;
+          display: inline-block;
+          vertical-align: top;
+          background: #FFFFFF;
+          border: 1px solid #6BC2EF;
+          border-radius: 7px;
+          min-height: 42px;
+          font-size: 14px; }
+          .contain-view .chat-view .chat-info .other-chat .other-chat-info pre {
+            margin: 11px;
+            max-width: 300px;
+            white-space: pre-wrap;
+            word-wrap: break-word; }
+            .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .record-img {
+              max-width: 100%;
+              height: auto; }
+            .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link {
+              font-size: 12px;
+              color: #3CAEE9;
+              display: block; }
+              .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info {
+                margin-top: 5px;
+                font-size: 0; }
+                .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .pro-img {
+                  width: 78px;
+                  height: 78px;
+                  display: inline-block;
+                  vertical-align: top; }
+                .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .record-detail {
+                  margin-left: 6px;
+                  display: inline-block;
+                  vertical-align: top; }
+                  .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .record-detail span {
+                    display: block; }
+                  .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .record-detail .titles {
+                    text-align: left;
+                    font-family: PingFangSC-Semibold;
+                    font-size: 16px;
+                    color: #222222;
+                    line-height: 22px;
+                    display: block; }
+                  .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .record-detail .price {
+                    font-family: PingFangSC-Semibold;
+                    font-size: 14px;
+                    color: #EA6A79;
+                    line-height: 20px; }
+                  .contain-view .chat-view .chat-info .other-chat .other-chat-info pre .re-link .record-detail-info .record-detail .desc {
+                    max-width: 180px;
+                    font-size: 12px;
+                    color: #7A7A7A;
+                    line-height: 17px; }
+      .contain-view .chat-view .chat-info .my-chat {
+        clear: both;
+        margin: auto  auto 28px 14px;
+        float: right; }
+        .contain-view .chat-view .chat-info .my-chat .user-icon {
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 14px; }
+        .contain-view .chat-view .chat-info .my-chat .right-arrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin-top: 10px;
+          margin-left: -20px;
+          border-top: 7px solid transparent;
+          border-left: 10px solid #6BC2EF;
+          border-bottom: 7px solid transparent; }
+        .contain-view .chat-view .chat-info .my-chat .my-chat-info {
+          margin-right: 20px;
+          display: inline-block;
+          vertical-align: top;
+          background: #6BC2EF;
+          border-radius: 7px;
+          min-height: 42px;
+          font-size: 14px;
+          color: #ffffff; }
+          .contain-view .chat-view .chat-info .my-chat .my-chat-info pre {
+            margin: 11px;
+            max-width: 300px;
+            white-space: pre-wrap;
+            word-wrap: break-word; }
+            .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .record-img {
+              max-width: 100%;
+              height: auto; }
+            .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link {
+              font-size: 12px;
+              color: #ffffff;
+              display: block; }
+              .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info {
+                margin-top: 5px;
+                font-size: 0; }
+                .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .pro-img {
+                  width: 78px;
+                  height: 78px;
+                  display: inline-block;
+                  vertical-align: top; }
+                .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .record-detail {
+                  margin-left: 6px;
+                  display: inline-block;
+                  vertical-align: top; }
+                  .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .record-detail span {
+                    display: block; }
+                  .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .record-detail .titles {
+                    text-align: left;
+                    font-family: PingFangSC-Semibold;
+                    font-size: 16px;
+                    color: #222222;
+                    line-height: 22px;
+                    display: block; }
+                  .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .record-detail .price {
+                    font-family: PingFangSC-Semibold;
+                    font-size: 14px;
+                    color: #EA6A79;
+                    line-height: 20px; }
+                  .contain-view .chat-view .chat-info .my-chat .my-chat-info pre .re-link .record-detail-info .record-detail .desc {
+                    max-width: 180px;
+                    font-size: 12px;
+                    color: #ffffff;
+                    line-height: 17px; }
+    .contain-view .chat-view .chat-info::-webkit-scrollbar {
+      width: 11px; }
+    .contain-view .chat-view .chat-info::-webkit-scrollbar-track {
+      width: 11px;
+      border-radius: 10px; }
+    .contain-view .chat-view .chat-info::-webkit-scrollbar-thumb {
+      width: 8px;
+      border-radius: 8px;
+      background-color: #d8d8d8; }
+    .contain-view .chat-view .input-view {
+      width: 100%;
+      height: 164px;
+      border-top: 1px solid #eaeaea; }
+      .contain-view .chat-view .input-view .tools-bar .left-tools {
+        display: inline-block;
+        cursor: pointer;
+        margin: 22px auto auto 20px; }
+      .contain-view .chat-view .input-view .tools-bar .right-tools {
+        margin: 22px 20px auto auto;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #222222;
+        float: right;
+        cursor: pointer; }
+      .contain-view .chat-view .input-view .tools-bar .active {
+        color: #EB6E7D; }
+      .contain-view .chat-view .input-view .textarea {
+        resize: none;
+        width: 96%;
+        height: 50px;
+        display: block;
+        margin: 10px auto 5px  auto;
+        font-size: 14px;
+        color: #222222;
+        border: none;
+        outline: none; }
+      .contain-view .chat-view .input-view .send {
+        float: right;
+        display: block;
+        background: #6BC2EF;
+        border-radius: 5px;
+        width: 88px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-right: 32px;
+        cursor: pointer; }
+  .contain-view .message-view {
+    width: 875px;
+    height: 640px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+    .contain-view .message-view .message-list {
+      width: 680px;
+      margin: 24px auto auto auto; }
+      .contain-view .message-view .message-list .message-item {
+        width: 680px; }
+        .contain-view .message-view .message-list .message-item .tips {
+          margin-top: 20px;
+          display: inline-block;
+          font-size: 14px;
+          width: 100%;
+          color: #7A7A7A;
+          text-align: center; }
+        .contain-view .message-view .message-list .message-item .message-type-1 {
+          margin-top: 20px;
+          width: 100%;
+          height: 114px;
+          background: #EEEEEE;
+          border: 1px solid #DADADA;
+          border-radius: 5px;
+          font-size: 0;
+          overflow: hidden; }
+          .contain-view .message-view .message-list .message-item .message-type-1 .user-icon {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 60px;
+            height: 60px;
+            margin-left: 32px; }
+          .contain-view .message-view .message-list .message-item .message-type-1 .user-info {
+            display: inline-block;
+            vertical-align: bottom;
+            height: 90px;
+            width: 300px; }
+            .contain-view .message-view .message-list .message-item .message-type-1 .user-info .tips {
+              margin-left: 8px;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #333333; }
+            .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell {
+              font-size: 0; }
+              .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell .sub-tips {
+                margin-left: 10px;
+                font-size: 14px;
+                color: #666666;
+                vertical-align: middle;
+                display: inline-block; }
+              .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell .star-img {
+                width: 17px;
+                height: 17px;
+                vertical-align: middle;
+                display: inline-block;
+                margin-left: 3px; }
+              .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell .score-tips {
+                margin-left: 5px;
+                vertical-align: middle;
+                display: inline-block;
+                font-family: PingFangSC-Semibold;
+                font-size: 14px;
+                color: #6BC2EF; }
+              .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell .shop-level-icon {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 3px; }
+              .contain-view .message-view .message-list .message-item .message-type-1 .user-info .cell .level-tips {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: PingFangSC-Semibold;
+                font-size: 16px;
+                color: #222222;
+                margin-left: 3px; }
+          .contain-view .message-view .message-list .message-item .message-type-1 .tools-btn {
+            display: inline-block;
+            vertical-align: top;
+            width: 160px;
+            height: 30px;
+            border-radius: 3px;
+            line-height: 30px;
+            text-align: center;
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            color: #FFFFFF;
+            margin-left: 80px;
+            margin-top: 42px;
+            cursor: pointer; }
+        .contain-view .message-view .message-list .message-item .add-info-view {
+          margin: 24px auto auto 32px;
+          width: 620px;
+          height: 130px;
+          border-top: 1px dashed #979797;
+          font-size: 0; }
+          .contain-view .message-view .message-list .message-item .add-info-view .item-tools {
+            font-size: 0; }
+            .contain-view .message-view .message-list .message-item .add-info-view .item-tools .ttips {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 25px;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #000000; }
+            .contain-view .message-view .message-list .message-item .add-info-view .item-tools .add-group {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 5px;
+              cursor: pointer;
+              line-height: 25px;
+              color: #EA6A79;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px; }
+            .contain-view .message-view .message-list .message-item .add-info-view .item-tools .select {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 5px;
+              width: 240px;
+              height: 25px;
+              font-size: 12px;
+              color: #000000; }
+            .contain-view .message-view .message-list .message-item .add-info-view .item-tools .input {
+              margin-left: 5px;
+              display: inline-block;
+              vertical-align: middle;
+              width: 231px;
+              height: 22px;
+              font-size: 12px;
+              color: #000000;
+              padding-left: 5px; }
+          .contain-view .message-view .message-list .message-item .add-info-view .tools-view {
+            font-size: 0;
+            margin-top: 10px;
+            text-align: right; }
+            .contain-view .message-view .message-list .message-item .add-info-view .tools-view .cancel {
+              width: 120px;
+              height: 30px;
+              display: inline-block;
+              background: #CCCCCC;
+              border-radius: 3px;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 30px;
+              margin-right: 20px;
+              cursor: pointer; }
+            .contain-view .message-view .message-list .message-item .add-info-view .tools-view .done {
+              width: 120px;
+              height: 30px;
+              display: inline-block;
+              background: #6BC2EF;
+              border-radius: 3px;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 30px;
+              cursor: pointer; }
+  .contain-view .record-view {
+    width: 348px;
+    height: 640px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #EAEAEA;
+    overflow: hidden; }
+    .contain-view .record-view .record-search-view {
+      width: 348px;
+      height: 148px;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5); }
+      .contain-view .record-view .record-search-view .search-view {
+        width: 284px;
+        height: 32px;
+        background: #EEEEEE;
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 20px auto auto 32.5px;
+        font-size: 0; }
+        .contain-view .record-view .record-search-view .search-view .seach-input {
+          margin-left: 15px;
+          width: 220px;
+          height: 32px;
+          outline: none;
+          border: none;
+          font-size: 14px;
+          color: #222222;
+          background: none;
+          display: inline-block;
+          vertical-align: middle; }
+        .contain-view .record-view .record-search-view .search-view .search-btn {
+          cursor: pointer;
+          margin-left: 22px;
+          display: inline-block;
+          vertical-align: middle; }
+          .contain-view .record-view .record-search-view .search-view .search-btn .search-img {
+            width: 24px;
+            height: 24px; }
+      .contain-view .record-view .record-search-view .record-tools {
+        margin-top: 28px; }
+        .contain-view .record-view .record-search-view .record-tools .record-btn {
+          width: 30px;
+          vertical-align: middle;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer; }
+          .contain-view .record-view .record-search-view .record-tools .record-btn img {
+            width: 30px;
+            height: 27px; }
+          .contain-view .record-view .record-search-view .record-tools .record-btn span {
+            display: block;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            color: #222222;
+            line-height: 22px; }
+        .contain-view .record-view .record-search-view .record-tools .active span {
+          color: #6BC2EF; }
+        .contain-view .record-view .record-search-view .record-tools .record-all {
+          cursor: pointer;
+          vertical-align: middle;
+          display: inline-block;
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #222222; }
+    .contain-view .record-view .record-list {
+      width: 100%;
+      height: 444px;
+      position: relative; }
+      .contain-view .record-view .record-list .record-item .time-view {
+        margin-top: 30px;
+        margin-bottom: 8px;
+        font-size: 0;
+        text-align: center; }
+        .contain-view .record-view .record-list .record-item .time-view .line {
+          display: inline-block;
+          vertical-align: middle;
+          width: 97px;
+          height: 1px;
+          background: #eaeaea; }
+        .contain-view .record-view .record-list .record-item .time-view .title {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+          color: #222222; }
+      .contain-view .record-view .record-list .record-item .record-info {
+        margin-top: 12px;
+        clear: both; }
+        .contain-view .record-view .record-list .record-item .record-info .record-info-head {
+          font-size: 0; }
+          .contain-view .record-view .record-list .record-item .record-info .record-info-head .user-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            margin-left: 20px;
+            line-height: 22px;
+            max-width: 220px;
+            white-space: pre-wrap;
+            word-wrap: break-word; }
+          .contain-view .record-view .record-list .record-item .record-info .record-info-head .time-title {
+            float: right;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 22px;
+            font-size: 12px;
+            color: #9B9B9B;
+            margin-right: 20px; }
+        .contain-view .record-view .record-list .record-item .record-info .record-tips {
+          margin: 8px 20px auto 20px;
+          max-width: 350px;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          font-size: 0;
+          color: #222222; }
+          .contain-view .record-view .record-list .record-item .record-info .record-tips .record-img {
+            max-width: 60%;
+            height: auto; }
+          .contain-view .record-view .record-list .record-item .record-info .record-tips .re-file {
+            margin-top: 10px;
+            font-size: 0; }
+            .contain-view .record-view .record-list .record-item .record-info .record-tips .re-file .file-type-img {
+              width: 36px;
+              height: 50px;
+              display: inline-block;
+              vertical-align: bottom; }
+            .contain-view .record-view .record-list .record-item .record-info .record-tips .re-file .file-desc {
+              margin-left: 28px;
+              display: inline-block;
+              vertical-align: bottom;
+              max-width: 84px;
+              font-size: 14px;
+              color: #AAAAAA; }
+            .contain-view .record-view .record-list .record-item .record-info .record-tips .re-file .record-btn {
+              cursor: pointer;
+              border: 1px solid #6BC2EF;
+              border-radius: 5px;
+              padding-left: 10px;
+              padding-right: 10px;
+              height: 25px;
+              text-align: center;
+              line-height: 25px;
+              font-size: 14px;
+              color: #EA6A79;
+              display: inline-block;
+              vertical-align: bottom;
+              float: right;
+              margin-top: 20px; }
+          .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link {
+            font-size: 12px;
+            color: #3CAEE9;
+            height: 100px;
+            width: 100%;
+            display: block; }
+            .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info {
+              margin-top: 5px; }
+              .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .pro-img {
+                width: 78px;
+                height: 78px;
+                display: inline-block;
+                vertical-align: top; }
+              .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .record-detail {
+                margin-left: 6px;
+                display: inline-block;
+                vertical-align: top; }
+                .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .record-detail span {
+                  display: block; }
+                .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .record-detail .title {
+                  font-family: PingFangSC-Semibold;
+                  font-size: 16px;
+                  color: #222222;
+                  line-height: 22px; }
+                .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .record-detail .price {
+                  font-family: PingFangSC-Semibold;
+                  font-size: 14px;
+                  color: #EA6A79;
+                  line-height: 20px; }
+                .contain-view .record-view .record-list .record-item .record-info .record-tips .re-link .record-detail-info .record-detail .desc {
+                  max-width: 180px;
+                  font-size: 12px;
+                  color: #7A7A7A;
+                  line-height: 17px; }
+        .contain-view .record-view .record-list .record-item .record-info .ft14 {
+          font-size: 14px; }
+    .contain-view .record-view .record-bot-tools {
+      width: 100%;
+      margin-top: 5px; }
+      .contain-view .record-view .record-bot-tools .select-date-view {
+        display: inline-block;
+        margin-left: 12px;
+        width: 234px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        font-size: 0; }
+        .contain-view .record-view .record-bot-tools .select-date-view .left-date-select {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          background: #7AC2F3;
+          text-align: center;
+          cursor: pointer; }
+          .contain-view .record-view .record-bot-tools .select-date-view .left-date-select .cimg {
+            margin-top: 7px;
+            width: 16px;
+            height: 16px; }
+        .contain-view .record-view .record-bot-tools .select-date-view .right-date-select {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          background: #EA6A79;
+          text-align: center;
+          cursor: pointer; }
+          .contain-view .record-view .record-bot-tools .select-date-view .right-date-select .cimg {
+            margin-top: 7px;
+            width: 16px;
+            height: 16px; }
+        .contain-view .record-view .record-bot-tools .select-date-view .left-time-input {
+          display: inline-block;
+          vertical-align: middle;
+          width: 80px;
+          height: 30px;
+          border: none;
+          outline: none;
+          font-size: 12px;
+          color: #CDCDCD;
+          text-align: center; }
+        .contain-view .record-view .record-bot-tools .select-date-view .right-time-input {
+          display: inline-block;
+          vertical-align: middle;
+          width: 80px;
+          height: 30px;
+          border: none;
+          outline: none;
+          font-size: 12px;
+          color: #CDCDCD;
+          text-align: center; }
+        .contain-view .record-view .record-bot-tools .select-date-view .center-line {
+          background: #6BC2EF;
+          width: 10px;
+          margin-left: 2px;
+          margin-right: 2px;
+          height: 1px;
+          display: inline-block;
+          vertical-align: middle; }
+      .contain-view .record-view .record-bot-tools .record-right-view {
+        margin-left: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 69px;
+        height: 30px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        font-size: 0; }
+        .contain-view .record-view .record-bot-tools .record-right-view .left-btn {
+          width: 34px;
+          height: 30px;
+          display: inline-block;
+          cursor: pointer; }
+        .contain-view .record-view .record-bot-tools .record-right-view .right-btn {
+          width: 33px;
+          height: 30px;
+          display: inline-block;
+          cursor: pointer; }
+        .contain-view .record-view .record-bot-tools .record-right-view img {
+          margin-top: 1.5px;
+          width: 34px;
+          height: 27px; }
+
+/*# sourceMappingURL=hb_im.css.map */

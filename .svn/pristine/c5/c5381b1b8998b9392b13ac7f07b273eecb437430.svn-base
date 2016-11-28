@@ -1,0 +1,46 @@
+<div class="modal fade" id="search_friend_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+      <div id="search-friend-dialog-view" class="search_friend_dialog h350">
+        <div class="dialog_head">
+          <span class="title">添加伙伴</span>
+        </div>
+        <div class="dialog_content">
+          <span class="dialog_tips">通过<span class="cEA6A79">帐号</span>／<span class="cEA6A79">用户名</span>查找伙伴</span>
+          <div class="search-view">
+            <input class="search-input" type="text" id="search-input">
+            <img id="search-btn" class="search-img" src="../images/friend_search_icon.png">
+          </div>
+          <span class="subtips" style="display: none">您输入的账号不存在~</span>
+          <div class="result-view" >
+            <div class="result-list" id="result-list">
+              <div class="result-item">
+                <img src="../images/order_test.png" class="user-icon">
+                <div class="info-view">
+                  <span class="user-name">Evelyn Fuller(9763343445)</span>
+                  <div class="cell mt8">
+                    <span class="title">用户信用:</span>
+                    <div class="star-list">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/star.png">
+                      <img src="../images/half_star.png">
+                      <span class="score">4.9分</span>
+                    </div>
+                  </div>
+                  <div class="cell mt2">
+                    <span class="title">商家等级:</span>
+                    <img class="shop_icon" src="../images/shop_level_icon.png">
+                    <span class="subtitle"> 7 Lev</span>
+                  </div>
+                </div>
+                <div class="tools-view">
+                  <a class="add-btn">加为好友</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>

@@ -1,0 +1,386 @@
+.contain {
+  width: 100%;
+  height: auto; }
+  .contain .center-view {
+    width: 1100px;
+    margin: 0 auto; }
+    .contain .center-view .top-src {
+      margin-left: 32px;
+      margin-top: 16px;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #485157;
+      letter-spacing: 0.87px; }
+      .contain .center-view .top-src .forword-a {
+        cursor: pointer; }
+    .contain .center-view .detail-view {
+      width: 1036px;
+      margin: 91px auto auto auto;
+      border-radius: 3px;
+      font-size: 0; }
+      .contain .center-view .detail-view .detail-left {
+        width: 682px;
+        min-height: 548px;
+        border: 1px solid #EAEAEA;
+        border-radius: 3px;
+        display: inline-block;
+        vertical-align: top; }
+        .contain .center-view .detail-view .detail-left .detial-title-view {
+          font-size: 0;
+          margin-left: 48px;
+          margin-top: -10px;
+          height: 20px;
+          line-height: 20px;
+          background: #ffffff;
+          display: inline-block; }
+          .contain .center-view .detail-view .detail-left .detial-title-view .line {
+            width: 4px;
+            height: 15px;
+            background: #CDCDCD;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px; }
+          .contain .center-view .detail-view .detail-left .detial-title-view .title {
+            opacity: 0.6;
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            color: #222222;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+            margin-right: 5px; }
+        .contain .center-view .detail-view .detail-left .detail-info {
+          width: 616px;
+          margin: 68px auto auto auto;
+          font-size: 0; }
+          .contain .center-view .detail-view .detail-left .detail-info .detail-icon {
+            width: 42px;
+            height: 42px;
+            display: inline-block;
+            vertical-align: middle; }
+          .contain .center-view .detail-view .detail-left .detail-info .user-info {
+            display: inline-block;
+            vertical-align: middle;
+            height: 42px;
+            margin-left: 14px; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .user-info-a {
+              font-size: 0;
+              cursor: pointer;
+              width: 214px;
+              display: inline-block; }
+              .contain .center-view .detail-view .detail-left .detail-info .user-info .user-info-a .name {
+                font-family: PingFangSC-Semibold;
+                font-size: 16px;
+                color: #222222;
+                letter-spacing: 0px;
+                display: inline-block;
+                vertical-align: middle; }
+              .contain .center-view .detail-view .detail-left .detail-info .user-info .user-info-a img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 14px;
+                height: 14px;
+                margin-left: 8px; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .user-icon {
+              margin-top: 2px;
+              display: inline-block;
+              vertical-align: top;
+              width: 16px;
+              height: 18px; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .address-icon {
+              margin-top: 4px;
+              display: inline-block;
+              vertical-align: top;
+              width: 12px;
+              height: 14px; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .user-name {
+              margin-top: 2px;
+              margin-left: 10px;
+              display: inline-block;
+              width: 68px;
+              vertical-align: top;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #7A7A7A;
+              letter-spacing: 0.87px; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .user-address {
+              margin-left: 4px;
+              display: inline-block;
+              vertical-align: top;
+              opacity: 0.6;
+              font-family: PingFangSC-Regular;
+              font-size: 16px;
+              color: #222222; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .type {
+              background: #EA6A79;
+              border-radius: 4px;
+              width: 45px;
+              height: 18px;
+              line-height: 18px;
+              font-family: PingFangSC-Regular;
+              font-size: 12px;
+              margin-left: 5px;
+              color: #FFFFFF;
+              display: block;
+              text-align: center; }
+            .contain .center-view .detail-view .detail-left .detail-info .user-info .left_arrow {
+              position: absolute;
+              width: 0px;
+              height: 0px;
+              line-height: 0px;
+              border-top: 5px solid transparent;
+              border-right: 5px solid #EA6A79;
+              border-bottom: 5px solid transparent;
+              left: 249px;
+              margin-top: 3px; }
+          .contain .center-view .detail-view .detail-left .detail-info .desc {
+            margin: 5px auto auto 56px;
+            display: block;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #222222; }
+          .contain .center-view .detail-view .detail-left .detail-info .company-info {
+            margin: 30px auto auto 56px; }
+            .contain .center-view .detail-view .detail-left .detail-info .company-info .title {
+              font-family: PingFangSC-Semibold;
+              font-size: 16px;
+              color: #222222; }
+            .contain .center-view .detail-view .detail-left .detail-info .company-info .subtitle {
+              font-size: 16px;
+              color: #222222; }
+          .contain .center-view .detail-view .detail-left .detail-info .mail-info {
+            margin: 10px auto auto 56px; }
+            .contain .center-view .detail-view .detail-left .detail-info .mail-info .title {
+              font-family: PingFangSC-Semibold;
+              font-size: 16px;
+              color: #222222; }
+            .contain .center-view .detail-view .detail-left .detail-info .mail-info .subtitle {
+              font-size: 16px;
+              color: #222222; }
+          .contain .center-view .detail-view .detail-left .detail-info .phone-info {
+            margin: 10px auto auto 56px; }
+            .contain .center-view .detail-view .detail-left .detail-info .phone-info .title {
+              font-family: PingFangSC-Semibold;
+              font-size: 16px;
+              color: #222222; }
+            .contain .center-view .detail-view .detail-left .detail-info .phone-info .subtitle {
+              font-size: 16px;
+              color: #222222; }
+      .contain .center-view .detail-view .detail-right {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 22px;
+        border: 1px solid #EAEAEA;
+        border-radius: 3px;
+        width: 324px;
+        max-height: 548px;
+        overflow: auto; }
+        .contain .center-view .detail-view .detail-right .top-img {
+          width: 295px;
+          height: 90px;
+          margin: 8px auto auto 8px; }
+        .contain .center-view .detail-view .detail-right .tab-view {
+          margin-top: 10px; }
+          .contain .center-view .detail-view .detail-right .tab-view .tab-item {
+            margin-left: 14px;
+            display: inline-block;
+            cursor: pointer; }
+            .contain .center-view .detail-view .detail-right .tab-view .tab-item .line {
+              width: 54px;
+              height: 2px;
+              display: block; }
+            .contain .center-view .detail-view .detail-right .tab-view .tab-item .tab-title {
+              margin-top: 6px;
+              width: 60px;
+              display: inline-block;
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #222222; }
+          .contain .center-view .detail-view .detail-right .tab-view .active .line {
+            background: #E22238; }
+          .contain .center-view .detail-view .detail-right .tab-view .active .tab-title {
+            color: #E22238; }
+        .contain .center-view .detail-view .detail-right .item-list {
+          margin: 16px auto auto 8px; }
+          .contain .center-view .detail-view .detail-right .item-list .item {
+            margin-top: 10px; }
+            .contain .center-view .detail-view .detail-right .item-list .item .item-img {
+              width: 295px;
+              height: 158px; }
+            .contain .center-view .detail-view .detail-right .item-list .item .item-detail {
+              position: relative;
+              width: 295px;
+              height: 50px;
+              margin-top: -79px; }
+              .contain .center-view .detail-view .detail-right .item-list .item .item-detail .title {
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #FFFFFF;
+                margin: 30px auto auto 6px;
+                display: block; }
+              .contain .center-view .detail-view .detail-right .item-list .item .item-detail .subtitle {
+                font-family: PingFangSC-Regular;
+                font-size: 12px;
+                color: #FFFFFF;
+                margin-left: 6px; }
+      .contain .center-view .detail-view .detail-bottom {
+        margin: 52px auto 100px auto;
+        width: 1030px;
+        border: 1px solid #EAEAEA;
+        border-radius: 3px; }
+        .contain .center-view .detail-view .detail-bottom .detial-title-view {
+          font-size: 0;
+          margin-left: 48px;
+          margin-top: -10px;
+          height: 20px;
+          line-height: 20px;
+          background: #ffffff;
+          display: inline-block; }
+          .contain .center-view .detail-view .detail-bottom .detial-title-view .line {
+            width: 4px;
+            height: 15px;
+            background: #CDCDCD;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px; }
+          .contain .center-view .detail-view .detail-bottom .detial-title-view .title {
+            opacity: 0.6;
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            color: #222222;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+            margin-right: 5px; }
+        .contain .center-view .detail-view .detail-bottom .order-list {
+          width: 950px;
+          height: 500px;
+          margin: 53px auto auto auto; }
+          .contain .center-view .detail-view .detail-bottom .order-list .order-item {
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            width: 100%;
+            height: 186px;
+            overflow: hidden;
+            margin-top: 12px; }
+            .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-head {
+              width: 100%;
+              height: 36px;
+              background: #F9F9F9;
+              font-size: 0; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-head .head-title {
+                display: inline-block;
+                opacity: 0.6;
+                font-family: PingFangSC-Semibold;
+                font-size: 14px;
+                color: #222222;
+                letter-spacing: 0.87px;
+                line-height: 32px; }
+            .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info {
+              margin-top: 8px;
+              display: inline-block;
+              font-size: 0; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-item-img {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 8px;
+                width: 68px;
+                height: 68px; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-info {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 15px; }
+                .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-info .title {
+                  font-family: PingFangSC-Semibold;
+                  font-size: 16px;
+                  color: #222222;
+                  display: block; }
+                .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-info .subtitle {
+                  opacity: 0.6;
+                  font-family: PingFangSC-Regular;
+                  font-size: 14px;
+                  color: #222222; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-price {
+                height: 68px;
+                width: 80px;
+                text-align: center;
+                overflow: hidden;
+                line-height: 68px;
+                margin-left: 100px;
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #222222; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-count {
+                height: 68px;
+                width: 80px;
+                text-align: center;
+                overflow: hidden;
+                line-height: 68px;
+                text-align: center;
+                display: inline-block;
+                margin-left: 50px;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #222222; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-total {
+                height: 68px;
+                width: 80px;
+                text-align: center;
+                overflow: hidden;
+                line-height: 68px;
+                margin-left: 50px;
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #222222; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-detail-a {
+                height: 68px;
+                width: 80px;
+                text-align: center;
+                overflow: hidden;
+                line-height: 68px;
+                margin-left: 80px;
+                display: inline-block;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #3CAEE9;
+                cursor: pointer; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .type {
+                background: #EA6A79;
+                border-radius: 4px;
+                height: 18px;
+                line-height: 18px;
+                font-family: PingFangSC-Regular;
+                font-size: 12px;
+                margin: 14px auto auto 10px;
+                color: #FFFFFF;
+                display: inline-block;
+                padding: 0 5px;
+                text-align: center; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .left_arrow {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                line-height: 0px;
+                border-top: 5px solid transparent;
+                border-right: 5px solid #EA6A79;
+                border-bottom: 5px solid transparent;
+                left: 208px;
+                margin-top: 3px; }
+              .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-remark {
+                margin: 10px auto auto 8px; }
+                .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-remark .tips {
+                  font-family: PingFangSC-Semibold;
+                  font-size: 14px;
+                  color: #6BC2EF; }
+                .contain .center-view .detail-view .detail-bottom .order-list .order-item .order-item-info .order-remark .remark-detail {
+                  margin-left: 15px;
+                  opacity: 0.6;
+                  font-family: PingFangSC-Regular;
+                  font-size: 12px;
+                  color: #222222; }
+
+/*# sourceMappingURL=/css/partmers_detail.css.map */

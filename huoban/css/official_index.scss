@@ -1,0 +1,31 @@
+.contianer{
+  width: 100%;
+  height: auto;
+  #banner-swiper{
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    .banner-img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .link-view{
+    position: relative;
+    margin: -50px auto auto auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    font-family: PingFang_Bold;
+    z-index: 999;
+    width: 1200px;
+    a{
+      color: #ffffff;
+    }
+    a:visited{
+      color: #ffffff;
+    }
+  }
+}

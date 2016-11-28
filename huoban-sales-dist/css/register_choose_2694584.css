@@ -1,0 +1,87 @@
+.rc_bg {
+  width: 1349px;
+  height: 768px;
+  margin: 0 auto; }
+
+.rc_top_line {
+  width: 687px;
+  margin: 95px auto auto auto; }
+  .rc_top_line img {
+    width: 687px;
+    height: auto; }
+  .rc_top_line .rc_high_point {
+    position: relative;
+    background: #77e751;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%; }
+  .rc_top_line .rc_point_list {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    top: -10px; }
+    .rc_top_line .rc_point_list .rc_high_point {
+      display: inline-block;
+      float: left;
+      background: #77e751;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 73px; }
+    .rc_top_line .rc_point_list .rc_point {
+      display: inline-block;
+      float: left;
+      background: #cdcdcd;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 252px; }
+  .rc_top_line .rc_point_tips span {
+    font-size: 12px;
+    color: #222222; }
+  .rc_top_line .rc_point_tips .rc_sp_1 {
+    margin-left: 55px; }
+  .rc_top_line .rc_point_tips .rc_sp_2 {
+    margin-left: 210px; }
+  .rc_top_line .rc_choose_v {
+    width: 557px;
+    height: 145px;
+    margin: 66px auto auto auto; }
+    .rc_top_line .rc_choose_v img {
+      cursor: pointer;
+      width: 200px;
+      height: 145px; }
+    .rc_top_line .rc_choose_v .rc_cimg {
+      float: right; }
+  .rc_top_line .rc_choose_tips_v {
+    width: 557px;
+    height: 22px;
+    margin: 34px auto auto auto; }
+    .rc_top_line .rc_choose_tips_v span {
+      display: inline-block;
+      width: 96px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 16px;
+      color: #222222;
+      text-align: center; }
+    .rc_top_line .rc_choose_tips_v .rc_ct_1 {
+      margin-left: 52px; }
+    .rc_top_line .rc_choose_tips_v .rc_ct_2 {
+      float: right;
+      margin-right: 52px; }
+  .rc_top_line .rc_choose_btn_v {
+    width: 557px;
+    height: 22px;
+    margin: 9px auto auto auto; }
+    .rc_top_line .rc_choose_btn_v img {
+      cursor: pointer;
+      width: 22px;
+      height: 22px; }
+    .rc_top_line .rc_choose_btn_v .rc_bt_1 {
+      margin-left: 89px; }
+    .rc_top_line .rc_choose_btn_v .rc_bt_2 {
+      float: right;
+      margin-right: 89px; }
+
+/*# sourceMappingURL=/css/register_choose.css.map */

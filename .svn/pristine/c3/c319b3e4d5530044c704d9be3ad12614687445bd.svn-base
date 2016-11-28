@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/manage_left_menu.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/order_manage.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="sm_bg">
+  <link rel="import" href="../widget/backstage_head.html?__inline">
+  <div class="sm_center_v">
+    <link rel="import" href="../widget/manage_left_menu.html?__inline">
+    <div class="sm_right_v">
+      <div class="top_tab">
+        <div class="category_title active">
+          全部订单
+          <div class="arrow">
+            <span class="up_arrow"></span>
+            <span class="up_arrow_bg"></span>
+          </div>
+        </div>
+        <div class="category_title" style="display:none">拼团订单
+          <div class="arrow">
+            <span class="up_arrow"></span>
+            <span class="up_arrow_bg"></span>
+          </div>
+        </div>
+        <div class="category_title">待买家付款
+          <div class="arrow">
+            <span class="up_arrow lf"></span>
+            <span class="up_arrow_bg l"></span>
+          </div>
+        </div>
+        <div class="category_title">待卖家发货
+          <div class="arrow">
+            <span class="up_arrow lf"></span>
+            <span class="up_arrow_bg l"></span>
+          </div>
+        </div>
+        <div class="category_title">交易未完成
+          <div class="arrow">
+            <span class="up_arrow lf"></span>
+            <span class="up_arrow_bg l"></span>
+          </div>
+        </div>
+        <div class="category_title">交易完成
+          <div class="arrow">
+            <span class="up_arrow"></span>
+            <span class="up_arrow_bg"></span>
+          </div>
+        </div>
+        <div class="category_title" style="display:none">交易关闭
+          <div class="arrow">
+            <span class="up_arrow"></span>
+            <span class="up_arrow_bg"></span>
+          </div>
+        </div>
+<!--        <div class="arrow">
+          <span class="up_arrow tab1"></span>
+          <span class="up_arrow_bg"></span>
+        </div>-->
+      </div>
+      <div class="sm_detail_v">
+          <div class="top_line_v">
+            <a class="output" data-toggle="modal" data-target="#export_dialog">导出</a>
+            <div class="search_v">
+              <input type="text">
+              <img src="../images/search_icon.png">
+            </div>
+          </div>
+          <div class="search_detail_v">
+            <span>订单号</span>
+            <input type="text" id="orderNo">
+            <span>买家</span>
+            <input type="text" id="maijia">
+            <span>下单日期</span>
+            <input type="text" id="order_range_before" readonly="readonly">
+            <span>~</span>
+            <input type="text" id="order_range_after" readonly="readonly">
+            <span>付款日期</span>
+            <input type="text" id="order_pay_before" readonly="readonly">
+            <span>~</span>
+            <input type="text" id="order_pay_after" readonly="readonly">
+            <a class="search_btn">查询</a>
+          </div>
+          <div class="order_list">
+            <!--订单列表-->
+              <div class="order_item_detail">
+                  <div class="order_top">
+                    <span class="order_id">订单号：10000101</span>
+                    <span class="order_time">下单时间：2016.01.30 12:30:23</span>
+                    <span class="order_buy">买家：zi12111</span>
+                    <span class="order_pt_id">T123456</span>
+                    <span class="order_pt">拼团</span>
+                    <div class="bz dropdown">
+                      <a class="remark_b" data-toggle="dropdown">我的备注</a>
+                      <div class="dropdown-menu remark_drop">
+                        <span class="up_arrow"></span>
+                        <span class="up_arrow_bg"></span>
+                        <div class="drop_v">
+                          <span class="dtitle">我的备注</span>
+                          <span class="dcontent">活动开始前一天要通知买家！活动开始前一天要通知买家！活动开始前一天要通知买家！</span>
+                          <a class="dupdate" data-toggle="modal" data-target="#update_remark_dialog">修改</a>
+                          <a class="dclose">关闭</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="close_order" data-toggle="modal" data-target="#close_order_dialog">关闭订单</a>
+                  </div>
+                <!--商品列表-->
+                  <div class="order_item_list">
+                    <div class="order_item">
+                      <img class="order_img" src="../images/order_test.png">
+                      <div class="order_detail_c1">
+                        <span class="title">读书会</span>
+                        <span class="subtitle">时间：2015.12.01～2015.12.04</span>
+                      </div>
+                      <div class="order_detail_c2">
+                        <span class="price">¥128</span>
+                        <span class="count">1</span>
+                        <span class="total">¥148</span>
+                      </div>
+                      <div class="order_detail_c3">
+                        <span class="order_status">待买家收货</span>
+                        <a class="order_detail_btn" href="ticket_order_detail.html">订单详情</a>
+                        <span class="order_wl">查看物流</span>
+                      </div>
+                      <div class="order_detail_c4">
+                        <!--<a class="order_pay">发货</a>-->
+                        <div class="order_delay_v">
+                          <img src="../images/order_time_icon.png">
+                          <span>6d.1h.30m</span>
+                          <a data-toggle="modal" data-target="#order_delay_dialog">延迟收货</a>
+                        </div>
+                      </div>
+                      <div style="clear: both"></div>
+                      <div class="order_special">
+                        <span class="left_arrow"></span>
+                        <span class="tips">爆米花 ¥20 x 1</span>
+                      </div>
+                      <div style="clear: both"></div>
+                    </div>
+                  </div>
+                <div class="order_bot"><span class="title">买家备注</span><span class="subtitle">活动开始前请通知一下！</span></div>
+              </div>
+
+            <div class="order_item_detail">
+              <div class="order_top">
+                <span class="order_id">订单号：10000101</span>
+                <span class="order_time">下单时间：2016.01.30 12:30:23</span>
+                <span class="order_buy">买家：zi12111</span>
+                <span class="order_pt_id">T123456</span>
+                <span class="order_pt">拼团</span>
+                <div class="bz dropdown">
+                  <a class="remark_b" data-toggle="dropdown">我的备注</a>
+                  <div class="dropdown-menu remark_drop">
+                    <span class="up_arrow"></span>
+                    <span class="up_arrow_bg"></span>
+                    <div class="drop_v">
+                      <span class="dtitle">我的备注</span>
+                      <span class="dcontent">活动开始前一天要通知买家！活动开始前一天要通知买家！活动开始前一天要通知买家！</span>
+                      <a class="dupdate" >修改</a>
+                      <a class="dclose">关闭</a>
+                    </div>
+                  </div>
+                </div>
+                <a class="close_order">关闭订单</a>
+              </div>
+              <!--商品列表-->
+              <div class="order_item_list">
+                <div class="order_item">
+                  <img class="order_img" src="../images/order_test.png">
+                  <div class="order_detail_c1">
+                    <span class="title">读书会</span>
+                    <span class="subtitle">时间：2015.12.01～2015.12.04</span>
+                  </div>
+                  <div class="order_detail_c2">
+                    <span class="price">¥128</span>
+                    <span class="count">1</span>
+                    <span class="total">¥148</span>
+                  </div>
+                  <div class="order_detail_c3">
+                    <span class="order_status">待买家收货</span>
+                    <a class="order_detail_btn">订单详情</a>
+                    <span class="order_wl">查看物流</span>
+                  </div>
+                  <div class="order_detail_c4">
+                    <a class="order_pay" data-toggle="modal" data-target="#delivery_dialog">发货</a>
+<!--                    <div class="order_delay_v">
+                      <img src="../images/order_time_icon.png">
+                      <span>6d.1h.30m</span>
+                      <a>延迟收货</a>
+                    </div>-->
+                  </div>
+                  <div style="clear: both"></div>
+                  <div class="order_special">
+                    <span class="left_arrow"></span>
+                    <span class="tips">爆米花 ¥20 x 1</span>
+                  </div>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+              <div class="order_bot"><span class="title">买家备注</span><span class="subtitle">活动开始前请通知一下！</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page_v">
+          <span class="page_tips">每页显示</span>
+          <select><option>10</option></select>
+          <div class="page_right_v">
+            <div class="forword_v">
+              <a class="page_forward">上一页</a>
+              <a class="left_v"><span class="left_arrow"></span></a>
+            </div>
+          <div class="page_count_v">
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+          </div>
+          <span class="d">...</span>
+          <div class="page_total_v">
+            <a>20</a>
+          </div>
+            <div class="next_v">
+              <a class="right_v"><span class="right_arrow"></span></a>
+              <a class="page_next">下一页</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/laydate.js"></script>
+<script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/manage_left_menu.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+<script type="text/javascript" src="../js/order_manage.js"></script>
+<script type="text/javascript" src="../js/delivery.js"></script>
+<link rel="import" href="../widget/update_remark.html?__inline">
+<link rel="import" href="../widget/delivery.html?__inline">
+<link rel="import" href="../widget/success.html?__inline">
+<link rel="import" href="../widget/close_order.html?__inline">
+<link rel="import" href="../widget/order_delay.html?__inline">
+<link rel="import" href="../widget/export_view.html?__inline">
+<div class="modal fade" id="update_remark_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="update_remark_dialog">
+    <span class="title">修改备注</span>
+    <textarea id="textarea"></textarea>
+    <div style="clear: both"></div>
+    <div class="bot_v">
+      <a class="pro_cancel" data-dismiss="modal">取消</a>
+      <a class="pro_add" id="remark_add" >确认</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="delivery_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="delivery_dialog">
+      <div class="user_info_v">
+         <div class="top_tips"><span class="left_line"></span><span class="title">收货信息</span></div>
+         <div class="user_top_cell"><span class="cell_tips">收货人：</span><span class="cell_value">张三</span></div>
+         <div class="user_cells"><span class="cell_tips">手机号：</span><span class="cell_value">15223988232</span></div>
+         <div class="user_cells"><span class="cell_tips">收货地址：</span><span class="cell_value">上海市 上海市 普陀区 曹阳街坊 梅川路141弄111号888</span></div>
+         <div class="user_cells"><span class="cell_tips">买家备注：</span><span class="cell_value">请不要发天天快递</span></div>
+         <div class="user_cells"><span class="cell_tips">商家备注：</span><span class="cell_value">圆通快递</span></div>
+      </div>
+      <div class="order_info_v">
+          <div class="order_top_v">
+              <span class="title">订单号：10000104</span>
+              <span class="subtitle">下单时间：2015.12.22 12:30:23</span>
+          </div>
+          <div class="order_list">
+            <div class="order_item">
+              <img class="order_img" src="../images/order_test.png">
+              <div class="order_detail_c1">
+                <span class="title">读书会</span>
+                <span class="subtitle">时间：2015.12.01～2015.12.04</span>
+              </div>
+              <div class="order_detail_c2">
+                <span class="price">¥128</span>
+                <span class="count">1</span>
+                <span class="total">¥148</span>
+              </div>
+              <div style="clear: both"></div>
+              <div class="order_special">
+                <span class="left_arrow"></span>
+                <span class="tips">爆米花 ¥20 x 1</span>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+      </div>
+      <div class="shipment_info_v">
+          <div class="shipment_list">
+              <div class="shipment_item"><select><option>顺丰速递</option></select><div class="shipment_detail_v"><span class="title">快递单号</span><input class="input" type="text"></div><a class="add">＋</a></div>
+          </div>
+      </div>
+      <div class="shipment_bot_v">
+          <a class="pro_cancel" data-dismiss="modal">取消</a>
+          <a class="pro_add" id="delivery_btn">发货</a>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="close_order_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="close_order_dialog">
+    <span>确认关闭此订单？</span>
+    <div class="bot_v">
+      <a class="pro_cancel" data-dismiss="modal">取消</a>
+      <a class="pro_add" id="pro_add" >确认</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="order_delay_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="order_delay_dialog">
+    <span class="title">确认延长收货时间？</span>
+    <span class="subtitle">确认后将于8d.1h.30m后自动确认收货</span>
+    <div class="bot_v">
+      <a class="pro_cancel" data-dismiss="modal">取消</a>
+      <a class="pro_add" id="delay_add" >确认</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="export_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="export_dialog">
+    <div class="cell_1">
+      <span class="ftitle">选择日期</span>
+      <input class="finput" type="text" id="startDate" readonly="readonly">
+      <span class="stitle">～</span>
+      <input type="text" id="endDate" readonly="readonly">
+    </div>
+    <div class="cell_2">
+      <span class="ftitle">订单状态</span>
+      <div class="rg_cb" style="margin-left: 12px">
+        <input class="" type="checkbox" id="rg_cb_tp" name="checkbox" />
+        <label for="rg_cb_tp"></label>
+      </div>
+      <label for="rg_cb_tp" class="rgcb_lbl">拼团订单</label>
+      <div class="rg_cb" style="margin-left: 8px">
+        <input class="" type="checkbox" id="rg_cb_dfk" name="checkbox" />
+        <label for="rg_cb_dfk"></label>
+      </div>
+      <label for="rg_cb_dfk" class="rgcb_lbl">待买家付款</label>
+      <div class="rg_cb" style="margin-left: 8px">
+        <input class="" type="checkbox" id="rg_cb_xsz" name="checkbox" />
+        <label for="rg_cb_xsz"></label>
+      </div>
+      <label for="rg_cb_xsz" class="rgcb_lbl">销售中</label>
+      <br>
+      <div class="rg_cb" style="margin-left: 108px">
+        <input class="" type="checkbox" id="rg_cb_dfh" name="checkbox" />
+        <label for="rg_cb_dfh"></label>
+      </div>
+      <label for="rg_cb_dfh" class="rgcb_lbl">待卖家发货</label>
+
+      <div class="rg_cb" style="margin-left: 8px">
+        <input class="" type="checkbox" id="rg_cb_wwc" name="checkbox" />
+        <label for="rg_cb_wwc"></label>
+      </div>
+      <label for="rg_cb_wwc" class="rgcb_lbl">交易未完成</label>
+
+      <div class="rg_cb" style="margin-left: 8px">
+        <input class="" type="checkbox" id="rg_cb_wc" name="checkbox" />
+        <label for="rg_cb_wc"></label>
+      </div>
+      <label for="rg_cb_wc" class="rgcb_lbl">交易完成</label>
+      <br>
+      <div class="rg_cb" style="margin-left: 108px">
+        <input class="" type="checkbox" id="rg_cb_gb" name="checkbox" />
+        <label for="rg_cb_gb"></label>
+      </div>
+      <label for="rg_cb_gb" class="rgcb_lbl">交易关闭</label>
+    </div>
+    <div class="bot_v">
+      <a class="pro_cancel" data-dismiss="modal">取消</a>
+      <a class="pro_add" id="export_add" >确认</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="success_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="success_dialog">
+    <img src="../images/success_icon.png">
+    <span>发货成功！</span>
+  </div>
+</div>
+</body>
+</html>

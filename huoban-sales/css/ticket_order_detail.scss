@@ -1,0 +1,845 @@
+.sm_v {
+  width: 1349px;
+  height: auto;
+
+
+  .sm_detail_v {
+    width: 1202px;
+    margin: auto auto;
+    .sm_top_v{
+      margin-top: 16px;
+      font-size:14px;
+      color:#485157;
+      letter-spacing:0.87px;
+      text-align:left;
+      a{
+        cursor: pointer;
+      }
+    }
+    .order_status_v{
+      width: 1007px;
+      height: 60px;
+      margin: 90px auto auto auto;
+      font-size: 0;
+      .img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 62px;
+        height: 62px;
+      }
+      .line{
+        background: #EAEAEA;
+        border-radius: 3px;
+        height: 3px;
+        width: 350px;
+        display: inline-block;
+        margin: auto 22px;
+        overflow: hidden;
+        div{
+          background-image: radial-gradient(100% 50%, #6BC2EF 0%, #A4E3F8 97%);
+          box-shadow: 0px 0px 2px 0px rgba(107,194,239,0.51);
+          border-radius: 7px;
+          height: 3px;
+        }
+      }
+    }
+
+
+
+    .order_staus_tips_v{
+      margin: 23px auto auto auto;
+      width: 1150px;
+      font-size: 0;
+      span{
+        vertical-align: middle;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 1.75px;
+        line-height: 40px;
+        height: 40px;
+      }
+      .fstatus{
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 22px;
+        width: 160px;
+        height: 40px;
+        text-align: center;
+      }
+      .sstatus{
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 295px;
+        width: 160px;
+        height: 40px;
+        text-align: center;
+      }
+      .tstatus{
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 298px;
+        width: 160px;
+        height: 40px;
+        text-align: center;
+      }
+    }
+    .transaction_status_v{
+      margin-top: 30px;
+      width: 816px;
+      height: 292px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.15);
+      border-radius: 5px;
+      overflow: hidden;
+      float: left;
+      .transaction_status_bar{
+        height: 48px;
+        width: 100%;
+        background-image: url(../images/order_detail_bar.png);
+      }
+      .left_line_v{
+        width: 41px;
+        height: 244px;
+        float: left;
+        display: inline-block;
+        .left_line{
+          height: 224px;
+          width: 1px;
+          background: #77C7F1;
+          margin: 9px auto auto 20px;
+        }
+        .point_v{
+          width: 9px;
+          height: 224px;
+          position: absolute;
+          margin-left: 16px;
+          margin-top: -224px;
+          div{
+            box-shadow: 0px 0px 4px 0px #6DC2EF;
+            width: 9px;
+            height: 9px;
+            border-radius: 10px;
+          }
+        }
+
+      }
+      .right_v{
+        display: inline-block;
+        float: left;
+        width: 775px;
+        height: 244px;
+        font-size: 0;
+        .transaction_tips{
+          margin-top: 14px;
+          img{
+            vertical-align: middle;
+            width: 60px;
+            height: 60px;
+          }
+          .rstatus_1{
+            font-size: 14px;
+            color: #485157;
+            letter-spacing: 0.87px;
+          }
+          .rstatus_2{
+            font-size: 14px;
+            color: #485157;
+            letter-spacing: 0.87px;
+          }
+          .rstatus_3 {
+            span {
+              display: inline-block;
+              line-height: 60px;
+              height: 60px;
+              letter-spacing: 1.5px;
+              vertical-align: middle;
+              font-family: PingFangSC-Semibold;
+              font-size: 24px;
+            }
+            .title {
+              margin-left: 26px;
+              color: #7A7A7A;
+            }
+            .subtitle {
+              color: #EA6A79;
+            }
+          }
+
+        }
+      }
+    }
+    .seller_v{
+      margin: 30px auto auto 50px;
+      width: 333px;
+      height: 292px;
+      background: #FFFFFF;
+      float: left;
+      box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.15);
+      border-radius: 5px;
+      overflow: hidden;
+      .seller_bar{
+        width: 100%;
+        height: 90px;
+        background: #3D464D;
+        .title{
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 0.87px;
+          display: inline-block;
+          height: 20px;
+          line-height: 20px;
+          margin: 70px auto auto 73px;
+        }
+        .number_ico{
+          width: 18px;
+          height: 13px;
+          margin-left: 42px;
+        }
+        .subtitle{
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+      }
+      .seller_detail_v{
+        .seller_ico{
+          margin-left: 12px;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          margin-top: -25px;
+        }
+        .tuan{
+          width: 20px;
+          height: 20px;
+          float: right;
+          margin: 32px 18px auto auto;
+        }
+        .user_tips{
+          margin-left: 23px;
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #7A7A7A;
+          letter-spacing: 0.87px;
+        }
+        .user_info_v{
+          margin-top: 2px;
+          border-width: 1px 0px;
+          border-color: #EAEAEA;
+          border-style: solid;
+          height: 64px;
+          width: 100%;
+          font-size: 0;
+          .fcell{
+            margin-top: 8px;
+            .user_ico{
+              width: 16px;
+              height: 18px;
+              margin-left:25px;
+            }
+            span{
+              vertical-align: middle;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #7A7A7A;
+              letter-spacing: 0.87px;
+              margin-left:10px;
+            }
+          }
+          .scell{
+            margin-top: 12px;
+            .phone_ico{
+              width: 12px;
+              height: 18px;
+              margin-left:27px;
+            }
+            span{
+              vertical-align: middle;
+              font-family: PingFangSC-Semibold;
+              font-size: 14px;
+              color: #7A7A7A;
+              letter-spacing: 0.87px;
+              margin-left:10px;
+            }
+          }
+
+        }
+        .remark_v{
+            .cell{
+              margin-top: 8px;
+              span{
+                vertical-align: middle;
+                font-family: PingFangSC-Semibold;
+                font-size: 14px;
+                color: #7A7A7A;
+                letter-spacing: 0.87px;
+                margin-left:10px;
+              }
+              .btitle{
+                color: #6BC2EF;
+                margin-left: 25px;
+              }
+              .rtitle{
+                color: #EA6A79;
+                margin-left: 25px;
+              }
+            }
+        }
+      }
+    }
+  }
+  .order_list_v{
+    width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin: 95px auto 30px auto;
+    overflow: hidden;
+    .order_bar{
+      width: 100%;
+      height: 36px;
+      background: #F9F9F9;
+      span{
+        height: 36px;
+        line-height: 36px;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 0.87px;
+        text-align: center;
+      }
+      .sp_1{
+        margin-left: 98px;
+      }
+      .sp_2{
+        margin-left: 198px;
+      }
+      .sp_3{
+        margin-left: 121px;
+      }
+      .sp_4{
+        margin-left: 90px;
+      }
+      .sp_5{
+        margin-left: 99px;
+      }
+      .sp_6{
+        margin-left: 105px;
+      }
+      .sp_7{
+        margin-left: 95px;
+      }
+    }
+    .order_item_v{
+      margin: 8px auto;
+    }
+    .order_item{
+
+      font-size: 0;
+      .item_cell_1{
+        width: 320px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        .item_icon{
+          vertical-align: middle;
+          width: 68px;
+          height: 68px;
+          margin-left: 8px;
+          display: inline-block;
+        }
+        .title{
+          margin-left: 12px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          line-height: 68px;
+          color: #222222;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .item_cell_2{
+        width: 110px;
+        display: inline-block;
+        height: 68px;
+        text-align: center;
+        vertical-align: middle;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222;
+        }
+      }
+      .item_cell_3{
+        width: 140px;
+        margin-left: 60px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222;
+        }
+      }
+      .item_cell_4{
+        width: 150px;
+        margin-left: 10px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222;
+        }
+      }
+      .item_cell_5{
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222;
+        }
+      }
+      .item_cell_6{
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 18px;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222;
+        }
+      }
+      .item_cell_7{
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 18px;
+        .title{
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 22px;
+          color: #222222;
+        }
+      }
+    }
+    .item_child_list{
+      margin-top: 15px;
+      .item_child_item{
+        font-size: 0;
+        .item_cell_1{
+          width: 320px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          .title{
+            margin-left: 86px;
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            line-height: 32px;
+            color: #222222;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .item_cell_2{
+          width: 110px;
+          display: inline-block;
+          height: 32px;
+          text-align: center;
+          vertical-align: middle;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222;
+          }
+        }
+        .item_cell_3{
+          width: 140px;
+          margin-left: 60px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222;
+          }
+        }
+        .item_cell_4{
+          width: 150px;
+          margin-left: 10px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222;
+          }
+        }
+        .item_cell_5{
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222;
+          }
+        }
+        .item_cell_6{
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          margin-left: 18px;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222;
+          }
+        }
+        .item_cell_7{
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          margin-left: 18px;
+          .title{
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 22px;
+            color: #222222;
+          }
+        }
+      }
+    }
+    .bot_total_v{
+      height: 48px;
+      width: 100%;
+      border-top: 1px dashed #eaeaea;
+      font-size: 0;
+      span{
+        display: inline-block;
+        line-height: 48px;
+        height: 48px;
+      }
+      .total_count{
+        font-size: 14px;
+        color: #222222;
+        margin-left: 11px;
+      }
+      .total_tips{
+        font-size: 14px;
+        color: #222222;
+        margin-left: 21px;
+      }
+      .total_price{
+        font-family: PingFangSC-Semibold;
+        font-size: 20px;
+        color: #EA6A79;
+      }
+    }
+  }
+  .ttable{
+    width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    margin: 40px auto 30px auto;
+    overflow: hidden;
+    .table_v{
+      font-size: 14px;
+      color: #222222;
+      letter-spacing: 0.87px;
+      tr td{
+        height: 40px;
+        border: 1px solid #EAEAEA;
+
+      }
+      td{
+        text-align: center;
+        width: 400px;
+      }
+      .title{
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 0.87px;
+      }
+    }
+  }
+
+  .fs{
+    .rstatus_1{
+      display: none;
+    }
+    .rstatus_2{
+      display: none;
+    }
+    .tstatus_1{
+      margin-top: 31px;
+      background: #ffffff;
+    }
+    .tstatus_2{
+      display: none;
+    }
+    .tstatus_3{
+      display: none;
+    }
+    .oimg_status_1{
+      background-image: url(../images/check_order_hover.png);
+    }
+    .oimg_status_2{
+      background-image: url(../images/pay_money.png);
+    }
+    .oimg_status_3{
+      background-image: url(../images/used.png);
+    }
+    .cp_line_1{
+      width: 84px;
+    }
+    .cp_line_2{
+      width: 0px;
+    }
+    .fstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+
+    }
+    .sstatus{
+      span{
+        display: inline-block;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 1.75px;
+      }
+      .time{
+        display: none;
+      }
+    }
+    .tstatus{
+      span{
+          display: inline-block;
+          width: 160px;
+          height: 40px;
+          line-height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #7A7A7A;
+          letter-spacing: 1.75px;
+        }
+      .time{
+        display: none;
+      }
+    }
+  }
+  .ss{
+    .rstatus_1{
+      margin-top: 35px;
+    }
+    .rstatus_2{
+      display: none;
+    }
+    .rstatus_3{
+      margin-top: 12px;
+    }
+    .tstatus_1{
+      margin-top: 31px;
+      background: #6BC2EF;
+    }
+    .tstatus_2{
+      background: #ffffff;
+      margin-top: 44px;
+    }
+    .tstatus_3{
+      visibility: hidden;
+    }
+    .oimg_status_1{
+      background-image: url(../images/check_order_hover.png);
+    }
+    .oimg_status_2{
+      background-image: url(../images/pay_money_hover.png);
+    }
+    .oimg_status_3{
+      background-image: url(../images/used.png);
+    }
+    .cp_line_1{
+      width: 100%;
+    }
+    .cp_line_2{
+      width: 84px;
+    }
+
+    .fstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+    }
+    .sstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+    }
+    .tstatus{
+      span{
+        display: inline-block;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 1.75px;
+      }
+      .time{
+        display: none;
+      }
+    }
+  }
+  .ts{
+    .rstatus_1{
+      margin-top: 35px;
+    }
+    .rstatus_2{
+      margin-top: 15px;
+    }
+    .rstatus_3{
+      margin-top: 12px;
+    }
+    .tstatus_1{
+      margin-top: 31px;
+      background: #6BC2EF;
+    }
+    .tstatus_2{
+      margin-top: 27px;
+      background: #6BC2EF;
+    }
+    .tstatus_3{
+      background: #ffffff;
+      margin-top: 42px;
+    }
+    .oimg_status_1{
+      background-image: url(../images/check_order_hover.png);
+    }
+    .oimg_status_2{
+      background-image: url(../images/pay_money_hover.png);
+    }
+    .oimg_status_3{
+      background-image: url(../images/used_hover.png);
+    }
+    .cp_line_1{
+      width: 100%;
+    }
+    .cp_line_2{
+      width: 100%;
+    }
+
+    .fstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+    }
+    .sstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+    }
+    .tstatus{
+      span{
+        font-family: PingFangSC-Semibold;
+        display: inline-block;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #222222;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}

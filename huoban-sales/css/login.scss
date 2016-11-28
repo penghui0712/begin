@@ -1,0 +1,279 @@
+.login_bg{
+  background-image: url("../images/login_bg.png");
+  width:1349px;
+  height:1083px;
+  margin: 0 auto;
+}
+.login_main{
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+.login_title_d{
+  margin-top: 50px;
+  margin-left: 77px;
+}
+.login_title{
+  font-size:20px;
+  color:#ffffff;
+  letter-spacing:2.5px;
+}
+.login_view_d{
+  background-image: url("../images/login_border_default.png");
+  width: 364px;
+  height: 316px;
+  margin-left: 912px;
+  margin-top: 34px;
+  .login_tab{
+    display: inline-block;
+    float: left;
+    width: 182px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    span{
+      font-size:20px;
+      color:#ffffff;
+      letter-spacing:2.5px;
+      line-height: 50px;
+    }
+  }
+  .login_detail_v{
+    width: 100%;
+    height: 266px;
+    margin-top: 19px;;
+
+    .login_input_v{
+      background:#ffffff;
+      border-radius:2px;
+      width:290px;
+      height:32px;
+      padding: 0px;
+      margin: 12px auto auto auto;
+      img{
+        margin: 9px auto auto 6px;
+        width: 12px;
+        height: 14px;
+      }
+      input{
+        margin-left: 8px;
+        outline: none;
+        border: none;
+        font-size:14px;
+        //color:#d8d8d8;
+        letter-spacing:1.75px;
+        width: 240px;
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+    .login_input_d{
+      margin: 12px auto auto 37px;
+      .login_input_yz{
+        float: left;
+        background:#ffffff;
+        border-radius:2px;
+        width:140px;
+        height:32px;
+
+        input{
+          outline: none;
+          border: none;
+          font-size:14px;
+          //color:#d8d8d8;
+          letter-spacing:1.75px;
+          width: 135px;
+          height: 30px;
+          line-height: 30px;
+          margin-top: 1px;
+          padding-left: 5px;
+        }
+      }
+      .login_input_yz_2{
+        float: left;
+        margin-left: 9px;
+        img{
+          float: left;
+          width: 82px;
+          height: 32px;
+        }
+        a{
+          float: left;
+          margin-left: 10px;
+          font-size: 14px;
+          cursor: pointer;
+          display: inline-block;
+          line-height: 32px;
+          color: #f8b878;
+          text-decoration:none;
+        }
+        a:link {
+          font-size: 14px;
+          color: #f8b878;
+          text-decoration: none;
+        }
+        a:visited {
+          font-size: 14px;
+          color: #f8b878;
+          text-decoration: none;
+        }
+        a:hover {
+          font-size: 14px;
+          color: #f8b878;
+          text-decoration:none;
+        }
+      }
+
+    }
+    .login_input_d_2{
+      height: 20px;
+      width: 100%;
+      margin: 12px auto auto 37px;
+
+      label{
+        font-size:14px;
+        color:#ffffff;
+        letter-spacing:1.75px;
+      }
+      input[type=checkbox] {
+        visibility: hidden;
+      }
+      .remember_cb {
+        width: 14px;
+        position: relative;
+        display: inline-block;
+      }
+      .remember_cb label {
+        cursor: pointer;
+        position: absolute;
+        width:14px;
+        height:14px;
+        border:1px solid #ffffff;
+        border-radius:4px;
+        top: 0;
+        left: 0;
+      }
+      .remember_cb label:after {
+        opacity: 0.0;
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 5px;
+        background: transparent;
+        top: 1px;
+        left: 1px;
+        border: 3px solid #ffffff;
+        border-top: none;
+        border-right: none;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      /**
+       * Create the hover event of the tick
+       */
+      .remember_cb label:hover::after {
+        opacity: 0.0;
+      }
+
+      /**
+       * Create the checkbox state for the tick
+       */
+      .remember_cb input[type=checkbox]:checked + label:after {
+        opacity: 1;
+      }
+      .remember_lbl{
+
+        margin-left: 8px;
+      }
+      .login_other_v{
+        display: inline-block;
+        height: 20px;
+        margin-left: 87px;
+        color: #ffffff;
+        a{
+          font-size: 14px;
+          cursor: pointer;
+          display: inline-block;
+          line-height: 32px;
+          color: #ffffff;
+          text-decoration:none;
+        }
+        a:link {
+          font-size: 14px;
+          color: #ffffff;
+          text-decoration: none;
+        }
+        a:visited {
+          font-size: 14px;
+          color: #ffffff;
+          text-decoration: none;
+        }
+        a:hover {
+          font-size: 14px;
+          color: #ffffff;
+          text-decoration:none;
+        }
+      }
+    }
+    .login_btn_v{
+
+      width: 290px;
+      height: 43px;
+      margin: 21px auto auto 37px;
+      background-image: url("../images/login_btn_bg.png");
+      .login_btn{
+        cursor: pointer;
+        display: block;
+        font-size:16px;
+        color:#ffffff;
+        letter-spacing:2px;
+        width: 290px;
+        height: 43px;
+        line-height: 43px;
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+
+
+
+.login_icon_v{
+  margin: 160px auto auto 165px;
+  img{
+    width: 98px;
+    height: 98px;
+  }
+  .icon_w{
+    margin-left: 211px;
+  }
+}
+.login_info_v{
+  margin: 25px auto auto 165px;
+  span{
+    display: inline-block;
+    text-align: center;
+    width: 98px;
+    line-height: 22px;
+    font-size:16px;
+    color:#222222;
+    letter-spacing:2px;
+  }
+  .info_w{
+    margin-left: 211px;
+  }
+}
+.login_v_bot{
+  margin: 282px auto auto auto;
+  width: 315px;
+  span{
+    font-size:20px;
+    color:#222222;
+    letter-spacing:2.5px;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/collapse.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/manage_left_menu.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/SupplyAndDemand.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+  <div class="contain">
+    <link rel="import" href="../widget/backstage_head.html?__inline">
+    <div class="center-view">
+      <link rel="import" href="../widget/manage_left_menu.html?__inline">
+      <div class="right-view">
+          <div class="detail-tab">
+            <div class="category_title active">
+              供应信息
+              <div class="arrow">
+                <span class="up_arrow lf"></span>
+                <span class="up_arrow_bg l"></span>
+              </div>
+            </div>
+            <div class="category_title">求购信息
+              <div class="arrow">
+                <span class="up_arrow lf"></span>
+                <span class="up_arrow_bg l"></span>
+              </div>
+            </div>
+            <div class="category_title">我的
+              <div class="arrow">
+                <span class="up_arrow lf1"></span>
+                <span class="up_arrow_bg l1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-view">
+              <div class="detail-top" style="visibility: hidden;">
+                  <div class="detail-tab-view">
+                    <div class="tab-view">
+                      <a class="detail-tab-btn active">我有</a>
+                      <a class="detail-tab-btn">我求</a>
+                    </div>
+                    <a class="release-btn" data-toggle="modal" data-target="#supply_release_dialog">发布</a>
+                    <div class="search-view">
+                      <input class="search-input" type="text">
+                      <a class="search-btn"><img class="search-img" src="../images/search_icon.png"></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-item">
+                    <div class="user-icon">
+                      <img class="detail-img" src="../images/supply-test-icon.png">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Mike</span>
+                        <span class="user-title">闲置音响投影设备出租</span>
+                        <span class="vaild-tips">有效期</span>
+                        <span class="vaild-time">2016.01.18  0:00 A.M ~ 2016.01.30 12:00 P.M</span>
+                        <span class="item-desc">闲置音响投影设备限时出租，价格便宜，有需要的请尽快联系！！</span>
+                    </div>
+                    <div class="operating-info">
+                        <div class="operating-top"><a class="operating-a"><img src="../images/contact-icon.png">联系TA</a><a class="operating-a"><img src="../images/collect-icon.png">收藏店铺</a><a class="operating-a"><img src="../images/collect-icon.png">收藏我有</a></div>
+                        <div class="address-info"><img class="address-icon" src="../images/address-icon.png"><span class="address-tips">上海市静安区淮海路1121号</span></div>
+                        <div class=" "><span class="release-time">2016.01.18  11:20:30</span></div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                  <div class="user-icon">
+                    <img class="detail-img" src="../images/supply-test-icon.png">
+                  </div>
+                  <div class="user-info">
+                    <span class="user-name">Mike</span>
+                    <span class="user-title">闲置音响投影设备出租</span>
+                    <span class="vaild-tips">有效期</span>
+                    <span class="vaild-time">2016.01.18  0:00 A.M ~ 2016.01.30 12:00 P.M</span>
+                    <span class="item-desc">闲置音响投影设备限时出租，价格便宜，有需要的请尽快联系！！</span>
+                  </div>
+                  <div class="operating-info">
+                    <div class="operating-top"><span class="o-tips">上架中</span><img class="o-img" src="../images/up-icon.png"><a class="operating-update" data-toggle="modal" data-target="#supply_release_dialog">修改</a><a class="operating-added" data-toggle="modal" data-target="#choose_tips_dialog">上架</a><a class="operating-added" data-toggle="modal" data-target="#choose_tips_dialog">下架</a></div>
+                    <div class="address-info"><img class="address-icon" src="../images/address-icon.png"><span class="address-tips">上海市静安区淮海路1121号</span></div>
+                    <div class="operating-bot"><span class="release-time">2016.01.18  11:20:30</span></div>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="user-icon">
+                    <img class="detail-img" src="../images/supply-test-icon.png">
+                  </div>
+                  <div class="user-info">
+                    <span class="user-name">Mike</span>
+                    <span class="user-title">闲置音响投影设备出租</span>
+                    <span class="vaild-tips">有效期</span>
+                    <span class="vaild-time">2016.01.18  0:00 A.M ~ 2016.01.30 12:00 P.M</span>
+                    <span class="item-desc">闲置音响投影设备限时出租，价格便宜，有需要的请尽快联系！！</span>
+                  </div>
+                  <div class="operating-info">
+                    <div class="operating-top"><span class="o-tips">下架中</span><img class="o-img" src="../images/down-icon.png"><a class="operating-update" data-toggle="modal" data-target="#supply_release_dialog">修改</a><a class="operating-added" data-toggle="modal" data-target="#choose_tips_dialog">上架</a><a class="operating-added" data-toggle="modal" data-target="#choose_tips_dialog">下架</a></div>
+                    <div class="address-info"><img class="address-icon" src="../images/address-icon.png"><span class="address-tips">上海市静安区淮海路1121号</span></div>
+                    <div class="operating-bot"><span class="release-time">2016.01.18  11:20:30</span></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <div class="page_v">
+          <span class="page_tips">每页显示</span>
+          <select><option>10</option></select>
+          <div class="page_right_v">
+            <div class="forword_v">
+              <a class="page_forward">上一页</a>
+              <a class="left_v"><span class="left_arrow"></span></a>
+            </div>
+            <div class="page_count_v">
+              <a>1</a>
+              <a>2</a>
+              <a>3</a>
+              <a>4</a>
+            </div>
+            <span class="d">...</span>
+            <div class="page_total_v">
+              <a>20</a>
+            </div>
+            <div class="next_v">
+              <a class="right_v"><span class="right_arrow"></span></a>
+              <a class="page_next">下一页</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../libs/jquery.min.js"></script>
+  <script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../libs/laydate.js"></script>
+  <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="../js/utils.js"></script>
+  <script type="text/javascript" src="../js/manage_left_menu.js"></script>
+  <script type="text/javascript" src="../js/supply_and_demand.js"></script>
+  <link rel="import" href="../widget/success.html?__inline">
+  <link rel="import" href="../widget/choose_tips_dialog.html?__inline">
+  <link rel="import" href="../widget/supply_release_dialog.html?__inline">
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+.mt10{
+  margin-top: 10px;
+}
+.mt24{
+  margin-top: 24px;
+}
+
+.mt35{
+  margin-top: 35px;
+}
+
+.mt37{
+  margin-top: 37px;
+}
+
+.mt40{
+  margin-top: 40px;
+}
+.mt50{
+  margin-top: 50px;
+}
+
+.ml5{
+  margin-left: 5px;
+}
+.ml35{
+  margin-left: 35px;
+}
+
+.ml44{
+  margin-left:44px;
+}
+.ml55{
+  margin-left:55px;
+}
+.ml75{
+  margin-left:75px;
+}
+.ml125{
+  margin-left:125px;
+}
+.ml204{
+  margin-left: 204px;
+}
+.ml94{
+  margin-left: 94px;
+}
+
+.mb27{
+  margin-bottom: 27px;
+}
+
+.mr27{
+  margin-bottom: 27px;
+}
+
+.block{
+  display: block;
+}
+.inblock{
+  display: inline-block;
+}

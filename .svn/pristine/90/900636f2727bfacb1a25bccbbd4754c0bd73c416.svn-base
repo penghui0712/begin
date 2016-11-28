@@ -1,0 +1,79 @@
+<div class="modal fade" id="create_group_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="create_group_dialog">
+    <div class="dialog_head">
+      <span class="title">创建讨论组</span>
+    </div>
+    <span class="tips">添加讨论组成员</span>
+    <div class="search-view">
+      <input class="input" id="search-input">
+      <img class="search-img" src="../images/friend_search_white_icon.png" id="search-friend">
+    </div>
+    <div class="info-view">
+      <div class="left-view" id="left-group-view">
+        <div class="menu-view">
+          <a class="menu-tips" data-toggle="collapse" data-parent="#accordion"
+           href="#collapse-friend">
+          伙伴分组（5）
+          </a>
+          <img class="arrow-img" src="../images/im_arrow_up.png">
+        </div>
+        <div id="collapse-friend" class="panel-collapse collapse in">
+          <div class="friend-list">
+            <a class="friend-item group-cell">活动策划商</a>
+            <a class="friend-item group-cell">住宿资源</a>
+            <a class="friend-item group-cell">旅游资源</a>
+            <a class="friend-item group-cell">旅行社</a>
+            <a class="friend-item group-cell">场地供应商</a>
+          </div>
+        </div>
+        <div class="menu-view">
+        <a class="menu-tips" data-toggle="collapse" data-parent="#accordion"
+           href="#collapse-group">
+          伙伴讨论组（123）
+        </a>
+          <img class="arrow-img" src="../images/im_arrow_up.png">
+        </div>
+        <div id="collapse-group" class="panel-collapse collapse in">
+          <div class="group-list">
+            <a class="group-item group-cell">
+              <img class="group-img" src="../images/order_test.png">
+              <span class="group-tips">色达7日游102111111111111111111111</span>
+            </a>
+            <a class="group-item group-cell">
+              <img class="group-img" src="../images/order_test.png">
+              <span class="group-tips">色达7日游102111111111111111111111</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="center-view" id="center-group-view">
+        <div class="user-list">
+          <div class="user-item">
+            <div class="rg_cb">
+              <input class="user-checkbox" type="checkbox" data-uid="userId" value="" id="user-checkbox-1" name="jy" />
+              <label for="user-checkbox-1"></label>
+            </div>
+            <label class="check-box-info" for="user-checkbox-1">
+              <img class="user-icon" src="../images/order_test.png">
+              <span class="user-name">Evelyn（985623153）1111111111111111111111111111</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="right-view" id="right-group-view">
+        <span class="g-tips">已选成员<span class="cEA6A79">（单击移除）</span></span>
+        <div class="checked-user-list" id="checked-user-list">
+          <div class="checked-user-item">
+            <img class="user-icon" src="../images/order_test.png">
+            <span class="user-name">Evelyn（985623153）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bot-view">
+      <a class="forward">上一步</a>
+      <a class="complete">完成</a>
+    </div>
+  </div>
+</div>

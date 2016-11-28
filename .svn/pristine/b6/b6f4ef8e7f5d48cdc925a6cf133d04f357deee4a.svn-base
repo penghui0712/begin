@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/manage_left_menu.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/product_categories.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="sm_bg">
+      <link rel="import" href="../widget/backstage_head.html?__inline">
+      <div class="sm_center_v">
+        <link rel="import" href="../widget/manage_left_menu.html?__inline">
+        <div class="sm_right_v">
+            <span class="category_title">产品分类</span>
+            <div class="sm_detail_v">
+              <span class="up_arrow"></span>
+              <span class="up_arrow_bg"></span>
+              <div class="category_list">
+                <div class="category_item">
+                  <div class="category_item_head">
+                    <span>旅行</span>
+                  </div>
+                  <div class="sec_category_list">
+                    <div class="sec_category_item">
+                      <div class="sec_detail_i">
+                        <a class="sc_add">加入产品</a>
+                        <img class="sc_del" src="../images/delete.png">
+                      </div>
+                      <div class="sec_bot">
+                        <span class="sec_title">国内游</span>
+                        <input class="sec_input"  type="text" placeholder="国内游">
+                        <img class="up_i" src="../images/update_icon.png">
+                        <a class="a_btn">下移</a><a class="al a_btn">上移</a>
+                      </div>
+                    </div>
+                    <div class="sec_category_item_add">
+                      <a class="sec_add_category">添加分类</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category_item">
+                  <div class="category_item_head">
+                    <span>旅行</span>
+                  </div>
+                  <div class="sec_category_list">
+                    <div class="sec_category_item">
+                      <div class="sec_detail_i">
+                        <a class="sc_add">加入产品</a>
+                        <img class="sc_del" src="../images/delete.png">
+                      </div>
+                      <div class="sec_bot">
+                        <span class="sec_title">国内游</span>
+                        <input class="sec_input"  type="text" placeholder="国内游">
+                        <img class="up_i" src="../images/update_icon.png">
+                        <a class="a_btn">下移</a><a class="al a_btn">上移</a>
+                      </div>
+                    </div>
+                    <div class="sec_category_item_add">
+                      <a class="sec_add_category">添加分类</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category_item">
+                  <div class="category_item_head">
+                    <span>旅行</span>
+                  </div>
+                  <div class="sec_category_list">
+                    <div class="sec_category_item">
+                      <div class="sec_detail_i">
+                        <a class="sc_add">加入产品</a>
+                        <img class="sc_del" src="../images/delete.png">
+                      </div>
+                      <div class="sec_bot">
+                        <span class="sec_title">国内游</span>
+                        <input class="sec_input"  type="text" placeholder="国内游">
+                        <img class="up_i" src="../images/update_icon.png">
+                        <a class="a_btn">下移</a><a class="al a_btn">上移</a>
+                      </div>
+                    </div>
+                    <div class="sec_category_item_add">
+                      <a class="sec_add_category">添加分类</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="../js/backstage_head.js"></script>
+    <script type="text/javascript" src="../js/manage_left_menu.js"></script>
+    <script type="text/javascript" src="../js/product_categories.js"></script>
+    <link rel="import" href="../widget/add_product.html?__inline">
+</body>
+</html>

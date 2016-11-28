@@ -1,0 +1,1053 @@
+/**
+ * Created by lwb on 2016/9/19.
+ */
+var token;
+var sellId;     //卖家id，相当于userId
+var author;     //卖家名称，相当于userName
+var friendList; //分组列表
+var toUserId;   //发送目标，相当于targetId
+var groupId;    //群id
+var groupList; //群组列表
+var map = {}; // Map map = new HashMap();
+var imIndex;  //用来判断点击的是好友还是群组
+var friendId; //点击加为好友按钮获取所点的好友id
+//var addFriend; //最近联系人界面加为好友时获取div
+var text;
+var groupingId; //好友分组的id
+$(function(){
+	
+  //根据sellId查询shopId
+  var searchShopId = function(datas){
+	  	var result = datas.data;
+	  	author = result.author;
+  }
+	  
+  sellId = 2;//Utils.getUrlParam("sellId");// Utils.getLoginUser.userID;
+  var data = {"sellId":sellId};
+  doPost("/huoban-sales/http/sales/userlogin/getSellInfo.do",data,searchShopId);
+  
+  $('#im-info').perfectScrollbar();
+  $('#friend-list').perfectScrollbar();
+  $('#chat-list').perfectScrollbar();
+  $('#record-list').perfectScrollbar();
+
+  laydate({
+    elem: '#record-start-date',
+    istime: false, //是否开启时间选择
+    isclear: false, //是否显示清空
+    istoday: false //是否显示今天
+
+  })
+
+  laydate({
+    elem: '#record-end-date',
+    istime: false, //是否开启时间选择
+    isclear: false, //是否显示清空
+    istoday: false //是否显示今天
+  })
+
+  $("#left-date-btn").click(function(){
+    $("#record-start-date").click();
+  })
+  $("#right-date-btn").click(function(){
+    $("#record-end-date").click();
+  })
+
+  $('.collapse').on('show.bs.collapse', function () {
+      var index=$('.collapse').index($(this));
+      $(".arrow-img").eq(index).attr("src","../images/im_arrow_up.png");
+  })
+  $('.collapse').on('hide.bs.collapse', function () {
+    var index=$('.collapse').index($(this));
+    $(".arrow-img").eq(index).attr("src","../images/im_arrow_down.png");
+  })
+
+  $(".record-btn").click(function(){
+    if(!$(this).hasClass("active")){
+      changeStyle(".record-btn",$(this));
+    }
+  })
+
+
+  function changeStyle(objClass,obj){
+      $(objClass).each(function(index,element){
+        if($(element).hasClass("active")){
+          $(element).find("img").attr("src",$(element).find("img").attr("src").replace("_checked.png",".png"));
+          $(element).removeClass("active");
+        }
+      });
+      $(obj).find("img").attr("src",$(obj).find("img").attr("src").replace(".png","_checked.png"));
+      $(obj).addClass("active");
+  }
+
+
+  $("#chat-record").click(function(){
+
+    if($(this).hasClass("active")){
+      $("#chat-view").animate({width:"875px"});
+      $(this).removeClass("active")
+    }else{
+      $("#chat-view").animate({width:"524px"});
+      $(this).addClass("active");
+    }
+/*    $('#friend-list').perfectScrollbar("update");
+    $('#chat-list').perfectScrollbar("update");
+    $('#record-list').perfectScrollbar("update");*/
+
+  })
+
+
+  //左侧menu
+  $(".menu-btn").click(function(){
+    if(!$(this).hasClass("active")){
+      changeStyle(".menu-btn",$(this));
+
+      changeLeftTab($(".menu-btn").index($(this)));
+    }
+  });
+
+
+  
+	//初始化SDK
+	RongIMClient.init("uwd1c0sxdued1");
+	
+	//获取token
+	var webSuccess = function(datas){
+		var result = datas.data.result;
+		var obj = eval('('+result+')');//将JSON字符串转换为JSON对象
+		token = obj.token;
+	}
+	var im_type = 0;
+	var data = {"userId":sellId,"userName":author,"im_type":im_type};
+	doPost("/huoban-sales/http/sales/userlogin/salesImWeb.do",data,webSuccess);
+
+	
+	// 设置连接监听状态 （ status 标识当前连接状态）
+	// 连接状态监听器
+	 RongIMClient.setConnectionStatusListener({
+		    onChanged: function (status) {
+		        switch (status) {
+		            //链接成功
+		            case RongIMLib.ConnectionStatus.CONNECTED:
+		                console.log('链接成功');
+		                break;
+		            //正在链接
+		            case RongIMLib.ConnectionStatus.CONNECTING:
+		                console.log('正在链接');
+		                break;
+		            //重新链接
+		            case RongIMLib.ConnectionStatus.DISCONNECTED:
+		                console.log('断开连接');
+		                break;
+		            //其他设备登录
+		            case RongIMLib.ConnectionStatus.KICKED_OFFLINE_BY_OTHER_CLIENT:
+		                console.log('其他设备登录');
+		                break;
+		              //网络不可用
+		            case RongIMLib.ConnectionStatus.NETWORK_UNAVAILABLE:
+		              console.log('网络不可用');
+		              break;
+		            }
+		   }});
+	 
+
+	 //消息监听器
+	 RongIMClient.setOnReceiveMessageListener({
+		    // 接收到的消息
+		    onReceived: function (message) {
+		        // 判断消息类型
+		        switch(message.messageType){
+		            case RongIMClient.MessageType.TextMessage: //文本消息
+		                // 发送的消息内容将会被打印
+		                console.log(message.content.content);
+		                var content = message.content.content;
+		                var targetId = message.targetId;
+			       		var userContent = '<div class="other-chat">'+
+						                  '<img class="user-icon" src="../images/im-user-icon.png">'+
+					                      '<span class="left-arrow"></span>'+
+					                      '<span class="left-arrow-bg"></span>'+
+					                      '<div class="other-chat-info">'+
+					                      '<pre>'+content+'</pre>'+
+					                      '</div></div>';
+			       		if((groupId!=undefined && groupId!=null) || (toUserId!=undefined && toUserId!=null)){
+			       			if(groupId==targetId || toUserId==targetId){
+			       				$("#chat-list").append(userContent);
+			       			}
+			       		}
+		                break;
+		            case RongIMClient.MessageType.VoiceMessage:  //声音消息
+		                // 对声音进行预加载                
+		                // message.content.content 格式为 AMR 格式的 base64 码
+		                //RongIMLib.RongIMVoice.preLoaded(message.content.content);
+		                break;
+		            case RongIMClient.MessageType.ImageMessage:  //图片消息
+		            	var targetId = message.targetId;
+		            	var imageUri = message.content.imageUri;
+		            	var image = '<div class="other-chat">'+
+		            	              '<img class="user-icon" src="../images/im-user-icon.png">'+
+		            	              '<span class="left-arrow"></span>'+
+		            	              '<span class="left-arrow-bg"></span>'+
+		            	              '<div class="other-chat-info">'+
+		            	              '<pre><img class="record-img" src="'+imageUri+'"></pre>'+
+		            	              '</div></div>';
+			       		if((groupId!=undefined & groupId!=null) || (toUserId!=undefined & toUserId!=null)){
+			       			if(groupId==targetId || toUserId==targetId){
+			       				$("#chat-list").append(image);
+			       			}
+			       		}
+		                break;
+		            case RongIMClient.MessageType.DiscussionNotificationMessage: //讨论组通知消息
+
+		                break;
+		            case RongIMClient.MessageType.LocationMessage:  //本地消息
+
+		                break;
+		            case RongIMClient.MessageType.RichContentMessage: //
+
+		                break;
+		            case RongIMClient.MessageType.InformationNotificationMessage:  //信息通知消息
+
+		                break;
+		            case RongIMClient.MessageType.ContactNotificationMessage:
+
+		                break;
+		            case RongIMClient.MessageType.ProfileNotificationMessage:
+
+		                break;
+		            case RongIMClient.MessageType.CommandNotificationMessage: //命令通知消息
+
+		                break;
+		            case RongIMClient.MessageType.CommandMessage: //命令消息
+
+		                break;
+		            case RongIMClient.MessageType.UnknownMessage: //未知消息
+
+		                break;
+		            default:
+		                // 自定义消息
+
+		        }
+		    }
+		});
+	 
+	// 连接融云服务器
+   RongIMClient.connect(token, {
+     onSuccess: function(userId) {
+       console.log("Login successfully." + userId);
+     },
+     onTokenIncorrect: function() {
+       console.log('token无效');
+     },
+     onError:function(errorCode){
+           var info = '';
+           switch (errorCode) {
+             case RongIMLib.ErrorCode.TIMEOUT:
+               info = '超时';
+               break;
+             case RongIMLib.ErrorCode.UNKNOWN_ERROR:
+               info = '未知错误';
+               break;
+             case RongIMLib.ErrorCode.UNACCEPTABLE_PaROTOCOL_VERSION:
+               info = '不可接受的协议版本';
+               break;
+             case RongIMLib.ErrorCode.IDENTIFIER_REJECTED:
+               info = 'appkey不正确';
+               break;
+             case RongIMLib.ErrorCode.SERVER_UNAVAILABLE:
+               info = '服务器不可用';
+               break;
+           }
+           console.log(errorCode);
+         }
+   });
+
+   /**
+    * targetId:目标Id
+    */
+   function setMap(targetId){
+	   if(targetId!=undefined){
+		   map[targetId] = $("#chat-list").html(); //将数据存入map
+	   }
+   }
+   /**
+    * targetId:目标Id
+    **/
+   function getMap(targetId){
+	   var record = map[targetId]; //根据key获取value的值
+	   if(record!=undefined){
+		   $("#chat-list").html(record);//将值写在列表上
+	   }else{
+		   $("#chat-list").html('');
+	   }
+   }
+   
+   //查询分组好友成功回调函数
+   var groupingSuccess = function(datas){
+	   var result = datas.data;
+	   if(result!=null){
+		   var length = result.length;
+	   }
+	   $('#'+groupingId).empty();
+	   if(length!=null){
+		  for(var i=0;i<result.length;i++){
+			  var author = result[i].author;
+			  var id = result[i].id;
+			  var content = '<div class="friend-item">'+
+			                '<div class="item" id="'+id+'">'+
+			                '<img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">'+
+			                '<div class="item-info">'+
+			                '<span class="name">'+author+'</span></div></div>'+
+			                '<div class="line"></div></div>';
+			  $('#'+groupingId).append(content);
+		  } 
+	   }
+	   //选择好友
+	   $(".item").click(function(){
+		   if(!$(this).hasClass("active")){
+			   $(this).addClass("active");
+			   toUserId = $(this).attr("id");//get new user id
+			   getMap(toUserId);
+			   $(".item").not($(this)).removeClass("active");
+		   }
+	   })
+   }
+   
+   var friendListSuccess = function(datas){
+	   //分组列表
+	   friendList = datas.data;
+	   $("#im_group").hide();
+	   $("#im_friend").show();
+       $("#info-list").hide();
+       $("#friend-list").show();
+	   $("#friend-list").empty();
+	   $("#chat-list").empty();
+	   $("#chat-view").show();
+	   $("#message-list").hide();
+	   if(friendList==null){
+		   alert("暂无好友");
+	   }
+	   var first = '<div class="group-list panel-group" id="accordion"></div>';
+	   $("#friend-list").append(first);
+	   for(var i=0;i<friendList.length;i++){
+		   var groupId = friendList[i].groupId;
+		   var groupName = friendList[i].groupName;
+		   if(groupName==null){
+			   groupName="";
+		   }
+		   var content = '<div class="group-view">'+
+			             '<div class="group-title-view">'+
+		                 '<span class="title" data-toggle="collapse" data-parent="#accordion" href="#group'+groupId+'">'+groupName+'()<img class="arrow-img" src="../images/im_arrow_down.png"></span>'+
+		                 '</div>'+
+		                 '<div class="group-info panel-collapse collapse" id="group'+groupId+'">'+
+		                 '</div></div>';
+		   $("#accordion").append(content);
+	   }
+	   
+	   
+	   $(".group-view").click(function(){
+		   groupingId = $(this).children()[1].id;
+		   var gid = groupingId.substring(5);
+		   text = $(this).children()[0].children[0];
+		   var data = {"gid":gid,"userId":sellId};
+		   doPost("/huoban-sales/http/sales/userlogin/myGroup_Friend.do",data,groupingSuccess);
+	   });
+//	   for(var i=0;i<friendList.length;i++){
+//		   var author = friendList[i].author;
+//		   if(author==null){
+//			   author = "";
+//		   }
+//		   var id = friendList[i].id;
+//		   var content = '<div class="friend-item"><div class="item" id="'+id+'">'+
+//		                 '<img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">'+
+//		                 '<div class="item-info"><span class="name">'+author+'</span>'+
+//		                 '<span class="desc" style="display:none;">哈喽！！</span></div></div><div class="line"></div></div>';
+//           $("#friend-list").append(content);
+//	   }
+
+	   
+   }
+   
+   
+   //查询群成功回调函数
+   var contactsSuccess = function(datas){
+	   var result = datas.data;
+	   //获取群列表
+	   groupList = result.lig;
+       $("#im_group").show();
+	   $("#im_friend").hide();
+	   $("#im-info").empty();
+	   $("#chat-list").empty;
+	   $("#chat-view").show();
+	   $("#message-list").hide();
+	   if(groupList==null){
+		   alert("暂无群组");
+	   }
+	   for(var i=0;i<groupList.length;i++){
+		   var groupName = groupList[i].groupName;
+		   var id = groupList[i].groupId;
+		   var lsi = groupList[i].lsi;
+		   var length = lsi.length;
+		   var group = '<div class="friend-item">'+
+			           '<div class="item" id="'+id+'">'+
+			           '<img class="friend-icon" src="../images/im-user-icon.png" class="friend-icon">'+
+			           '<div class="item-info">'+
+			           '<span class="name">'+groupName+'('+length+')</span>'+
+			           '<span class="desc" style="display:none;">哈喽！！</span>'+
+			           '</div></div>'+
+			           '<div class="line"></div></div>';
+		   $("#im-info").append(group); 
+	   }
+	   
+	   //选择好友
+	   $(".item").click(function(){
+	     if(!$(this).hasClass("active")){
+	       $(this).addClass("active");	
+	    	   //2.取当前选中toUserId,并取当前toUserId的历史记录显示在对话$("#chat-list")
+	    	   groupId = $(this).attr("id");//get new user id
+	    	   getMap(groupId);
+	       $(".item").not($(this)).removeClass("active");
+	     }
+	   })
+	   
+
+   }
+   
+   //新好友列表中添加好友成功回调函数
+   var addInfoSuccess = function(datas){
+	   alert(datas.message);
+//	   var id = addFriend.children()[1].id;
+//	   var last_time = addFriend.children()[0].innerText;
+//	   var info = addFriend.children()[1].children[1].children[0].innerText;
+//	   var arrayInfo = info.split("(");
+//	   var author = arrayInfo[0];
+//	   var authorMobile = arrayInfo[1].substring(0,11);
+//	   addFriend.remove();
+//	   addSuccess(last_time,author,authorMobile,id);
+	   changeLeftTab(0);
+   }
+   //信息列表好友分组查询成功
+   var infoListSuccess = function(datas){
+	   var result = datas.data;
+	   $(".select").empty();
+	   friendGroup(result);
+	   $(".done").click(function(){
+			 var option = $($(this).parent().prev().prev().children()[1]).val();
+			 if(option==null || option==undefined){
+				 option=0;
+			 }
+			 var remark = $($(this).parent().prev().children()[1]).val();
+			 var friendId = $($(this).parent().parent().parent()).attr("id");
+			 //addFriend = $(this).parent().parent().parent().parent();
+			 var data = {"userId":sellId,"groupId":option,"label":remark,"friendId":friendId};
+		     doPost("/huoban-sales/http/sales/userlogin/addFriend.do",data,addInfoSuccess);
+	   });
+   }
+   
+   //封装已经加为好友的显示列表
+   function addSuccess(last_time,author,authorMobile,id){
+	   var thd = '<div class="message-item">'+
+		     	 '<span class="tips">'+last_time+'</span>'+
+		     	 '<div class="message-type-1" id="'+id+'">'+
+		     	 '<img class="user-icon" src="../images/order_test.png">'+
+		     	 '<div class="user-info">'+
+		     	 '<span class="tips">'+author+' ('+authorMobile+')已成功添加您为伙伴！</span>'+
+		     	 '<div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>'+
+		     	 '<div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>'+
+		     	 '</div><a class="tools-btn b6BC2EF">会话窗口</a></div></div>';
+      $("#message-grade").append(thd);
+   }
+   
+   //新的好友列表
+   var newFriendListSuccess = function(datas){
+	   var result = datas.data;
+	   var date = (new Date()).Format("yyyy-MM-dd");
+	   $("#im_group").hide();
+	   $("#im_friend").show();
+       $("#friend-list").hide();
+       $("#info-list").show();
+       $("#message-verify").empty();
+	   $("#message-grade").empty();
+	   $("#chat-view").hide();
+	   $("#message-list").show();
+	   var head = '<div class="message-item">'+
+	              '<img class="message-icon" src="../images/head_new.png">'+
+	              '<div class="detail-view">'+
+	              '<span class="title">伙伴验证消息</span>'+
+	              '<span class="desc">最新：'+date+'</span></div></div>';
+	   $("#message-verify").append(head);
+	   for(var i=0;i<result.length;i++){
+		   var author = result[i].author;
+		   var authorMobile = result[i].authorMobile;
+		   var last_time = result[i].last_time;
+		   var isFriend = result[i].isFriend;
+		   var id = result[i].id;
+		   var content = '<div class="message-item">'+
+		                 '<img class="message-icon" src="../images/order_test.png">'+
+		                 '<div class="detail-view">'+
+		                 '<span class="title">'+author+'</span>'+
+		                 '<span class="desc"></span></div></div>';
+		   $("#message-verify").append(content);
+		   if(isFriend==2){ //别人申请加我为好友
+			   var first = '<div class="message-item">'+
+			               '<span class="tips">'+last_time+'</span>'+
+			               '<div class="message-type-1" id="'+id+'">'+
+			               '<img class="user-icon" src="../images/order_test.png">'+
+			               '<div class="user-info">'+
+			               '<span class="tips">'+author+'('+authorMobile+')申请加您为伙伴！</span>'+
+			               '<div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>'+
+			               '<div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>'+
+			               '</div><a class="add-friend tools-btn b7ED321">加为伙伴</a>'+
+			               '<div class="add-info-view"><div class="item-tools mt20"><span class="ttips">分组：</span>'+
+			               '<select class="select"><option>sh</option></select><a id="add-group-btn" class="add-group">新增分组</a></div>'+
+			               '<div class="item-tools mt5"><span class="ttips">备注：</span><input class="input" type="text"/></div>'+
+			               '<div class="tools-view"><a class="cancel">取消</a><a class="done">确定</a></div></div></div>';
+			   $("#message-grade").append(first);
+		   }
+		   if(isFriend==1){ //我申请加别人为好友
+			   var second = '<div class="message-item">'+
+			                '<span class="tips">'+last_time+'</span>'+
+			                '<div class="message-type-1" id="'+id+'">'+
+			                '<img class="user-icon" src="../images/order_test.png">'+
+			                '<div class="user-info">'+
+			                '<span class="tips">'+author+' ('+authorMobile+')您的申请已发出！</span>'+
+			                '<div class="cell mt10"><span class="sub-tips">用户信用:</span><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/star.png"><img class="star-img" src="../images/half_star.png"><span class="score-tips">4.9分</span></div>'+
+			                '<div class="cell"><span class="sub-tips">商家等级:</span><img class="shop-level-icon" src="../images/shop_level_icon.png"><span class="level-tips"> 5 Lev</span></div>'+
+			                '</div><a class="tools-btn b6BC2EF">等待对方验证</a></div></div>';
+			   $("#message-grade").append(second);
+		   }
+		   if(isFriend==0){ //已经成为好友
+			   addSuccess(last_time,author,authorMobile,id);
+		   }
+	   }
+	   
+	    //信息列表 添加好友
+	    $(".add-friend").click(function(){
+	      $($(this).parent()).animate({height:"250px"});
+	      $(this).hide();
+	      var data = {"userId":sellId};
+	      doPost("/huoban-sales/http/sales/userlogin//myFriendGroup.do",data,infoListSuccess);
+	    });
+
+	    $(".cancel").click(function(){
+	      $($(this).parent().parent().parent()).animate({height:"114px"});
+	      $($(this).parent().parent()).siblings(".add-friend").show();
+	    });
+
+   }
+    
+   //左侧menu  0 最近联系人 1 好友列表 2 群组列表
+   function changeLeftTab(index){
+	   var data = {"uid":sellId};
+	   imIndex = index;
+	   if(imIndex==0){
+		   doPost("/huoban-sales/http/sales/userlogin/newFriend.do",data,newFriendListSuccess);
+	   }
+	   if(imIndex==1){
+		   var data = {"userId":sellId};
+		   doPost("/huoban-sales/http/sales/userlogin/myFriendGroup.do",data,friendListSuccess);
+	   }
+	   if(imIndex==2){
+		   doPost("/huoban-sales/http/sales/userlogin/userFriend.do",data,contactsSuccess);
+	   }
+   }
+   //点击enter键发送消息
+   $(document).keydown(function (event) {
+	   if (event.keyCode == 13) {
+		   $("#sendMessage").click();
+	   }
+	});
+   
+
+   $("#sendMessage").click(function(){
+	   if(imIndex==1){ //私聊
+		   //发送文字消息
+		   var im_text = $("#im_text").val();
+		   //定义消息类型,文字消息使用 RongIMLib.TextMessage
+		   var msg = new RongIMLib.TextMessage({content:im_text,extra:"附加信息"});
+		   //或者使用RongIMLib.TextMessage.obtain 方法.具体使用请参见文档  //var msg = RongIMLib.TextMessage.obtain("hello"); 
+		   var conversationtype = RongIMLib.ConversationType.PRIVATE; // 私聊
+		   var targetId = toUserId; // 目标 Id
+		   if(targetId==undefined || targetId==null){
+			   alert("请选择好友");
+			   return;
+		   }
+		   RongIMClient.getInstance().sendMessage(conversationtype, targetId, msg, {
+			   // 发送消息成功
+			   onSuccess: function (message) {
+				   //message 为发送的消息对象并且包含服务器返回的消息唯一Id和发送消息时间戳
+				   console.log("发送成功！");
+				   $("#im_text").val("");
+				   //获取内容
+				   var content = message.content.content;
+				   if(content==null || content== ""){
+					   return;
+				   }
+				   //获取发送时间 
+				   var date = new Date();
+				   var now = (new Date()).Format("yyyy-MM-dd hh:mm:ss");
+				   var hour = now.substring(11,13); //发送消息的小时
+				   var fen = now.substring(14,16);  //发送消息的分钟
+				  
+				   //获取消息唯一的id
+				   var messageId = message.messageId;
+				   var contentList = '<div class="my-chat">'+
+									 '<div class="my-chat-info">'+
+									 '<pre>'+content+'</pre>'+
+									 '</div>'+
+									 '<span class="right-arrow"></span>'+
+									 '<img class="user-icon" src="../images/im-user-icon.png">'+
+									 '</div>';
+				   $("#chat-list").append(contentList);
+				   
+				   
+				   //让滚动滑到最底下
+				   var height = $("#chat-list")[0].scrollHeight; 
+				   $("#chat-list").perfectScrollbar('update');
+				   $("#chat-list").scrollTop(height);
+				   
+				   setMap(targetId);//保存到历史消息记录中
+			   },
+			   onError: function (errorCode,message) {
+				   var info = '';
+				   switch (errorCode) {
+				   case RongIMLib.ErrorCode.TIMEOUT:
+					   info = '超时';
+					   break;
+				   case RongIMLib.ErrorCode.UNKNOWN_ERROR:
+					   info = '未知错误';
+					   break;
+				   case RongIMLib.ErrorCode.REJECTED_BY_BLACKLIST:
+					   info = '在黑名单中，无法向对方发送消息';
+					   break;
+				   case RongIMLib.ErrorCode.NOT_IN_DISCUSSION:
+					   info = '不在讨论组中';
+					   break;
+				   case RongIMLib.ErrorCode.NOT_IN_GROUP:
+					   info = '不在群组中';
+					   break;
+				   case RongIMLib.ErrorCode.NOT_IN_CHATROOM:
+					   info = '不在聊天室中';
+					   break;
+				   default :
+					   info = x;
+				   break;
+				   }
+				   console.log('发送失败:' + info);
+			   }
+		   });
+	   }
+	   if(imIndex==2){	//群聊  
+		   //文本消息
+		   var im_text = $("#im_text").val();
+		   var msg = new RongIMLib.TextMessage({content:im_text,extra:"附加信息"});
+		   var conversationtype = RongIMLib.ConversationType.GROUP; // 群聊
+		   var targetId = groupId;
+		   if(targetId==undefined || targetId==null){
+			   alert("请选择群组");
+			   return;
+		   }
+		   RongIMClient.getInstance().sendMessage(conversationtype, targetId, msg, {
+	           // 发送消息成功
+	           onSuccess: function (message) {
+	               //message 为发送的消息对象并且包含服务器返回的消息唯一Id和发送消息时间戳
+				   console.log("发送成功！");
+				   $("#im_text").val("");
+				   //获取内容
+				   var content = message.content.content;
+				   if(content==null || content== ""){
+					   return;
+				   }
+				   //获取发送时间
+				   var sendTime = message.sentTime;
+				   //获取消息唯一的id
+				   var messageId = message.messageId;
+				   var contentList = '<div class="my-chat">'+
+									 '<div class="my-chat-info">'+
+									 '<pre>'+content+'</pre>'+
+									 '</div>'+
+									 '<span class="right-arrow"></span>'+
+									 '<img class="user-icon" src="../images/im-user-icon.png">'+
+									 '</div>';
+				   $("#chat-list").append(contentList);
+				   
+				   //让滚动滑到最底下
+				   var height = $("#chat-list")[0].scrollHeight; 
+				   $("#chat-list").perfectScrollbar('update');
+				   $("#chat-list").scrollTop(height);
+				   
+				   setMap(targetId);//保存到历史消息记录中
+	           },
+	           onError: function (errorCode,message) {
+	               var info = '';
+	               switch (errorCode) {
+	                   case RongIMLib.ErrorCode.TIMEOUT:
+	                       info = '超时';
+	                       break;
+	                   case RongIMLib.ErrorCode.UNKNOWN_ERROR:
+	                       info = '未知错误';
+	                       break;
+	                   case RongIMLib.ErrorCode.REJECTED_BY_BLACKLIST:
+	                       info = '在黑名单中，无法向对方发送消息';
+	                       break;
+	                   case RongIMLib.ErrorCode.NOT_IN_DISCUSSION:
+	                       info = '不在讨论组中';
+	                       break;
+	                   case RongIMLib.ErrorCode.NOT_IN_GROUP:
+	                       info = '不在群组中';
+	                       break;
+	                   case RongIMLib.ErrorCode.NOT_IN_CHATROOM:
+	                       info = '不在聊天室中';
+	                       break;
+	                   default :
+	                       info = x;
+	                       break;
+	               }
+	               alert('发送失败:' + info);
+	           }
+	       });
+		   }
+   });
+       
+     //点击查看更多消息
+     $("#all-chat").click(function(){
+    	 $("#chat-list").scrollTop(0);
+     });
+     
+	 $("#biaoqing").click(function(){
+		
+		//使用默认 Emoji 和图片
+		RongIMLib.RongIMEmoji.init();
+		
+		//获取全部表情
+		var emojis = RongIMLib.RongIMEmoji.emojis;
+
+		for(var i = 0;i<emojis.length;i++){
+			var bq = emojis[i].children[0];
+			var $bq = $(bq).attr("name");
+			//名称转化为表情
+			var str = RongIMLib.RongIMEmoji.symbolToEmoji($bq);
+			console.log(str);
+		}
+		
+//		//名称转 Emoji
+//		//发送消息使用(表情)
+//		var str = RongIMLib.RongIMEmoji.symbolToEmoji("[狞笑][露齿而笑]测试Emoji");
+//		
+//		//Emoji 转名称
+//		//会话列表显示最后一条消息使用(表情转成对应的字)
+//		var str1 = RongIMLib.RongIMEmoji.emojiToSymbol("😀😁测试 Emoji");
+//		
+//		//Emoji 转字 HTML
+//		//接收消息使用(html代码)
+//		var str2 = RongIMLib.RongIMEmoji.emojiToHTML("😂测试 Emoji");
+//		
+//		//名称转字 HTML(html代码)
+//		var str3 = RongIMLib.RongIMEmoji.symbolToHTML("[露齿而笑]测试 Emoji");
+		
+	});
+	  
+	 //封装好友分组列表
+	 function friendGroup(result){
+		  if(result!=null){
+			  for(var i=0;i<result.length;i++){
+				 var groupId = result[i].groupId;
+				 var groupName = result[i].groupName;
+				 var content = '<option value="'+groupId+'">'+groupName+'</option>';
+				 $(".select").append(content);
+			  }
+		  }
+	 }
+	 
+	  //好友分组查询成功回调函数
+	  var friendGroupSuccess = function(datas){
+		  $(".select").empty();
+		  var result = datas.data;
+		  friendGroup(result);
+	  }
+	 
+	 
+	  //根据条件查询好友成功回调函数
+	  var  searchFriendSuccess = function(datas){
+		  $("#result-list").empty();
+		  var result = datas.data;
+		  var length = result.length;
+		  changeContentHeight(length);
+		  for(var i=0;i<result.length;i++){
+			  var id = result[i].id;
+			  var isFriend = result[i].isFriend;
+			  var author = result[i].author;
+			  var authorMobile = result[i].authorMobile;
+			  if(isFriend!=0){
+				  var content = '<div class="result-item">'+
+								'<img src="../images/order_test.png" class="user-icon">'+
+								'<div class="info-view">'+
+								'<span class="user-name">'+author+'('+authorMobile+')</span>'+
+								'<div class="cell mt8">'+
+								'<span class="title">用户信用:</span>'+
+								'<div class="star-list">'+
+								'<img src="../images/star.png">'+
+								'<img src="../images/star.png">'+
+								'<img src="../images/star.png">'+
+								'<img src="../images/star.png">'+
+								'<img src="../images/half_star.png">'+
+								'<span class="score">4.9分</span>'+
+								'</div></div>'+
+								'<div class="cell mt2">'+
+								'<span class="title">商家等级:</span>'+
+								'<img class="shop_icon" src="../images/shop_level_icon.png">'+
+								'<span class="subtitle"> 7 Lev</span></div></div>'+
+								'<div class="tools-view" name="'+id+'">'+
+								'<a class="add-btn">加为好友</a>'+
+								'</div></div>';
+				  $("#result-list").append(content);
+			  }
+		  }
+		  
+			 //加为好友
+			 $(".add-btn").click(function(){
+			     $("#search_friend_dialog").modal('hide');
+			     $("#add_friend_dialog").modal('show');
+				 friendId = $(this).parent().attr("name");
+				 var data = {"userId":sellId};
+				 doPost("/huoban-sales/http/sales/userlogin/myFriendGroup.do",data,friendGroupSuccess);
+			 });
+	  }
+ 
+	 //根据条件查询好友
+	 $("#search-btn").click(function(){
+		 var accountNo = $("#search-input").val();
+		 var data = {"pro":accountNo,"uid":sellId};
+		 doPost("/huoban-sales/http/sales/userlogin/searchPerson.do",data,searchFriendSuccess);
+	 });
+	 
+	 var addFriendSuccess = function(datas){
+         var result = datas.message;
+         alert(result);
+		 $("#add_friend_dialog").modal('hide');
+	 }
+	 
+	 //点击发送按钮添加好友
+	 $("#add-friend").click(function(){
+		 var option = $(".select").val();
+		 if(option==null || option==undefined){
+			 option=0;
+		 }
+		 var remark = $("#remark").val();
+		 var data = {"userId":sellId,"groupId":option,"label":remark,"friendId":friendId};
+		 doPost("/huoban-sales/http/sales/userlogin/addFriend.do",data,addFriendSuccess);
+	 });
+     
+	 //点击取消按钮
+	 $("#cancle").click(function(){
+		 $("#add_friend_dialog").modal('hide');
+	 });
+	 
+
+	 //创建好友分组成功回调函数
+	 var createFriendSuccess = function(datas){
+		 var result = datas.message;
+		 alert(result);
+		 $("#add_group_dialog").modal('hide');
+	 }
+	 
+	 //创建好友分组
+	 $("#add-group").click(function(){
+		 var groupName = $("#group-name").val();
+//		 if(!Utils.checkNotEmpty(groupName)){
+//			 alert("分组名称不能为空");
+//		 }
+		 var data = {"userId":sellId,"groupName":groupName};
+		 doPost("/huoban-sales/http/sales/userlogin/addFriendGroup.do",data,createFriendSuccess);
+	 });
+	 
+	 
+	  //封装创建讨论组 勾选朋友
+	  function selectFriend(){
+		    var record = [];
+		    $(".user-checkbox").click(function(){
+		      if($(this).get(0).checked==true){
+		        var a=($($(this).parent()).siblings(".check-box-info").html());
+		        var b='<div class="checked-user-item" id='+$(this).attr('data-uid')+'>'+a+'</div>';
+		        var length = $("#checked-user-list").children().length;
+		        console.log(length);
+		        if(length==0){
+		        	$("#checked-user-list").append(b);
+		        }else{
+		        	for(var i=0;i<length;i++){
+		        		var id = $("#checked-user-list").children()[i].id;
+//		        		if(){
+//		        			
+//		        		}
+		        		record.push(id);
+		        	}
+		        	var dataUid = $(this).attr("data-uid");
+		        	if(jQuery.inArray(dataUid,record)==-1){
+		        	    $("#checked-user-list").append(b);
+		        	}
+		        }
+		        $(".checked-user-item").unbind().bind('click',function(){
+		          var cb=$('input:checkbox[data-uid='+$(this).attr("id")+']:checked');
+		          $(cb).removeAttr('checked');
+		          $(this).remove();
+		 
+		        });
+		      }else{
+		        $('#'+$(this).attr('data-uid')).remove();
+		      }
+		    });
+	  }
+	 
+	 //查询每个分组下的好友成功回调函数
+	 var everyFriendSuccess = function(datas){
+		 $("#center-group-view").empty();
+		 var result = datas.data;
+		 if(result!=null){
+			 for(var i=0;i<result.length;i++){
+				 var author = result[i].author;
+				 var authorMobile = result[i].authorMobile;
+				 var sellId = result[i].id;
+				 var content = '<div class="user-list">'+
+							   '<div class="user-item">'+
+							   '<div class="rg_cb">'+
+							   '<input class="user-checkbox" type="checkbox" data-uid="sellId'+sellId+'" value="" id="user-checkbox-1+'+i+'" name="jy" />'+
+							   '<label for="user-checkbox-1'+i+'"></label></div>'+
+							   '<label class="check-box-info" for="user-checkbox-1">'+
+							   '<img class="user-icon" src="../images/order_test.png">'+
+							   '<span class="user-name">'+author+'（'+authorMobile+'）</span>'+
+							   '</label></div></div>';
+				 $("#center-group-view").append(content);
+			 }
+		 }
+		    //创建讨论组 勾选朋友
+		    selectFriend();
+	 }
+	 
+	 
+	 //查询好友分组
+	 var createGroupSuccess = function(datas){
+		 $("#center-group-view").empty();
+		 $("#checked-user-list").empty();
+		 var result = datas.data;
+		 var length = result.length;
+		 var first = '<div class="menu-view">'+
+					 '<a class="menu-tips" data-toggle="collapse" data-parent="#accordion" href="#collapse-friend">'+
+					 '伙伴分组（'+length+'）'+
+					 '</a>'+
+					 '<img class="arrow-img" src="../images/im_arrow_up.png"></div>'+
+					 '<div id="collapse-friend" class="panel-collapse collapse in">'+
+					 '<div class="friend-list">'+
+					 '</div></div>';
+		 $("#left-group-view").prepend(first);
+		 for(var i=0;i<result.length;i++){
+			 var groupName = result[i].groupName;
+			 var id = result[i].groupId;
+			 var second = '<a class="friend-item" id="'+id+'">'+groupName+'</a>';
+			 $(".friend-list").append(second);
+		 }
+		 
+		 
+		 //点击分组查询该组好友
+		 $(".friend-item").click(function(){
+			 var groupId = $(this).attr("id");
+			 var data = {"userId":sellId,"gid":groupId};
+			 doPost("/huoban-sales/http/sales/userlogin/myGroup_Friend.do",data,everyFriendSuccess);
+		 });
+	 }
+	 
+	 //根据groupId查询群成员
+	 var groupMemberSuccess = function(datas){
+		 $("#center-group-view").empty();
+		 var result = datas.data;
+		 var groupList = result.lsi;
+		 for(var i=0;i<groupList.length;i++){
+			 var author = groupList[i].author;
+			 var authorMobile = groupList[i].authorMobile;
+			 var sellId = groupList[i].id;
+			 var content = '<div class="user-list">'+
+						   '<div class="user-item">'+
+						   '<div class="rg_cb">'+
+						   '<input class="user-checkbox" type="checkbox" data-uid="sellId'+sellId+'" value="" id="user-checkbox-1'+i+'" name="jy" />'+
+						   '<label for="user-checkbox-1'+i+'"></label></div>'+
+						   '<label class="check-box-info" for="user-checkbox-1">'+
+						   '<img class="user-icon" src="../images/order_test.png">'+
+						   '<span class="user-name">'+author+'（'+authorMobile+'）</span>'+
+						   '</label></div></div>';
+            $("#center-group-view").append(content);
+		 }
+		    
+		    //创建讨论组 勾选朋友
+		    selectFriend();
+		   	    
+	 }
+	 
+	 //创建群组
+	 $("#create-group").click(function(){
+	     $("#left-group-view").empty();
+	     changeLeftTab(2);
+		 var length = groupList.length;
+		 var first = '<div class="menu-view">'+
+					 '<a class="menu-tips" data-toggle="collapse" data-parent="#accordion"href="#collapse-group">'+
+					 '伙伴讨论组（'+length+'）'+
+					 '</a>'+
+					 '<img class="arrow-img" src="../images/im_arrow_down.png"></div>'+
+					 '<div id="collapse-group" class="panel-collapse collapse in">'+
+					 '<div class="group-list">'+
+					 '</div></div>';
+		 $("#left-group-view").append(first);
+		 
+		 for(var i=0;i<groupList.length;i++){
+			 var groupName = groupList[i].groupName;
+			 var groupId = groupList[i].groupId;
+			 var second = '<a class="group-item" id="'+groupId+'">'+
+			 '<img class="group-img" src="../images/order_test.png">'+
+			 '<span class="group-tips">'+groupName+'</span></a>';
+			 $(".group-list").append(second);
+		 }
+		 
+		 var data = {"userId":sellId};
+		 doPost("/huoban-sales/http/sales/userlogin/myFriendGroup.do",data,createGroupSuccess);
+
+		 
+		 //根据groupId查询该群成员
+	     $(".group-item").click(function(){
+	    	 var group_id = $(this).attr("id");
+	    	 var data = {"group_id":group_id};
+	    	 doPost("/huoban-sales/http/sales/userlogin/groupById.do",data,groupMemberSuccess);
+	     });
+	 });
+
+	 
+	 //根据条件查询好友成功回调函数
+	 var searchPersonSuccess = function(datas){
+		 var result = datas.data;
+		 $("#center-group-view").empty();
+		 //$("#checked-user-list").empty();
+		 for(var i=0;i<result.length;i++){
+			 var author = result[i].author;
+			 var authorMobile = result[i].authorMobile;
+			 var sellId = result[i].id;
+			 var content = '<div class="user-list">'+
+						   '<div class="user-item">'+
+						   '<div class="rg_cb">'+
+						   '<input class="user-checkbox" type="checkbox" data-uid="sellId'+sellId+'" value="" id="user-checkbox-1'+i+'" name="jy" />'+
+						   '<label for="user-checkbox-1'+i+'"></label></div>'+
+						   '<label class="check-box-info" for="user-checkbox-1">'+
+						   '<img class="user-icon" src="../images/order_test.png">'+
+						   '<span class="user-name">'+author+'（'+authorMobile+'）</span>'+
+						   '</label></div></div>';
+            $("#center-group-view").append(content);
+		 }
+		    //创建讨论组 勾选朋友
+		    selectFriend();   
+	 }
+	 
+	 
+	 //创建讨论组中的搜索
+	 $("#search-friend").click(function(){
+		 var input = $("#search-input").val();
+		 var data = {"pro":input,"uid":sellId};
+		 doPost("/huoban-sales/http/sales/userlogin/searchPerson.do",data,searchPersonSuccess);
+	 });
+
+	 changeLeftTab(1);
+})

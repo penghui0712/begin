@@ -1,0 +1,95 @@
+.rg_bg {
+  width: 100%; }
+
+.rg_top_line {
+  width: 687px;
+  margin: 95px auto auto auto; }
+  .rg_top_line img {
+    width: 687px;
+    height: auto; }
+  .rg_top_line .rg_high_point {
+    position: relative;
+    background: #77e751;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%; }
+  .rg_top_line .rg_point_list {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    top: -10px; }
+    .rg_top_line .rg_point_list .rg_high_point_1 {
+      display: inline-block;
+      float: left;
+      background: #77e751;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 73px; }
+    .rg_top_line .rg_point_list .rg_high_point_2 {
+      display: inline-block;
+      float: left;
+      background: #cf8be0;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 252px; }
+    .rg_top_line .rg_point_list .rg_high_point_3 {
+      display: inline-block;
+      float: left;
+      background: #F9E51F;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 252px; }
+    .rg_top_line .rg_point_list .rg_point {
+      display: inline-block;
+      float: left;
+      background: #cdcdcd;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-left: 252px; }
+
+.rg_point_tips span {
+  font-size: 12px;
+  color: #222222; }
+.rg_point_tips .rg_sp_1 {
+  margin-left: 55px; }
+.rg_point_tips .rg_sp_2 {
+  margin-left: 210px; }
+
+.sc_img {
+  width: 68px;
+  height: 68px;
+  margin: 77px auto auto auto;
+  display: block; }
+
+.rg_success_tips {
+  width: 357px;
+  height: 44px;
+  display: block;
+  margin: 56px auto auto auto;
+  font-size: 16px;
+  color: #222222;
+  letter-spacing: 1px; }
+
+.rg_close_btn {
+  margin-left: 12px;
+  background: #6bc2ef;
+  border-radius: 5px;
+  width: 88px;
+  height: 32px;
+  display: block;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.87px;
+  cursor: pointer;
+  margin: 152px auto auto auto; }
+
+.rg_close_btn:active {
+  background: #3caee9; }
+
+/*# sourceMappingURL=register_check.css.map */

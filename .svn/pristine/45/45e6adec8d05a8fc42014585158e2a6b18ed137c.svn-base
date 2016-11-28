@@ -1,0 +1,25 @@
+.contact-info{
+  display: inline-block;
+  margin-top: 40px;
+  .contact-us-img{
+    width: 100%;
+    height: auto;
+  }
+  .contact-tips-info{
+    position: relative;
+    width: 1200px;
+    display: block;
+    margin:-400px  auto auto auto;
+    font-size: 24px;
+
+    color: #434142;
+
+    span{
+      width: 630px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 40px;
+    }
+  }
+}

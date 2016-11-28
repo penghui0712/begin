@@ -1,0 +1,828 @@
+.sm_v {
+  width: 100%;
+  height: auto; }
+  .sm_v .sm_detail_v {
+    width: 1202px;
+    margin: auto auto; }
+    .sm_v .sm_detail_v .sm_top_v {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #485157;
+      letter-spacing: 0.87px;
+      text-align: left; }
+      .sm_v .sm_detail_v .sm_top_v a {
+        cursor: pointer; }
+    .sm_v .sm_detail_v .order_status_v {
+      width: 1007px;
+      height: 60px;
+      margin: 90px auto auto auto;
+      font-size: 0; }
+      .sm_v .sm_detail_v .order_status_v .img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 62px;
+        height: 62px; }
+      .sm_v .sm_detail_v .order_status_v .line {
+        background: #EAEAEA;
+        border-radius: 3px;
+        height: 3px;
+        width: 200px;
+        display: inline-block;
+        margin: auto 22px;
+        overflow: hidden; }
+        .sm_v .sm_detail_v .order_status_v .line div {
+          background-image: radial-gradient(100% 50%, #6BC2EF 0%, #A4E3F8 97%);
+          box-shadow: 0px 0px 2px 0px rgba(107, 194, 239, 0.51);
+          border-radius: 7px;
+          height: 3px; }
+    .sm_v .sm_detail_v .order_staus_tips_v {
+      margin: 23px auto auto auto;
+      width: 1150px;
+      font-size: 0; }
+      .sm_v .sm_detail_v .order_staus_tips_v span {
+        vertical-align: middle;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 1.75px;
+        line-height: 40px;
+        height: 40px; }
+      .sm_v .sm_detail_v .order_staus_tips_v .fstatus {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 22px;
+        width: 160px;
+        height: 40px;
+        text-align: center; }
+      .sm_v .sm_detail_v .order_staus_tips_v .sstatus {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 148px;
+        width: 160px;
+        height: 40px;
+        text-align: center; }
+      .sm_v .sm_detail_v .order_staus_tips_v .tstatus {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 145px;
+        width: 160px;
+        height: 40px;
+        text-align: center; }
+      .sm_v .sm_detail_v .order_staus_tips_v .fthstatus {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 145px;
+        width: 160px;
+        height: 40px;
+        text-align: center; }
+    .sm_v .sm_detail_v .transaction_status_v {
+      margin-top: 30px;
+      width: 816px;
+      height: 292px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      overflow: hidden;
+      float: left; }
+      .sm_v .sm_detail_v .transaction_status_v .transaction_status_bar {
+        height: 48px;
+        width: 100%;
+        background-image: url(/images/order_detail_bar.png); }
+      .sm_v .sm_detail_v .transaction_status_v .left_line_v {
+        width: 41px;
+        height: 244px;
+        float: left;
+        display: inline-block; }
+        .sm_v .sm_detail_v .transaction_status_v .left_line_v .left_line {
+          height: 224px;
+          width: 1px;
+          background: #77C7F1;
+          margin: 9px auto auto 20px; }
+        .sm_v .sm_detail_v .transaction_status_v .left_line_v .point_v {
+          width: 9px;
+          height: 224px;
+          position: absolute;
+          margin-left: 16px;
+          margin-top: -224px; }
+          .sm_v .sm_detail_v .transaction_status_v .left_line_v .point_v div {
+            box-shadow: 0px 0px 4px 0px #6DC2EF;
+            width: 9px;
+            height: 9px;
+            border-radius: 10px; }
+      .sm_v .sm_detail_v .transaction_status_v .right_v {
+        display: inline-block;
+        float: left;
+        width: 775px;
+        height: 244px;
+        font-size: 0; }
+        .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips {
+          margin-top: 14px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips img {
+            vertical-align: middle;
+            width: 60px;
+            height: 60px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_1 {
+            font-size: 14px;
+            color: #485157;
+            letter-spacing: 0.87px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_2 {
+            font-size: 14px;
+            color: #485157;
+            letter-spacing: 0.87px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_3 {
+            font-size: 14px;
+            color: #485157;
+            letter-spacing: 0.87px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_4 span {
+            display: inline-block;
+            line-height: 60px;
+            height: 60px;
+            letter-spacing: 1.5px;
+            vertical-align: middle;
+            font-family: PingFangSC-Semibold;
+            font-size: 24px; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_4 .title {
+            margin-left: 26px;
+            color: #7A7A7A; }
+          .sm_v .sm_detail_v .transaction_status_v .right_v .transaction_tips .rstatus_4 .subtitle {
+            color: #EA6A79; }
+    .sm_v .sm_detail_v .seller_v {
+      margin: 30px auto auto 50px;
+      width: 333px;
+      height: 292px;
+      background: #FFFFFF;
+      float: left;
+      box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      overflow: hidden; }
+      .sm_v .sm_detail_v .seller_v .seller_bar {
+        width: 100%;
+        height: 90px;
+        background: #3D464D; }
+        .sm_v .sm_detail_v .seller_v .seller_bar .title {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 0.87px;
+          display: inline-block;
+          height: 20px;
+          line-height: 20px;
+          margin: 70px auto auto 73px; }
+        .sm_v .sm_detail_v .seller_v .seller_bar .number_ico {
+          width: 18px;
+          height: 13px;
+          margin-left: 42px; }
+        .sm_v .sm_detail_v .seller_v .seller_bar .subtitle {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #FFFFFF; }
+      .sm_v .sm_detail_v .seller_v .seller_detail_v .seller_ico {
+        margin-left: 12px;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin-top: -25px; }
+      .sm_v .sm_detail_v .seller_v .seller_detail_v .tuan {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: 32px 18px auto auto; }
+      .sm_v .sm_detail_v .seller_v .seller_detail_v .user_tips {
+        margin-left: 23px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 0.87px; }
+      .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v {
+        margin-top: 2px;
+        border-width: 1px 0px;
+        border-color: #EAEAEA;
+        border-style: solid;
+        height: 64px;
+        width: 100%;
+        font-size: 0; }
+        .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .fcell {
+          margin-top: 8px; }
+          .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .fcell .user_ico {
+            width: 16px;
+            height: 18px;
+            margin-left: 25px; }
+          .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .fcell span {
+            vertical-align: middle;
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            color: #7A7A7A;
+            letter-spacing: 0.87px;
+            margin-left: 10px; }
+        .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .scell {
+          margin-top: 12px; }
+          .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .scell .phone_ico {
+            width: 12px;
+            height: 18px;
+            margin-left: 27px; }
+          .sm_v .sm_detail_v .seller_v .seller_detail_v .user_info_v .scell span {
+            vertical-align: middle;
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            color: #7A7A7A;
+            letter-spacing: 0.87px;
+            margin-left: 10px; }
+      .sm_v .sm_detail_v .seller_v .seller_detail_v .remark_v .cell {
+        margin-top: 8px; }
+        .sm_v .sm_detail_v .seller_v .seller_detail_v .remark_v .cell span {
+          vertical-align: middle;
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #7A7A7A;
+          letter-spacing: 0.87px;
+          margin-left: 10px; }
+        .sm_v .sm_detail_v .seller_v .seller_detail_v .remark_v .cell .btitle {
+          color: #6BC2EF;
+          margin-left: 25px; }
+        .sm_v .sm_detail_v .seller_v .seller_detail_v .remark_v .cell .rtitle {
+          color: #EA6A79;
+          margin-left: 25px; }
+  .sm_v .order_list_v {
+    width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 95px auto 30px auto;
+    overflow: hidden; }
+    .sm_v .order_list_v .order_bar {
+      width: 100%;
+      height: 36px;
+      background: #F9F9F9; }
+      .sm_v .order_list_v .order_bar span {
+        height: 36px;
+        line-height: 36px;
+        font-family: PingFangSC-Semibold;
+        font-size: 14px;
+        color: #7A7A7A;
+        letter-spacing: 0.87px;
+        text-align: center; }
+      .sm_v .order_list_v .order_bar .sp_1 {
+        margin-left: 98px; }
+      .sm_v .order_list_v .order_bar .sp_2 {
+        margin-left: 198px; }
+      .sm_v .order_list_v .order_bar .sp_3 {
+        margin-left: 121px; }
+      .sm_v .order_list_v .order_bar .sp_4 {
+        margin-left: 90px; }
+      .sm_v .order_list_v .order_bar .sp_5 {
+        margin-left: 99px; }
+      .sm_v .order_list_v .order_bar .sp_6 {
+        margin-left: 105px; }
+      .sm_v .order_list_v .order_bar .sp_7 {
+        margin-left: 95px; }
+    .sm_v .order_list_v .order_item_v {
+      margin: 8px auto; }
+    .sm_v .order_list_v .order_item {
+      font-size: 0; }
+      .sm_v .order_list_v .order_item .item_cell_1 {
+        width: 320px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle; }
+        .sm_v .order_list_v .order_item .item_cell_1 .item_icon {
+          vertical-align: middle;
+          width: 68px;
+          height: 68px;
+          margin-left: 8px;
+          display: inline-block; }
+        .sm_v .order_list_v .order_item .item_cell_1 .title {
+          margin-left: 12px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          line-height: 68px;
+          color: #222222;
+          display: inline-block;
+          vertical-align: middle; }
+      .sm_v .order_list_v .order_item .item_cell_2 {
+        width: 110px;
+        display: inline-block;
+        height: 68px;
+        text-align: center;
+        vertical-align: middle; }
+        .sm_v .order_list_v .order_item .item_cell_2 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222; }
+      .sm_v .order_list_v .order_item .item_cell_3 {
+        width: 140px;
+        margin-left: 60px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center; }
+        .sm_v .order_list_v .order_item .item_cell_3 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222; }
+      .sm_v .order_list_v .order_item .item_cell_4 {
+        width: 150px;
+        margin-left: 10px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center; }
+        .sm_v .order_list_v .order_item .item_cell_4 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222; }
+      .sm_v .order_list_v .order_item .item_cell_5 {
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center; }
+        .sm_v .order_list_v .order_item .item_cell_5 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222; }
+      .sm_v .order_list_v .order_item .item_cell_6 {
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 18px; }
+        .sm_v .order_list_v .order_item .item_cell_6 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 14px;
+          color: #222222; }
+      .sm_v .order_list_v .order_item .item_cell_7 {
+        width: 120px;
+        display: inline-block;
+        height: 68px;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 18px; }
+        .sm_v .order_list_v .order_item .item_cell_7 .title {
+          height: 68px;
+          display: block;
+          line-height: 68px;
+          font-size: 22px;
+          color: #222222; }
+    .sm_v .order_list_v .item_child_list {
+      margin-top: 15px; }
+      .sm_v .order_list_v .item_child_list .item_child_item {
+        font-size: 0; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_1 {
+          width: 320px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_1 .title {
+            margin-left: 86px;
+            font-family: PingFangSC-Semibold;
+            font-size: 16px;
+            line-height: 32px;
+            color: #222222;
+            display: inline-block;
+            vertical-align: middle; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_2 {
+          width: 110px;
+          display: inline-block;
+          height: 32px;
+          text-align: center;
+          vertical-align: middle; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_2 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_3 {
+          width: 140px;
+          margin-left: 60px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_3 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_4 {
+          width: 150px;
+          margin-left: 10px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_4 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_5 {
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_5 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_6 {
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          margin-left: 18px; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_6 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 14px;
+            color: #222222; }
+        .sm_v .order_list_v .item_child_list .item_child_item .item_cell_7 {
+          width: 120px;
+          display: inline-block;
+          height: 32px;
+          vertical-align: middle;
+          text-align: center;
+          margin-left: 18px; }
+          .sm_v .order_list_v .item_child_list .item_child_item .item_cell_7 .title {
+            height: 32px;
+            display: block;
+            line-height: 32px;
+            font-size: 22px;
+            color: #222222; }
+    .sm_v .order_list_v .bot_total_v {
+      height: 48px;
+      width: 100%;
+      border-top: 1px dashed #eaeaea;
+      font-size: 0; }
+      .sm_v .order_list_v .bot_total_v span {
+        display: inline-block;
+        line-height: 48px;
+        height: 48px; }
+      .sm_v .order_list_v .bot_total_v .total_count {
+        font-size: 14px;
+        color: #222222;
+        margin-left: 11px; }
+      .sm_v .order_list_v .bot_total_v .total_tips {
+        font-size: 14px;
+        color: #222222;
+        margin-left: 21px; }
+      .sm_v .order_list_v .bot_total_v .total_price {
+        font-family: PingFangSC-Semibold;
+        font-size: 20px;
+        color: #EA6A79; }
+  .sm_v .service_list_v {
+    width: 1200px;
+    margin: 40px auto 30px auto; }
+    .sm_v .service_list_v .service_info_item {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      width: 270px;
+      height: 293px;
+      font-size: 0;
+      overflow: hidden;
+      float: left;
+      margin: 10px auto 10px 23px; }
+      .sm_v .service_list_v .service_info_item .stable {
+        table-layout: fixed;
+        margin-top: 18px; }
+        .sm_v .service_list_v .service_info_item .stable tr {
+          height: 22px; }
+        .sm_v .service_list_v .service_info_item .stable td {
+          word-wrap: break-word; }
+        .sm_v .service_list_v .service_info_item .stable .title {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #7A7A7A;
+          letter-spacing: 0.87px;
+          width: 95px;
+          height: auto;
+          display: inline-block;
+          margin-left: 11px;
+          text-align: right; }
+        .sm_v .service_list_v .service_info_item .stable .value {
+          vertical-align: middle;
+          margin-left: 11px;
+          font-size: 14px;
+          display: inline-block;
+          color: #222222;
+          letter-spacing: 0.87px;
+          width: 150px;
+          height: auto; }
+      .sm_v .service_list_v .service_info_item .bot_v {
+        margin-top: 50px;
+        width: 100%;
+        height: 64px;
+        border-top: 1px solid #EAEAEA; }
+        .sm_v .service_list_v .service_info_item .bot_v .title {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #222222;
+          letter-spacing: 0.87px;
+          margin: 9px auto auto 36px;
+          display: block; }
+  .sm_v .fs .rstatus_1 {
+    display: none; }
+  .sm_v .fs .rstatus_2 {
+    display: none; }
+  .sm_v .fs .rstatus_3 {
+    display: none; }
+  .sm_v .fs .tstatus_1 {
+    margin-top: 31px;
+    background: #ffffff; }
+  .sm_v .fs .tstatus_2 {
+    display: none; }
+  .sm_v .fs .tstatus_3 {
+    display: none; }
+  .sm_v .fs .tstatus_4 {
+    display: none; }
+  .sm_v .fs .oimg_status_1 {
+    background-image: url(/images/check_order_hover.png); }
+  .sm_v .fs .oimg_status_2 {
+    background-image: url(/images/pay_money.png); }
+  .sm_v .fs .oimg_status_3 {
+    background-image: url(/images/order_service.png); }
+  .sm_v .fs .oimg_status_4 {
+    background-image: url(/images/order_comple.png); }
+  .sm_v .fs .cp_line_1 {
+    width: 84px; }
+  .sm_v .fs .cp_line_2 {
+    width: 0px; }
+  .sm_v .fs .cp_line_3 {
+    width: 0px; }
+  .sm_v .fs .fstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .fs .sstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .fs .sstatus .time {
+    display: none; }
+  .sm_v .fs .tstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .fs .tstatus .time {
+    display: none; }
+  .sm_v .fs .fthstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .fs .fthstatus .time {
+    display: none; }
+  .sm_v .ss .rstatus_1 {
+    margin-top: 35px; }
+  .sm_v .ss .rstatus_2 {
+    display: none; }
+  .sm_v .ss .rstatus_3 {
+    display: none; }
+  .sm_v .ss .rstatus_4 {
+    margin-top: 12px; }
+  .sm_v .ss .tstatus_1 {
+    margin-top: 31px;
+    background: #6BC2EF; }
+  .sm_v .ss .tstatus_2 {
+    background: #ffffff;
+    margin-top: 44px; }
+  .sm_v .ss .tstatus_3 {
+    visibility: hidden; }
+  .sm_v .ss .tstatus_4 {
+    background: #ffffff;
+    visibility: hidden; }
+  .sm_v .ss .oimg_status_1 {
+    background-image: url(/images/check_order_hover.png); }
+  .sm_v .ss .oimg_status_2 {
+    background-image: url(/images/pay_money_hover.png); }
+  .sm_v .ss .oimg_status_3 {
+    background-image: url(/images/order_service.png); }
+  .sm_v .ss .oimg_status_4 {
+    background-image: url(/images/order_comple.png); }
+  .sm_v .ss .cp_line_1 {
+    width: 100%; }
+  .sm_v .ss .cp_line_2 {
+    width: 84px; }
+  .sm_v .ss .cp_line_3 {
+    width: 0px; }
+  .sm_v .ss .fstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .ss .sstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .ss .tstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .ss .tstatus .time {
+    display: none; }
+  .sm_v .ss .fthstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .ss .fthstatus .time {
+    display: none; }
+  .sm_v .ts .rstatus_1 {
+    margin-top: 35px; }
+  .sm_v .ts .rstatus_2 {
+    margin-top: 15px; }
+  .sm_v .ts .rstatus_3 {
+    display: none; }
+  .sm_v .ts .rstatus_4 {
+    margin-top: 12px; }
+  .sm_v .ts .tstatus_1 {
+    margin-top: 31px;
+    background: #6BC2EF; }
+  .sm_v .ts .tstatus_2 {
+    margin-top: 27px;
+    background: #6BC2EF; }
+  .sm_v .ts .tstatus_3 {
+    background: #ffffff;
+    margin-top: 42px; }
+  .sm_v .ts .tstatus_4 {
+    visibility: hidden; }
+  .sm_v .ts .oimg_status_1 {
+    background-image: url(/images/check_order_hover.png); }
+  .sm_v .ts .oimg_status_2 {
+    background-image: url(/images/pay_money_hover.png); }
+  .sm_v .ts .oimg_status_3 {
+    background-image: url(/images/order_service_hover.png); }
+  .sm_v .ts .oimg_status_4 {
+    background-image: url(/images/order_comple.png); }
+  .sm_v .ts .cp_line_1 {
+    width: 100%; }
+  .sm_v .ts .cp_line_2 {
+    width: 100%; }
+  .sm_v .ts .cp_line_3 {
+    width: 84px; }
+  .sm_v .ts .fstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .ts .sstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .ts .tstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .ts .fthstatus span {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #7A7A7A;
+    letter-spacing: 1.75px; }
+  .sm_v .ts .fthstatus .time {
+    display: none; }
+  .sm_v .fths .rstatus_1 {
+    margin-top: 35px; }
+  .sm_v .fths .rstatus_2 {
+    margin-top: 15px; }
+  .sm_v .fths .rstatus_3 {
+    margin-top: 15px; }
+  .sm_v .fths .rstatus_4 {
+    margin-top: 12px; }
+  .sm_v .fths .tstatus_1 {
+    margin-top: 31px;
+    background: #6BC2EF; }
+  .sm_v .fths .tstatus_2 {
+    margin-top: 27px;
+    background: #6BC2EF; }
+  .sm_v .fths .tstatus_3 {
+    background: #6BC2EF;
+    margin-top: 27px; }
+  .sm_v .fths .tstatus_4 {
+    background: #ffffff;
+    margin-top: 42px; }
+  .sm_v .fths .oimg_status_1 {
+    background-image: url(/images/check_order_hover.png); }
+  .sm_v .fths .oimg_status_2 {
+    background-image: url(/images/pay_money_hover.png); }
+  .sm_v .fths .oimg_status_3 {
+    background-image: url(/images/order_service_hover.png); }
+  .sm_v .fths .oimg_status_4 {
+    background-image: url(/images/order_comple_hover.png); }
+  .sm_v .fths .cp_line_1 {
+    width: 100%; }
+  .sm_v .fths .cp_line_2 {
+    width: 100%; }
+  .sm_v .fths .cp_line_3 {
+    width: 100%; }
+  .sm_v .fths .fstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .fths .sstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .fths .tstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+  .sm_v .fths .fthstatus span {
+    font-family: PingFangSC-Semibold;
+    display: inline-block;
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222222;
+    letter-spacing: 1.5px; }
+
+/*# sourceMappingURL=/css/service_order_detail.css.map */

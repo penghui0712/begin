@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/manage_left_menu.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/product_categories.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="sm_bg">
+  <link rel="import" href="../widget/backstage_head.html?__inline">
+  <div class="sm_center_v">
+    <link rel="import" href="../widget/manage_left_menu.html?__inline">
+    <div class="sm_right_v">
+      <span class="category_title">产品分类</span>
+      <div class="sm_detail_v">
+        <span class="up_arrow"></span>
+        <span class="up_arrow_bg"></span>
+        <a class="bjfl">编辑分类</a>
+        <div class="category_item_list">
+            <div class="cate_top"><span class="title">分类名称</span><span class="subtitle">关联产品</span></div>
+            <div class="category_items">
+              <div class="category_item">
+                <a class="citem item" href="#collapseOne" data-toggle="collapse" ><span>餐饮</span><div class="triangle_down"></div></a>
+                <a class="gl" data-toggle="modal" data-target="#add_product_dialog">关联产品</a>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="sec_item_list">
+                    <div class="sec_item">
+                      <span class="point"></span>
+                      <a class="scitem item"  href="#collapseTwo" data-toggle="collapse" >日韩料理<div class="triangle_down"></div></a>
+                      <a class="gl">关联产品</a>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                         <div class="thd_item_list">
+                            <div class="thd_item">
+                              <span class="tpoint"></span>
+                              <a class="titem">刺身</a>
+                              <a class="gl">关联产品</a>
+                            </div>
+                           <div class="thd_item">
+                             <span class="tpoint"></span>
+                             <a class="titem">刺身</a>
+                             <a class="gl">关联产品</a>
+                           </div>
+                           <div class="thd_item">
+                             <span class="tpoint"></span>
+                             <a class="titem">刺身</a>
+                             <a class="gl">关联产品</a>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+<script type="text/javascript" src="../js/manage_left_menu.js"></script>
+<script type="text/javascript" src="../js/pro_dialog.js"></script>
+<script type="text/javascript" src="../js/products_categories.js"></script>
+<link rel="import" href="../widget/add_product.html?__inline">
+</body>
+</html>

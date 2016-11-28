@@ -1,0 +1,463 @@
+.c6BC2EF {
+  color: #6BC2EF; }
+
+.cEA6A79 {
+  color: #EA6A79; }
+
+.contain {
+  width: 100%; }
+  .contain .info-view {
+    width: 1060px;
+    height: 222px;
+    margin: 58px auto auto auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    font-size: 0; }
+    .contain .info-view .user-info-view {
+      margin-top: 36px; }
+      .contain .info-view .user-info-view .left-view {
+        width: 156px;
+        margin: auto auto auto 43px;
+        display: inline-block;
+        vertical-align: middle; }
+        .contain .info-view .user-info-view .left-view .user-icon {
+          width: 42px;
+          height: 42px;
+          display: block; }
+        .contain .info-view .user-info-view .left-view .credit-tips {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #222222;
+          display: block; }
+        .contain .info-view .user-info-view .left-view .star-info {
+          margin-top: 2px;
+          font-size: 0; }
+          .contain .info-view .user-info-view .left-view .star-info .star {
+            display: inline-block;
+            vertical-align: middle;
+            width: 18px;
+            height: 18px; }
+          .contain .info-view .user-info-view .left-view .star-info .score-tips {
+            margin-left: 6px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            color: #6BC2EF; }
+        .contain .info-view .user-info-view .left-view .user-level-info {
+          margin-top: 8px;
+          font-size: 0; }
+          .contain .info-view .user-info-view .left-view .user-level-info .vip-icon {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: middle; }
+          .contain .info-view .user-info-view .left-view .user-level-info .tips {
+            font-size: 16px;
+            color: #222222;
+            display: inline-block;
+            vertical-align: middle; }
+      .contain .info-view .user-info-view .center-view {
+        margin-left: 140px;
+        display: inline-block;
+        vertical-align: middle; }
+        .contain .info-view .user-info-view .center-view .tips {
+          font-size: 16px;
+          color: #222222;
+          display: block;
+          line-height: 24px; }
+        .contain .info-view .user-info-view .center-view .tips-value {
+          color: #EA6A79; }
+  .contain .transaction-info-view {
+    width: 1060px;
+    margin: 78px auto auto auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    font-size: 0; }
+    .contain .transaction-info-view .order-list {
+      margin-top: 50px; }
+      .contain .transaction-info-view .order-list .order-item {
+        width: 980px;
+        margin: 12px auto auto auto;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px; }
+        .contain .transaction-info-view .order-list .order-item .head-view {
+          height: 36px;
+          width: 100%;
+          font-size: 0;
+          background: #F9F9F9; }
+          .contain .transaction-info-view .order-list .order-item .head-view .tips {
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 0.6;
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            color: #222222;
+            letter-spacing: 0.87px;
+            line-height: 36px; }
+          .contain .transaction-info-view .order-list .order-item .head-view .subtitle {
+            font-size: 14px;
+            letter-spacing: 0.87px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 36px; }
+          .contain .transaction-info-view .order-list .order-item .head-view .remark-btn {
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            letter-spacing: 0.87px;
+            width: 80px;
+            height: 22px;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            border-radius: 52px;
+            display: inline-block;
+            text-align: center;
+            line-height: 22px;
+            float: right;
+            margin-top: 7px;
+            cursor: pointer;
+            margin-right: 50px; }
+        .contain .transaction-info-view .order-list .order-item .order-info {
+          font-size: 0;
+          margin-top: 10px; }
+          .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-1 {
+            display: inline-block;
+            vertical-align: top; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-1 .order-img {
+              margin-left: 18px;
+              width: 68px;
+              height: 68px;
+              display: inline-block; }
+          .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-2 {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 14px; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-2 .title {
+              font-family: PingFangSC-Semibold;
+              font-size: 16px;
+              color: #222222;
+              display: block;
+              width: 260px; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-2 .subtitle {
+              opacity: 0.6;
+              font-size: 14px;
+              color: #222222;
+              display: block;
+              width: 260px; }
+          .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-3 {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-3 .price {
+              font-size: 16px;
+              color: #222222; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-3 .count {
+              margin-left: 90px;
+              font-size: 16px;
+              color: #222222; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-3 .total {
+              margin-left: 90px;
+              font-family: PingFangSC-Semibold;
+              font-size: 22px;
+              color: #222222; }
+          .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-4 {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 65px; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-4 .order-stauts {
+              font-size: 16px;
+              color: #222222;
+              display: block; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-4 .order-detail {
+              font-size: 16px;
+              color: #3CAEE9;
+              display: block;
+              cursor: pointer; }
+            .contain .transaction-info-view .order-list .order-item .order-info .order-info-cell-4 .order-wl {
+              font-size: 16px;
+              color: #E22238;
+              display: block;
+              cursor: pointer; }
+        .contain .transaction-info-view .order-list .order-item .addition-view {
+          font-size: 0;
+          margin: 10px auto auto 18px; }
+          .contain .transaction-info-view .order-list .order-item .addition-view .left-arrow {
+            width: 0;
+            height: 0;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 3px;
+            border-top: 5px solid transparent;
+            border-right: 5px solid #EA6A79;
+            border-bottom: 5px solid transparent; }
+          .contain .transaction-info-view .order-list .order-item .addition-view .tips {
+            padding: 2px 10px;
+            height: 22px;
+            line-height: 22px;
+            background: #EA6A79;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 12px;
+            color: #FFFFFF;
+            border-radius: 3px; }
+        .contain .transaction-info-view .order-list .order-item .remark-view {
+          margin: 10px auto 10px auto; }
+          .contain .transaction-info-view .order-list .order-item .remark-view .tips {
+            font-family: PingFangSC-Semibold;
+            font-size: 14px;
+            color: #6BC2EF;
+            margin-left: 18px; }
+          .contain .transaction-info-view .order-list .order-item .remark-view .value {
+            opacity: 0.6;
+            font-size: 12px;
+            color: #222222;
+            margin-left: 16px; }
+    .contain .transaction-info-view .page-view {
+      margin: 70px 40px 40px 40px;
+      font-size: 0; }
+      .contain .transaction-info-view .page-view .page_tips {
+        opacity: 0.6;
+        font-size: 14px;
+        color: #222222;
+        line-height: 28px;
+        display: inline-block;
+        vertical-align: middle; }
+      .contain .transaction-info-view .page-view select {
+        width: 60px;
+        height: 28px;
+        border: 1px solid #E2E2E2;
+        border-radius: 5px;
+        margin-left: 8px;
+        opacity: 0.6;
+        font-size: 14px;
+        color: #222222;
+        display: inline-block;
+        vertical-align: middle; }
+      .contain .transaction-info-view .page-view .page_right_v {
+        float: right;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0; }
+        .contain .transaction-info-view .page-view .page_right_v .forword_v {
+          float: left;
+          display: inline-block;
+          vertical-align: middle; }
+          .contain .transaction-info-view .page-view .page_right_v .forword_v .page_forward {
+            float: left;
+            width: 64px;
+            height: 28px;
+            display: inline-block;
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid #E2E2E2;
+            border-radius: 5px;
+            line-height: 28px;
+            cursor: pointer;
+            opacity: 0.6;
+            font-size: 14px;
+            color: #222222;
+            vertical-align: middle; }
+          .contain .transaction-info-view .page-view .page_right_v .forword_v .left_v {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            background: #FFFFFF;
+            border: 1px solid #E2E2E2;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: auto 5px; }
+            .contain .transaction-info-view .page-view .page_right_v .forword_v .left_v .left_arrow {
+              position: absolute;
+              width: 0px;
+              height: 0px;
+              line-height: 0px;
+              border-top: 8px solid transparent;
+              border-right: 8px solid #818181;
+              border-bottom: 8px solid transparent;
+              margin: 5px auto auto 7px;
+              vertical-align: middle; }
+        .contain .transaction-info-view .page-view .page_right_v .next_v {
+          display: inline-block;
+          vertical-align: middle; }
+          .contain .transaction-info-view .page-view .page_right_v .next_v .page_next {
+            width: 64px;
+            height: 28px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid #E2E2E2;
+            border-radius: 5px;
+            line-height: 28px;
+            cursor: pointer;
+            opacity: 0.6;
+            font-size: 14px;
+            color: #222222; }
+          .contain .transaction-info-view .page-view .page_right_v .next_v .right_v {
+            float: left;
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            vertical-align: middle;
+            background: #FFFFFF;
+            border: 1px solid #E2E2E2;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: auto 5px; }
+            .contain .transaction-info-view .page-view .page_right_v .next_v .right_v .right_arrow {
+              position: absolute;
+              width: 0px;
+              height: 0px;
+              line-height: 0px;
+              border-top: 8px solid transparent;
+              border-left: 8px solid #818181;
+              border-bottom: 8px solid transparent;
+              margin: 5px auto auto 10px;
+              vertical-align: middle; }
+      .contain .transaction-info-view .page-view .page_count_v {
+        font-size: 0;
+        display: inline-block;
+        vertical-align: middle; }
+        .contain .transaction-info-view .page-view .page_count_v a {
+          width: 28px;
+          height: 28px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 28px;
+          text-align: center;
+          background: #FFFFFF;
+          border: 1px solid #E2E2E2;
+          border-radius: 3px;
+          opacity: 0.6;
+          font-size: 14px;
+          color: #222222;
+          letter-spacing: 0.87px;
+          cursor: pointer; }
+      .contain .transaction-info-view .page-view .d {
+        font-size: 14px;
+        color: #222222;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 5px;
+        margin-right: 5px; }
+      .contain .transaction-info-view .page-view .page_total_v {
+        font-size: 0;
+        display: inline-block;
+        vertical-align: middle; }
+        .contain .transaction-info-view .page-view .page_total_v a {
+          width: 28px;
+          height: 28px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 28px;
+          text-align: center;
+          background: #FFFFFF;
+          border: 1px solid #E2E2E2;
+          border-radius: 3px;
+          opacity: 0.6;
+          font-size: 14px;
+          color: #222222;
+          letter-spacing: 0.87px;
+          cursor: pointer; }
+  .contain .collection-info-view {
+    width: 1060px;
+    height: 360px;
+    margin: 70px auto auto auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    font-size: 0; }
+    .contain .collection-info-view .collection-list {
+      width: 960px;
+      margin: 40px auto auto auto; }
+      .contain .collection-info-view .collection-list .collection-item {
+        display: inline-block;
+        width: 168px; }
+        .contain .collection-info-view .collection-list .collection-item .pro-img {
+          width: 168px;
+          height: 160px;
+          display: block; }
+        .contain .collection-info-view .collection-list .collection-item .title {
+          margin-top: 16px;
+          font-size: 16px;
+          color: #000000;
+          word-break: normal;
+          width: auto;
+          display: block;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          overflow: hidden; }
+        .contain .collection-info-view .collection-list .collection-item .price {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #6BC2EF; }
+        .contain .collection-info-view .collection-list .collection-item .time {
+          font-size: 12px;
+          color: #EA6A79; }
+  .contain .cart-info-view {
+    width: 1060px;
+    height: 360px;
+    margin: 70px auto 80px auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    font-size: 0; }
+    .contain .cart-info-view .cart-list {
+      width: 960px;
+      margin: 40px auto auto auto; }
+      .contain .cart-info-view .cart-list .cart-item {
+        display: inline-block;
+        width: 168px; }
+        .contain .cart-info-view .cart-list .cart-item .pro-img {
+          width: 168px;
+          height: 160px;
+          display: block; }
+        .contain .cart-info-view .cart-list .cart-item .title {
+          margin-top: 16px;
+          font-size: 16px;
+          color: #000000;
+          word-break: normal;
+          width: auto;
+          display: block;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          overflow: hidden; }
+        .contain .cart-info-view .cart-list .cart-item .price {
+          font-family: PingFangSC-Semibold;
+          font-size: 14px;
+          color: #6BC2EF; }
+        .contain .cart-info-view .cart-list .cart-item .time {
+          font-size: 12px;
+          color: #EA6A79; }
+
+.top_tips {
+  position: absolute;
+  margin: -10px auto auto 50px;
+  background: #ffffff; }
+  .top_tips .left_line {
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 16px;
+    background: #CDCDCD;
+    display: inline-block; }
+  .top_tips .title {
+    margin: auto 5px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.8;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #222222;
+    letter-spacing: 0.87px;
+    line-height: 20px; }
+  .top_tips .show-all {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 8px;
+    line-height: 20px;
+    font-family: PingFangSC-Semibold;
+    font-size: 12px;
+    color: #EA6A79;
+    cursor: pointer; }
+
+/*# sourceMappingURL=user_info_detail.css.map */

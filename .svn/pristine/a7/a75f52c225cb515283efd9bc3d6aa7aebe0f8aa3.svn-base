@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/ticket_order_detail.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="sm_v">
+  <link rel="import" href="../widget/backstage_head.html?__inline">
+
+  <div class="sm_detail_v">
+    <div class="sm_top_v"><a>销售订单</a> | <span>订单详情</span></div>
+    <div class="order_status_v">
+      <div class="oimg_status_1 img"></div>
+      <div class="line"><div class="cp_line_1"></div></div>
+      <div class="oimg_status_2 img"></div>
+      <div class="line"><div class="cp_line_2"></div></div>
+      <div class="oimg_status_3 img"></div>
+    </div>
+    <div class="order_staus_tips_v">
+      <div class="fstatus">
+        <span class="time">2016-01-22 12:20:20</span><br>
+        <span>买家下单</span>
+      </div>
+      <div class="sstatus">
+        <span class="time">2016-01-22 12:20:20</span>
+        <span>买家付款</span>
+      </div>
+      <div class="tstatus">
+        <span class="time">2016-01-22 12:20:20</span>
+        <span>已使用</span>
+      </div>
+    </div>
+    <div class="transaction_status_v">
+      <div class="transaction_status_bar"></div>
+      <div class="left_line_v">
+        <div class="left_line"></div>
+        <div class="point_v">
+          <div class="tstatus_1">
+          </div>
+          <div class="tstatus_2">
+          </div>
+          <div class="tstatus_3">
+          </div>
+        </div>
+      </div>
+      <div class="right_v">
+          <div class="transaction_tips">
+            <div class="rstatus_1">
+              <span>买家下单</span>
+            </div>
+            <div class="rstatus_2">
+              <span>买家付款</span>
+            </div>
+            <div class="rstatus_3">
+              <img src="../images/success_icon.png">
+              <span class="title">交易状态：</span>
+              <span class="subtitle">买家下单</span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="seller_v">
+      <div class="seller_bar">
+          <span class="title">买家ID：maijia</span>
+          <img class="number_ico" src="../images/number_icon.png">
+          <span class="subtitle">100000102</span>
+      </div>
+      <div class="seller_detail_v">
+        <img class="seller_ico" src="../images/seller_icon.png">
+        <img class="tuan" src="../images/tuan_ico.png">
+        <div style="clear: both"></div>
+        <span class="user_tips">联系人信息</span>
+        <div class="user_info_v">
+          <div class="fcell"><img class="user_ico" src="../images/user_name_ico.png"><span>张三</span></div>
+          <div class="scell"><img class="phone_ico" src="../images/phone_ico.png"><span>1322123212</span></div>
+        </div>
+        <div class="remark_v">
+          <div class="cell"><span class="btitle">买家备注：</span><span>无</span></div>
+          <div class="cell"><span class="rtitle">商家备注：</span><span>无</span></div>
+        </div>
+      </div>
+
+    </div>
+    <div style="clear: both"></div>
+    <div class="order_list_v">
+        <div class="order_bar">
+          <span class="sp_1">产品名称</span>
+          <span class="sp_2">属性</span>
+          <span class="sp_3">退款／货状态</span>
+          <span class="sp_4">单价</span>
+          <span class="sp_5">数量</span>
+          <span class="sp_6">优惠</span>
+          <span class="sp_7">商品总价</span>
+        </div>
+        <div class="order_list">
+          <div class="order_item_v">
+            <div class="order_item">
+              <div class="item_cell_1">
+                <img class="item_icon" src="../images/order_test.png">
+                <span class="title">贰千金单人晚餐券</span>
+              </div>
+              <div class="item_cell_2">
+                <span class="title">无</span>
+              </div>
+              <div class="item_cell_3">
+                <span class="title">无</span>
+              </div>
+              <div class="item_cell_4">
+                <span class="title">¥188</span>
+              </div>
+              <div class="item_cell_5">
+                <span class="title">1</span>
+              </div>
+              <div class="item_cell_6">
+                <span class="title">0</span>
+              </div>
+              <div class="item_cell_7">
+                <span class="title">¥188</span>
+              </div>
+            </div>
+            <div class="item_child_list">
+              <div class="item_child_item">
+                <div class="item_cell_1">
+                  <span class="title">咖啡</span>
+                </div>
+                <div class="item_cell_2">
+                  <span class="title">无</span>
+                </div>
+                <div class="item_cell_3">
+                  <span class="title">无</span>
+                </div>
+                <div class="item_cell_4">
+                  <span class="title">¥188</span>
+                </div>
+                <div class="item_cell_5">
+                  <span class="title">1</span>
+                </div>
+                <div class="item_cell_6">
+                  <span class="title">0</span>
+                </div>
+                <div class="item_cell_7">
+                  <span class="title">¥188</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <div class="bot_total_v">
+        <span class="total_count">一共：4件商品</span>
+        <span class="total_tips">总价：</span>
+        <span class="total_price">¥652</span>
+      </div>
+    </div>
+    <div class="ttable">
+      <table class="table_v">
+        <tr class="title"><td>券编号</td><td>时间</td><td>券状态</td></tr>
+        <tr><td>100201201231123</td><td>2016-01-23  12:30:16</td><td>已使用</td></tr>
+        <tr><td>100201201231123</td><td>2016-01-23  12:30:16</td><td>已使用</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+<script type="text/javascript" src="../js/manage_left_menu.js"></script>
+<script type="text/javascript" src="../js/ticket_order_detail.js"></script>
+</body>
+</html>

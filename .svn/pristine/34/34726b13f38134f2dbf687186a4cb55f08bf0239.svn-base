@@ -1,0 +1,47 @@
+<div class="modal fade" id="add_friend_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="add-friend-dialog" class="add_friend_dialog h400">
+    <div class="dialog_head">
+      <span class="title">添加伙伴</span>
+    </div>
+    <div class="dialog_content">
+      <span class="dialog_tips">您将添加以下好友</span>
+          <div class="result-item">
+            <img src="../images/order_test.png" class="user-icon">
+            <div class="info-view">
+              <span class="user-name">Evelyn Fuller(9763343445)</span>
+              <div class="cell mt8">
+                <span class="title">用户信用:</span>
+                <div class="star-list">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/star.png">
+                  <img src="../images/half_star.png">
+                  <span class="score">4.9分</span>
+                </div>
+              </div>
+              <div class="cell mt2">
+                <span class="title">商家等级:</span>
+                <img class="shop_icon" src="../images/shop_level_icon.png">
+                <span class="subtitle"> 7 Lev</span>
+              </div>
+            </div>
+          </div>
+         <span class="center-line"></span>
+         <div class="item-tools mt20">
+           <span class="tips">分组：</span>
+           <select class="select">
+             <option>sh</option>
+           </select>
+           <a id="add-group-btn" class="add-group">新增分组</a>
+         </div>
+          <div class="item-tools mt5">
+           <span class="tips">备注：</span>
+            <input class="input" type="text" id="remark"/>
+          </div>
+    </div>
+      <a class="bot-btn mr50" id="add-friend">发送</a>
+      <a class="bot-btn mr20" id="cancle">取消</a>
+  </div>
+</div>

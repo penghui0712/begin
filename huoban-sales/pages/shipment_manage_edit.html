@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/shipment_manage_edit.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/app.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/modal.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="sm_v">
+  <link rel="import" href="../widget/backstage_head.html?__inline">
+  <div class="sm_detail_v">
+    <div class="sm_top_v"><a>运费模版</a> | <span>编辑模版</span></div>
+    <div class="sm_title_v">
+      <span class="title">模版名称</span><input class="input" type="text"><span class="stitle">快递公司</span><select><option>顺丰快递</option><option>顺丰快递</option><option>顺丰快递</option><option>顺丰快递</option></select>
+      <a class="save" id="save">保存</a>
+      <div class="sm_right_v"><span class="title">续费规则</span><span class="point"></span><span class="subtitle">不续费</span><span class="point"></span><span class="subtitle">按重量续费</span><span class="point"></span><span class="subtitle">按数量续费</span></div>
+    </div>
+    <div class="sm_center_v">
+      <div class="sm_center_detail_v">
+        <span class="sm_title_1">分区</span>
+        <span class="sm_title_2">省份</span>
+        <span class="sm_title_3">起步费</span>
+        <span class="sm_title_3">续费重量</span>
+        <span class="sm_title_3">续费金额</span>
+      </div>
+      <div class="sm_detail_center_v">
+        <div class="sm_fv">
+          <div class="fq_v" id="fq_list">
+            <div class="fq_item" style="height: 100px">
+              <span>• 	一区</span>
+            </div>
+          </div>
+        </div>
+        <div class="sm_qx" id="qx_list">
+          <div class="ss_item onum clearfix"  id="qxgroup1">
+            <span class="ss_sp">上海1</span>
+            <span class="ss_sp">上海2</span>
+            <span class="ss_sp">上海3</span>
+            <span class="ss_sp">上海4</span>
+            <span class="ss_sp">上海5</span>
+            <span class="ss_sp">上海6</span>
+            <span class="ss_sp">上海7</span>
+            <span class="ss_sp">上海8</span>
+            <span class="ss_sp">上海9</span>
+            <span class="ss_sp">上海10</span>
+            <span class="ss_sp">上海11</span>
+            <span class="ss_sp">上海12</span>
+            <span class="ss_sp">上海13</span>
+            <span class="ss_sp">上海14</span>
+            <span class="ss_sp">上海15</span>
+            <span class="ss_sp">上海16</span>
+            <span class="ss_sp">上海17</span>
+            <span class="ss_sp">上海18</span>
+          </div>
+        </div>
+        <div class="sm_right" id="right_list">
+          <div class="sm_item onum" style="height: 100px">
+            <div class="input1"><span>¥</span><input type="text"/></div>
+            <div class="input2"><input type="text"/></div>
+            <div class="input1"><span>¥</span><input type="text"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="sm_bot_v">
+        <div class="shipment_add" id="shipment_add">
+          <img src="../images/shipment_add.png">
+          <span>添加分区</span>
+        </div>
+        <div class="shipment_tips">
+          <span>拖动省份可更改分区</span>
+          <img src="../images/shipment_tips.png">
+        </div>
+        <div class="shipment_rv">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/json2.js"></script>
+<script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+<script type="text/javascript" src="../libs/Sortable.min.js"></script>
+<script type="text/javascript" src="../js/shipment_manage_edit.js"></script>
+<link rel="import" href="../widget/add_shipment_fq.html?__inline">
+</body>
+</html>

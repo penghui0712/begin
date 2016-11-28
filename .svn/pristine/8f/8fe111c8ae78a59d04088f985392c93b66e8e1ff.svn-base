@@ -1,0 +1,116 @@
+.contianer {
+  width: 100%;
+  height: auto; }
+  .contianer #banner-swiper {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    height: auto; }
+    .contianer #banner-swiper .banner-img {
+      width: 100%;
+      height: auto; }
+  .contianer .classification-view {
+    width: 100%;
+    height: 1450px;
+    background: #ebebeb; }
+    .contianer .classification-view .classification-info {
+      width: 1200px;
+      height: auto;
+      margin: 0 auto; }
+      .contianer .classification-view .classification-info .classification-img {
+        display: inline-block;
+        width: 221px;
+        height: 21px;
+        margin: 90px auto 0 489.5px; }
+      .contianer .classification-view .classification-info .heart-img {
+        width: 241px;
+        height: 15px;
+        margin: 27px auto auto auto;
+        display: block; }
+      .contianer .classification-view .classification-info .wine-list {
+        margin-top: 44px;
+        font-size: 0;
+        text-align: center; }
+        .contianer .classification-view .classification-info .wine-list .wine-item {
+          width: 302px;
+          height: 333px;
+          display: inline-block;
+          overflow: hidden; }
+          .contianer .classification-view .classification-info .wine-list .wine-item .wine-filter {
+            background: url("../img/filter-bg.png") no-repeat;
+            width: 285px;
+            height: 316px;
+            position: absolute;
+            margin-left: 9px;
+            margin-top: 6px;
+            -webkit-transition: opacity 0.3s linear;
+            -moz-transition: opacity 0.3s linear;
+            -o-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            text-align: center; }
+          .contianer .classification-view .classification-info .wine-list .wine-item .wine-img {
+            width: 302px;
+            height: 333px; }
+          .contianer .classification-view .classification-info .wine-list .wine-item .wine-tips {
+            color: #fff;
+            font-size: 17px;
+            width: 240px;
+            margin: 25px auto auto auto;
+            line-height: 24px;
+            font-family: PingFang_Bold; }
+          .contianer .classification-view .classification-info .wine-list .wine-item .wine-bot-img {
+            width: 44px;
+            height: 44px;
+            margin-top: 55px;
+            display: inline-block;
+            cursor: pointer; }
+        .contianer .classification-view .classification-info .wine-list .wine-item:hover .wine-filter {
+          opacity: 100;
+          filter: alpha(opacity=100); }
+      .contianer .classification-view .classification-info .wine-list-tips {
+        font-size: 0;
+        text-align: center; }
+        .contianer .classification-view .classification-info .wine-list-tips .wine-tips {
+          font-family: PingFang_Bold;
+          margin-top: 10px;
+          width: 302px;
+          color: #0EB493;
+          font-size: 19px;
+          display: inline-block;
+          vertical-align: middle; }
+      .contianer .classification-view .classification-info .hdsource-img {
+        width: 158px;
+        height: 21px;
+        margin: 120px auto auto auto;
+        display: block; }
+      .contianer .classification-view .classification-info .hdsource-control {
+        font-size: 0;
+        text-align: center;
+        margin: 50px auto auto auto; }
+        .contianer .classification-view .classification-info .hdsource-control a {
+          font-family: PingFang_Bold;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 15px;
+          padding: 7.5px 15px;
+          color: #062033;
+          border-radius: 5px;
+          cursor: pointer; }
+        .contianer .classification-view .classification-info .hdsource-control a:hover {
+          color: #0EB493; }
+        .contianer .classification-view .classification-info .hdsource-control .active {
+          color: #ffffff;
+          background: #0EB493; }
+        .contianer .classification-view .classification-info .hdsource-control .active:hover {
+          color: #ffffff; }
+      .contianer .classification-view .classification-info .food-info {
+        width: 100%;
+        margin-top: 50px;
+        font-size: 0; }
+        .contianer .classification-view .classification-info .food-info img {
+          width: 300px;
+          height: 223px; }
+
+/*# sourceMappingURL=official_wine.css.map */

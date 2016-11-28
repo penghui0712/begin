@@ -1,0 +1,88 @@
+.head-view {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 99999;
+  .head-info {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    .logo {
+      height: 28px;
+      width: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+    .logo-title {
+      margin-left: 15px;
+      font-size: 20px;
+      color: #000000;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 40px;
+      font-family: PingFang_Bold;
+    }
+    a {
+      font-family: PingFang_Bold;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      line-height: 40px;
+      color: #232323;
+    }
+    .active {
+      color: #F5A237;
+    }
+    a:hover {
+      color: #F5A237;
+    }
+  }
+}
+.foot-view{
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 0;
+  .foot-cell{
+    margin-top: 50px;
+    width: 257px;
+    height: 204px;
+    border-right: 2px #EEEEEE solid;
+    display: inline-block;
+    vertical-align: middle;
+    .title{
+      font-family: PingFang_Bold;
+      margin-top: 16px;
+      font-size: 18px;
+      color: #27201D;
+      display: block;
+    }
+    .subtitle{
+      font-size: 16px;
+      color: #27201D;
+    }
+    a{
+      font-size: 16px;
+      cursor: pointer;
+      color: #27201D;
+    }
+  }
+  .wxcode-img{
+    margin: 16px auto auto 61px;
+    width: 166px;
+    height: 166px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .company-tips{
+    color: #27201D;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+
+}

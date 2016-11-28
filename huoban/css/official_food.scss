@@ -1,0 +1,173 @@
+.contianer{
+  width: 100%;
+  height: auto;
+  #banner-swiper{
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    .banner-img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .destination-view{
+    width: 100%;
+    height: 1850px;
+    background: #ebebeb;
+    .destination-info{
+      width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      .dest-img{
+        display: inline-block;
+        width: 187px;
+        height: 21px;
+        margin: 90px auto 0 506px;
+      }
+      .heart-img{
+        width: 241px;
+        height: 15px;
+        margin: 27px auto auto auto;
+        display: block;
+      }
+      .dest-control{
+        font-size: 0;
+        text-align: center;
+        margin: 50px auto auto auto;
+        a{
+          font-family: PingFang_Bold;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 15px;
+          padding: 7.5px 15px;
+          color: #062033;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        a:hover{
+          color: #0EB493;
+        }
+        .active{
+          color: #ffffff;
+          background: #0EB493;
+        }
+        .active:hover{
+          color: #ffffff;
+        }
+      }
+      #center-swiper{
+        width: 100%;
+        margin-top:50px;
+        .center-img{
+          display: inline-block;
+          width: 166px;
+          height: 166px;
+          overflow: visible;;
+          -moz-transform:rotate(-45deg);
+          -webkit-transform:rotate(-45deg);
+          -o-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+          filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+          img{
+            width: 166px;
+            height: 166px;
+          }
+          .food-tips {
+            width: 166px;
+            height: 166px;
+            background: #3B3B3B;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: none;
+            color: #FFFFFF;
+            background:url("../img/center-img-bg.png") no-repeat;
+            .title{
+              font-family: PingFang_Bold;
+              display: inline-block;
+              font-size: 16px;
+              width: 100%;
+              text-align: center;
+              line-height: 166px;
+              -moz-transform:rotate(45deg);
+              -webkit-transform:rotate(45deg);
+              -o-transform:rotate(45deg);
+              transform:rotate(45deg);
+              filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+            }
+          }
+        }
+        .center-img:hover{
+          .food-tips{
+            display:block;
+          }
+        }
+        .img-1{
+          margin-top: 37px;
+          margin-left: 518px;
+          display: block;
+        }
+        .img-2{
+          margin-left: 155px;
+          margin-top: -44px;
+        }
+        .img-3{
+          margin-left: 68px;
+          margin-top: -44px;
+        }
+        .img-4{
+          margin-left: 68px;
+          margin-top: -44px;
+        }
+        .img-5{
+          margin-left: 68px;
+          margin-top: -44px;
+        }
+        .img-6{
+          margin-left: 36px;
+          margin-top: -48px;
+        }
+        .img-7{
+          margin-left: 68px;
+          margin-top: -48px;
+        }
+        .img-8{
+          margin-left: 68px;
+          margin-top: -48px;
+        }
+        .img-9{
+          margin-left: 68px;
+          margin-top: -48px;
+        }
+        .img-10{
+          display: block;
+          margin-left: 882px;
+          margin-top: -48px;
+        }
+        .img-11{
+          display: block;
+          margin-left: 482px;
+          margin-top: -80px;
+          margin-bottom: 37px;
+        }
+      }
+      .photos-img{
+        width: 113px;
+        height: 21px;
+        margin: 140px auto auto auto;
+        display: block;
+      }
+      .food-info{
+        width: 100%;
+        margin-top: 50px;
+        font-size: 0;
+        img{
+          width: 300px;
+          height: 223px;
+        }
+      }
+    }
+  }
+
+}

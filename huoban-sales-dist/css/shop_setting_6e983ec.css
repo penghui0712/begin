@@ -1,0 +1,132 @@
+.sm_bg {
+  width: 1349px; }
+
+.sm_right_v {
+  float: left; }
+
+.category_title {
+  font-size: 18px;
+  color: #e22238;
+  letter-spacing: 2.25px;
+  margin-left: 52px;
+  margin-top: 32px;
+  display: block; }
+
+.sm_detail_v {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.12);
+  margin: 15px auto auto 32px;
+  border-radius: 8px;
+  width: 1099px; }
+  .sm_detail_v .up_arrow {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-bottom: 10px solid #e1e1e1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 286px;
+    margin-top: -10px; }
+  .sm_detail_v .up_arrow_bg {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-bottom: 8px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+    left: 288px;
+    margin-top: -8px; }
+  .sm_detail_v .shop_edit_v {
+    width: 536px;
+    margin: 60px auto auto 30px;
+    background: #ffffff;
+    border: 1px solid #eaeaea; }
+    .sm_detail_v .shop_edit_v .se_top_v {
+      background: #d8d8d8;
+      width: 536px;
+      height: 130px;
+      text-align: center; }
+      .sm_detail_v .shop_edit_v .se_top_v .se_btn {
+        background: #ffffff;
+        border-radius: 5px;
+        width: 125px;
+        height: 48px;
+        display: inline-block;
+        text-align: center;
+        line-height: 48px;
+        margin: 41px auto;
+        cursor: pointer;
+        font-size: 18px;
+        color: #e22238;
+        letter-spacing: 2.25px; }
+    .sm_detail_v .shop_edit_v .se_tab_v {
+      width: 536px;
+      height: 122px; }
+      .sm_detail_v .shop_edit_v .se_tab_v span {
+        font-size: 18px;
+        color: #222222;
+        letter-spacing: 2.25px;
+        display: inline-block;
+        line-height: 122px; }
+      .sm_detail_v .shop_edit_v .se_tab_v .span_1 {
+        margin-left: 35px; }
+      .sm_detail_v .shop_edit_v .se_tab_v .span_2 {
+        margin-left: 42px; }
+    .sm_detail_v .shop_edit_v .se_custom_v {
+      width: 536px;
+      height: 284px;
+      background: #eaeaea; }
+      .sm_detail_v .shop_edit_v .se_custom_v .edit_list {
+        background: #ea6a79;
+        width: 248px;
+        height: 48px;
+        float: right; }
+        .sm_detail_v .shop_edit_v .se_custom_v .edit_list a {
+          cursor: pointer;
+          font-size: 18px;
+          color: #ffffff;
+          letter-spacing: 2.25px;
+          display: inline-block;
+          line-height: 48px;
+          margin-left: 15px; }
+      .sm_detail_v .shop_edit_v .se_custom_v .center_v {
+        background: #d8d8d8;
+        width: 267px;
+        height: 86px;
+        margin: 52px auto auto auto;
+        cursor: pointer; }
+        .sm_detail_v .shop_edit_v .se_custom_v .center_v span {
+          font-size: 18px;
+          color: #222222;
+          letter-spacing: 2.25px;
+          display: block;
+          float: left;
+          width: 267px;
+          text-align: center; }
+    .sm_detail_v .shop_edit_v .se_title_v {
+      width: 536px;
+      height: 58px; }
+      .sm_detail_v .shop_edit_v .se_title_v span {
+        font-size: 18px;
+        color: #222222;
+        letter-spacing: 2.25px;
+        margin-left: 12px;
+        line-height: 58px; }
+  .sm_detail_v .se_add_btn {
+    margin: 28px auto 60px 30px;
+    border: 1px solid #cdcdcd;
+    width: 534px;
+    height: 282px;
+    text-align: center;
+    cursor: pointer; }
+    .sm_detail_v .se_add_btn img {
+      width: 114px;
+      height: 114px;
+      display: inline-block;
+      margin: 85px auto; }
+
+/*# sourceMappingURL=/css/shop_setting.css.map */

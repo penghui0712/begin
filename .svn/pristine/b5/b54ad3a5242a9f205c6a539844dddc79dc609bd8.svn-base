@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="../css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/register.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="rg_bg">
+  <link rel="import" href="../widget/backstage_head.html?__inline">
+  <div class="rg_top_line">
+    <img src="../images/line_arrow.png">
+    <div class="rg_point_list">
+      <div class="rg_high_point_1"></div>
+      <div class="rg_high_point_2"></div>
+      <div class="rg_point"></div>
+    </div>
+    <div class="rg_point_tips">
+      <span class="rg_sp_1">选择类型</span>
+      <span class="rg_sp_2">填写信息</span>
+      <span class="rg_sp_2">完成注册</span>
+    </div>
+  </div>
+  <div class="rg_detail_v">
+      <span class="rg_title">账号信息</span>
+      <span class="rg_subtitle"  style="margin-top: 46px;">用户名</span>
+      <input class="rg_input" id="userName" type="text" />
+      <div class="rg_icon">
+        <img src="../images/pass_icon.png"/>
+        <img src="../images/no_icon.png"/>
+      </div>
+      <div style="clear: both"></div>
+      <span class="rg_tips"><span class="rg_tips_point">• </span>大小写字母、符号、数字任意两种组合，不少于8位</span>
+      <span class="rg_subtitle" style="margin-top: 1px;">密码</span>
+      <input class="rg_input" id="userPwd" type="password" />
+      <div class="rg_icon">
+        <img src="../images/pass_icon.png"/>
+        <img src="../images/no_icon.png"/>
+     </div>
+    <div style="clear: both"></div>
+     <span class="rg_tips_2">强度</span><div class="rg_safety"><div class="rg_satety_nomarl_ponit"></div><div class="rg_satety_nomarl_ponit point_margin"></div><div class="rg_satety_nomarl_ponit point_margin"></div></div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 16px;">再次输入密码</span>
+       <input class="rg_input"  id="confirmPwd" type="password" />
+       <div class="rg_icon">
+         <img src="../images/pass_icon.png"/>
+         <img src="../images/no_icon.png"/>
+       </div>
+    <div class="rg_center_line"></div>
+    <span class="rg_title" style="margin-top: 27px">个人信息</span>
+    <span class="rg_subtitle" style="margin-top: 26px;">品牌名称</span>
+    <input class="rg_input" id="brandName" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 22px;">负责人姓名</span>
+    <input class="rg_input"  id="chargePersonName" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 22px;">身份证号</span>
+    <input class="rg_input" id="idNo"  type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_smtitle" style="margin-top: 28px">身份证正面</span>
+    <span class="rg_lgtitle">案例</span>
+    <div style="clear: both"></div>
+    <div class="rg_upload_v" ><span onclick="$('#file1').click()">上传</span><img onclick="$('#file1').click()" id="img1"/><input name="myfile" class="upload" type="file" id="file1"/></div>
+    <img class="rg_template_img" src="../images/idcard_p.png"/>
+    <div style="clear: both"></div>
+    <span class="rg_smtitle" style="margin-top: 9px">身份证背面</span>
+    <div style="clear: both"></div>
+    <div class="rg_upload_v" ><span onclick="$('#file2').click()">上传</span><img onclick="$('#file2').click()" id="img2"/><input name="myfile" class="upload" type="file" id="file2"/></div>
+    <img class="rg_template_img" src="../images/idcard_o.png"/>
+    <div style="clear: both"></div>
+    <span class="rg_smtitle" style="margin-top: 9px">手持身份证照片</span>
+    <div style="clear: both"></div>
+    <div class="rg_upload_v"><span onclick="$('#file3').click()">上传</span><img onclick="$('#file3').click()" id="img3"/><input name="myfile" class="upload" type="file" id="file3"/></div>
+    <img class="rg_template_img" src="../images/idcard_detail.png"/>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 27px;">负责人手机号</span>
+    <input class="rg_input" id="personPhoneNo" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">验证码</span>
+    <input class="rg_input_s"  id="randomCode" type="text" />
+    <a class="rg_ymz" id="rg_yzm">获取验证码</a>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">国家</span>
+    <input class="rg_input" id="country" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">地址</span>
+    <input class="rg_input" id="address" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">货币</span>
+    <input class="rg_input" id="currency" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">邮箱</span>
+    <input class="rg_input" id="email" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">经营项目</span>
+    <div class="rg_cb" style="margin-left: 12px">
+      <input class="" type="checkbox" value="旅游" id="rg_cb_ly" name="jy" />
+      <label for="rg_cb_ly"></label>
+    </div>
+    <label for="rg_cb_ly" class="rgcb_lbl">旅游</label>
+    <div class="rg_cb" style="margin-left: 18px">
+      <input class="" type="checkbox" value="活动" id="rg_cb_hd" name="jy" />
+      <label for="rg_cb_hd"></label>
+    </div>
+    <label for="rg_cb_hd" class="rgcb_lbl">活动</label>
+    <div class="rg_cb" style="margin-left: 18px">
+      <input class="" type="checkbox" value="培训" id="rg_cb_px" name="jy" />
+      <label for="rg_cb_px"></label>
+    </div>
+    <label for="rg_cb_px" class="rgcb_lbl">培训</label>
+    <div class="rg_cb" style="margin-left: 18px">
+      <input class="" type="checkbox" value="餐饮" id="rg_cb_cy" name="jy" />
+      <label for="rg_cb_cy"></label>
+    </div>
+    <label for="rg_cb_cy" class="rgcb_lbl">餐饮</label>
+    <div class="rg_cb" style="margin-left: 18px">
+      <input class="" type="checkbox" value="酒" id="rg_cb_j" name="jy" />
+      <label for="rg_cb_j"></label>
+    </div>
+    <label for="rg_cb_j" class="rgcb_lbl">酒</label>
+
+    <div class="rg_center_line"></div>
+    <span class="rg_title" style="margin-top: 27px">银行信息</span>
+    <span class="rg_subtitle" style="margin-top: 25px;">开户行</span>
+    <input class="rg_input" id="bankAccount" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">银行账号</span>
+    <input class="rg_input" id="cardNo" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <div style="clear: both"></div>
+    <span class="rg_subtitle" style="margin-top: 12px;">开户者名称</span>
+    <input class="rg_input" id="accountName" type="text" />
+    <div class="rg_icon">
+      <img src="../images/pass_icon.png"/>
+      <img src="../images/no_icon.png"/>
+    </div>
+    <span class="rg_smtitle" style="margin-top: 28px">开户许可证</span>
+    <span class="rg_lgtitle">案例</span>
+    <div style="clear: both"></div>
+    <div class="rg_upload_v" ><span onclick="$('#file4').click()">上传</span><img onclick="$('#file4').click()" id="img4"/><input name="myfile" class="upload" type="file" id="file4"/></div>
+    <img class="rg_template_img" src="../images/khxk.png"/>
+    <div class="rg_center_line"></div>
+    <span class="rg_subtitle_2" style="margin-top: 18px;">服务条款</span>
+    <div class="rg_cb" style="margin-left: 135px;">
+      <input class="" type="checkbox" value="1" id="rg_cb_fwtk" name="" />
+      <label for="rg_cb_fwtk"></label>
+    </div>
+    <label for="rg_cb_fwtk" class="rgcb_lbl_2">同意服务条款</label>
+    <div style="clear: both"></div>
+    <a class="rg_next" id="rg_next_btn">下一步</a>
+  </div>
+
+</div>
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/ajaxfileupload.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
+</body>
+</html>

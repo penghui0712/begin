@@ -1,0 +1,32 @@
+<div class="modal fade" id="create_group_info_dialog" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="create-group-info-dialog" class="create-group-info-dialog">
+    <div class="head-view">
+      <span class="title">创建群</span>
+    </div>
+    <div class="content-view">
+      <div class="cell mt50">
+        <span class="tips">群名称</span>
+        <input class="input">
+      </div>
+      <div class="cell mt20">
+        <span class="subtips">群组头像</span>
+        <img class="group-icon" src="../images/group-default-icon.png">
+        <img onclick="uploadImage.click()" class="group-icon" src="../images/group-img-add.png">
+        <input type="file" id="uploadImage" class="hide">
+      </div>
+      <div class="cell">
+        <span class="s-tips ml126">默认</span>
+        <span class="s-tips ml12">本地上传</span>
+      </div>
+      <div class="cell mt20">
+        <span class="group-state">群状态</span>
+        <div class="check-view">
+          <div class="radio-item"><input type="radio" name="group-radio" class="grdo" checked="checked" id="rdo1"><label for="rdo1" class="rdo-tips">开放群</label></div>
+          <div class="radio-item"><input type="radio" name="group-radio" class="grdo" id="rdo2"><label for="rdo2" class="rdo-tips">封闭群（邀请权限仅限群主）</label></div>
+        </div>
+      </div>
+      <a class="create-btn">添加成员</a>
+    </div>
+  </div>
+</div>

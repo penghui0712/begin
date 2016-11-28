@@ -1,0 +1,27 @@
+.contianer {
+  width: 100%;
+  height: auto; }
+  .contianer #banner-swiper {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    height: auto; }
+    .contianer #banner-swiper .banner-img {
+      width: 100%;
+      height: auto; }
+  .contianer .link-view {
+    position: relative;
+    margin: -50px auto auto auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    font-family: PingFang_Bold;
+    z-index: 999;
+    width: 1200px; }
+    .contianer .link-view a {
+      color: #ffffff; }
+    .contianer .link-view a:visited {
+      color: #ffffff; }
+
+/*# sourceMappingURL=official_index.css.map */

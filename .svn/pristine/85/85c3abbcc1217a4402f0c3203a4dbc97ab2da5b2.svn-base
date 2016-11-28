@@ -1,0 +1,76 @@
+.head-view {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 99999; }
+  .head-view .head-info {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0; }
+    .head-view .head-info .logo {
+      height: 28px;
+      width: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+    .head-view .head-info .logo-title {
+      margin-left: 15px;
+      font-size: 20px;
+      color: #000000;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 40px;
+      font-family: PingFang_Bold; }
+    .head-view .head-info a {
+      font-family: PingFang_Bold;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      line-height: 40px;
+      color: #232323; }
+    .head-view .head-info .active {
+      color: #F5A237; }
+    .head-view .head-info a:hover {
+      color: #F5A237; }
+
+.foot-view {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 0; }
+  .foot-view .foot-cell {
+    margin-top: 50px;
+    width: 257px;
+    height: 204px;
+    border-right: 2px #EEEEEE solid;
+    display: inline-block;
+    vertical-align: middle; }
+    .foot-view .foot-cell .title {
+      font-family: PingFang_Bold;
+      margin-top: 16px;
+      font-size: 18px;
+      color: #27201D;
+      display: block; }
+    .foot-view .foot-cell .subtitle {
+      font-size: 16px;
+      color: #27201D; }
+    .foot-view .foot-cell a {
+      font-size: 16px;
+      cursor: pointer;
+      color: #27201D; }
+  .foot-view .wxcode-img {
+    margin: 16px auto auto 61px;
+    width: 166px;
+    height: 166px;
+    display: inline-block;
+    vertical-align: middle; }
+  .foot-view .company-tips {
+    color: #27201D;
+    font-size: 14px;
+    display: block;
+    text-align: center; }
+
+/*# sourceMappingURL=public-head.css.map */

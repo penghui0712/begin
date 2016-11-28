@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'PingFang_Bold';
+  src: url("../font/PingFang_Bold.ttf"); }
+@font-face {
+  font-family: 'PingFang_Regular';
+  src: url("../font/PingFang_Regular.ttf"); }
+
+/*# sourceMappingURL=official_font.css.map */

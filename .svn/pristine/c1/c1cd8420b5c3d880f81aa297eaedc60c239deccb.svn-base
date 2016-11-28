@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="../css/font.css" rel="stylesheet" type="text/css"/>
+<link href="../css/main.css" rel="stylesheet" type="text/css"/>
+<link href="../css/backstage_head.css" rel="stylesheet" type="text/css"/>
+<link href="../css/register_choose.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="rc_bg">
+<link rel="import" href="../widget/backstage_head.html?__inline">
+<div class="rc_top_line">
+<img src="../images/line_arrow.png">
+<div class="rc_point_list">
+<div class="rc_high_point"></div>
+<div class="rc_point"></div>
+<div class="rc_point"></div>
+</div>
+<div class="rc_point_tips">
+<span class="rc_sp_1">选择类型</span>
+<span class="rc_sp_2">填写信息</span>
+<span class="rc_sp_2">完成注册</span>
+</div>
+<div class="rc_choose_v">
+<img src="../images/rc_choose_1.jpg" onclick="$('#register_company_btn').click()">
+<img class="rc_cimg" src="../images/rc_choose_2.jpg" onclick="$('#register_btn').click()">
+</div>
+<div class="rc_choose_tips_v">
+<span class="rc_ct_1">公司注册</span>
+<span class="rc_ct_2">个人品牌注册</span>
+</div>
+<div class="rc_choose_btn_v">
+<img class="rc_bt_1" id="register_company_btn" src="../images/rc_choose_btn.png"/>
+<img class="rc_bt_2" id="register_btn" src="../images/rc_choose_btn.png"/>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/register_choose.js"></script>
+<script type="text/javascript" src="../js/backstage_head.js"></script>
+
+</body>
+</html>
